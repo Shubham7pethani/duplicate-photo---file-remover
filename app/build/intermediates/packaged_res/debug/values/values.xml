@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="ic_launcher_background">#0025DB</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">Duplicate Remover</string>
+    <style name="CustomDialogTheme" parent="Theme.MaterialComponents.Light.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="Theme.DuplicateRemover" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">#2563EB</item>
+        <item name="colorPrimaryVariant">#1D4ED8</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">#3B82F6</item>
+        <item name="colorSecondaryVariant">#2563EB</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="android:statusBarColor">#FFFFFF</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:navigationBarColor">#FFFFFF</item>
+        <item name="android:windowBackground">#FFFFFF</item>
+        <item name="colorSurface">#FFFFFF</item>
+        <item name="colorOnSurface">#000000</item>
+    </style>
+    <declare-styleable name="CircularProgressView">
+        <attr format="color" name="cpv_progressColor"/>
+        <attr format="color" name="cpv_backgroundColor"/>
+        <attr format="boolean" name="cpv_fillEnabled"/>
+        <attr format="color" name="cpv_fillColor"/>
+        <attr format="dimension" name="cpv_strokeWidth"/>
+        <attr format="boolean" name="cpv_useTrackStyle"/>
+        <attr format="integer" name="cpv_progress"/>
+        <attr format="integer" name="cpv_max"/>
+    </declare-styleable>
+</resources>

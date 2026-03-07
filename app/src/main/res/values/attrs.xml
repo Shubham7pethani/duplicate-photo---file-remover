@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircularProgressView">
+        <attr name="cpv_progressColor" format="color" />
+        <attr name="cpv_backgroundColor" format="color" />
+        <attr name="cpv_fillEnabled" format="boolean" />
+        <attr name="cpv_fillColor" format="color" />
+        <attr name="cpv_strokeWidth" format="dimension" />
+        <attr name="cpv_useTrackStyle" format="boolean" />
+        <attr name="cpv_progress" format="integer" />
+        <attr name="cpv_max" format="integer" />
+    </declare-styleable>
+</resources>
