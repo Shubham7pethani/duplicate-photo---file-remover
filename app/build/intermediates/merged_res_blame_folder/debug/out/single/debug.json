@@ -1,238 +1,294 @@
 [
     {
-        "merged": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-merged_res-38:\\layout_activity_doc_scan.xml.flat",
-        "source": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-main-40:\\layout\\activity_doc_scan.xml"
+        "merged": "com.duplicateremover.app-merged_res-38:/raw_photo.mp4.flat",
+        "source": "com.duplicateremover.app-main-40:/raw/photo.mp4"
     },
     {
-        "merged": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-merged_res-38:\\mipmap-hdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-main-40:\\mipmap-hdpi\\ic_launcher.png"
+        "merged": "com.duplicateremover.app-merged_res-38:/raw_audio.mp4.flat",
+        "source": "com.duplicateremover.app-main-40:/raw/audio.mp4"
     },
     {
-        "merged": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-merged_res-38:\\layout_activity_scan.xml.flat",
-        "source": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-main-40:\\layout\\activity_scan.xml"
+        "merged": "com.duplicateremover.app-merged_res-38:/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "com.duplicateremover.app-main-40:/mipmap-hdpi/ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-merged_res-38:\\layout_activity_all_files_scan.xml.flat",
-        "source": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-main-40:\\layout\\activity_all_files_scan.xml"
-    },
-    {
-        "merged": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-merged_res-38:\\drawable_ic_chevron_right.xml.flat",
-        "source": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-main-40:\\drawable\\ic_chevron_right.xml"
+        "merged": "com.duplicateremover.app-merged_res-38:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.duplicateremover.app-main-40:/mipmap-xxxhdpi/ic_launcher.png"
     },
     {
         "merged": "com.duplicateremover.app-merged_res-38:/layout_activity_categories.xml.flat",
         "source": "com.duplicateremover.app-main-40:/layout/activity_categories.xml"
     },
     {
-        "merged": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-merged_res-38:\\layout_activity_video_scan.xml.flat",
-        "source": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-main-40:\\layout\\activity_video_scan.xml"
+        "merged": "com.duplicateremover.app-merged_res-38:/layout_item_duplicate_group.xml.flat",
+        "source": "com.duplicateremover.app-main-40:/layout/item_duplicate_group.xml"
     },
     {
-        "merged": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-merged_res-38:\\drawable_more.png.flat",
-        "source": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-main-40:\\drawable\\more.png"
+        "merged": "com.duplicateremover.app-merged_res-38:/layout_dialog_custom_delete.xml.flat",
+        "source": "com.duplicateremover.app-main-40:/layout/dialog_custom_delete.xml"
     },
     {
-        "merged": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-merged_res-38:\\drawable_photographer.png.flat",
-        "source": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-main-40:\\drawable\\photographer.png"
+        "merged": "com.duplicateremover.app-merged_res-38:/drawable_cross.png.flat",
+        "source": "com.duplicateremover.app-main-40:/drawable/cross.png"
     },
     {
-        "merged": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-merged_res-38:\\raw_docs.mp4.flat",
-        "source": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-main-40:\\raw\\docs.mp4"
+        "merged": "com.duplicateremover.app-merged_res-38:/drawable_cloud_storage.png.flat",
+        "source": "com.duplicateremover.app-main-40:/drawable/cloud_storage.png"
     },
     {
-        "merged": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-merged_res-38:\\mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-main-40:\\mipmap-xxhdpi\\ic_launcher.png"
+        "merged": "com.duplicateremover.app-merged_res-38:/raw_video.mp4.flat",
+        "source": "com.duplicateremover.app-main-40:/raw/video.mp4"
     },
     {
-        "merged": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-merged_res-38:\\raw_allfiles.mp4.flat",
-        "source": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-main-40:\\raw\\allfiles.mp4"
+        "merged": "com.duplicateremover.app-merged_res-38:/raw_people_contact.mp4.flat",
+        "source": "com.duplicateremover.app-main-40:/raw/people_contact.mp4"
     },
     {
-        "merged": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-merged_res-38:\\drawable_video_editor.png.flat",
-        "source": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-main-40:\\drawable\\video_editor.png"
+        "merged": "com.duplicateremover.app-merged_res-38:/drawable_bin.png.flat",
+        "source": "com.duplicateremover.app-main-40:/drawable/bin.png"
     },
     {
-        "merged": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-merged_res-38:\\raw_video.mp4.flat",
-        "source": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-main-40:\\raw\\video.mp4"
+        "merged": "com.duplicateremover.app-merged_res-38:/raw_docs.mp4.flat",
+        "source": "com.duplicateremover.app-main-40:/raw/docs.mp4"
     },
     {
-        "merged": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-merged_res-38:\\drawable_linear_progress_white.xml.flat",
-        "source": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-main-40:\\drawable\\linear_progress_white.xml"
+        "merged": "com.duplicateremover.app-merged_res-38:/raw_mobile_apps.mp4.flat",
+        "source": "com.duplicateremover.app-main-40:/raw/mobile_apps.mp4"
     },
     {
-        "merged": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-merged_res-38:\\drawable_apk.png.flat",
-        "source": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-main-40:\\drawable\\apk.png"
+        "merged": "com.duplicateremover.app-merged_res-38:/mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.duplicateremover.app-main-40:/mipmap-xxxhdpi/ic_launcher_foreground.png"
     },
     {
-        "merged": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-merged_res-38:\\drawable_audio.png.flat",
-        "source": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-main-40:\\drawable\\audio.png"
+        "merged": "com.duplicateremover.app-merged_res-38:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "com.duplicateremover.app-main-40:/mipmap-xxxhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-merged_res-38:\\raw_audio.mp4.flat",
-        "source": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-main-40:\\raw\\audio.mp4"
+        "merged": "com.duplicateremover.app-merged_res-38:/drawable_circle_background.xml.flat",
+        "source": "com.duplicateremover.app-main-40:/drawable/circle_background.xml"
     },
     {
-        "merged": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-merged_res-38:\\layout_activity_photo_scan.xml.flat",
-        "source": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-main-40:\\layout\\activity_photo_scan.xml"
+        "merged": "com.duplicateremover.app-merged_res-38:/drawable_file.png.flat",
+        "source": "com.duplicateremover.app-main-40:/drawable/file.png"
     },
     {
-        "merged": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-merged_res-38:\\raw_photo.mp4.flat",
-        "source": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-main-40:\\raw\\photo.mp4"
+        "merged": "com.duplicateremover.app-merged_res-38:/drawable_privacy_policy.png.flat",
+        "source": "com.duplicateremover.app-main-40:/drawable/privacy_policy.png"
     },
     {
-        "merged": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-merged_res-38:\\drawable_circle_background.xml.flat",
-        "source": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-main-40:\\drawable\\circle_background.xml"
+        "merged": "com.duplicateremover.app-merged_res-38:/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "com.duplicateremover.app-main-40:/mipmap-mdpi/ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-merged_res-38:\\mipmap-mdpi_ic_launcher_foreground.png.flat",
-        "source": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-main-40:\\mipmap-mdpi\\ic_launcher_foreground.png"
+        "merged": "com.duplicateremover.app-merged_res-38:/drawable_setting.png.flat",
+        "source": "com.duplicateremover.app-main-40:/drawable/setting.png"
     },
     {
-        "merged": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-merged_res-38:\\mipmap-mdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-main-40:\\mipmap-mdpi\\ic_launcher.png"
+        "merged": "com.duplicateremover.app-merged_res-38:/drawable_linear_progress_white.xml.flat",
+        "source": "com.duplicateremover.app-main-40:/drawable/linear_progress_white.xml"
     },
     {
-        "merged": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-merged_res-38:\\raw_finder.mp4.flat",
-        "source": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-main-40:\\raw\\finder.mp4"
+        "merged": "com.duplicateremover.app-merged_res-38:/raw_allfiles.mp4.flat",
+        "source": "com.duplicateremover.app-main-40:/raw/allfiles.mp4"
     },
     {
-        "merged": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-merged_res-38:\\drawable_people.png.flat",
-        "source": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-main-40:\\drawable\\people.png"
+        "merged": "com.duplicateremover.app-merged_res-38:/drawable_photographer.png.flat",
+        "source": "com.duplicateremover.app-main-40:/drawable/photographer.png"
     },
     {
-        "merged": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-merged_res-38:\\layout_activity_contact_scan.xml.flat",
-        "source": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-main-40:\\layout\\activity_contact_scan.xml"
+        "merged": "com.duplicateremover.app-merged_res-38:/layout_activity_doc_scan.xml.flat",
+        "source": "com.duplicateremover.app-main-40:/layout/activity_doc_scan.xml"
     },
     {
-        "merged": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-merged_res-38:\\mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-main-40:\\mipmap-mdpi\\ic_launcher_round.png"
+        "merged": "com.duplicateremover.app-merged_res-38:/raw_finder.mp4.flat",
+        "source": "com.duplicateremover.app-main-40:/raw/finder.mp4"
     },
     {
-        "merged": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-merged_res-38:\\drawable_file.png.flat",
-        "source": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-main-40:\\drawable\\file.png"
+        "merged": "com.duplicateremover.app-merged_res-38:/mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "com.duplicateremover.app-main-40:/mipmap-mdpi/ic_launcher_foreground.png"
     },
     {
-        "merged": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-merged_res-38:\\mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-main-40:\\mipmap-xxxhdpi\\ic_launcher.png"
+        "merged": "com.duplicateremover.app-merged_res-38:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.duplicateremover.app-main-40:/mipmap-xhdpi/ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-merged_res-38:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-main-40:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "com.duplicateremover.app-merged_res-38:/mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.duplicateremover.app-main-40:/mipmap-xxhdpi/ic_launcher_foreground.png"
     },
     {
-        "merged": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-merged_res-38:\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
-        "source": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-main-40:\\mipmap-xxxhdpi\\ic_launcher_foreground.png"
+        "merged": "com.duplicateremover.app-merged_res-38:/drawable_support.png.flat",
+        "source": "com.duplicateremover.app-main-40:/drawable/support.png"
     },
     {
-        "merged": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-merged_res-38:\\mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-main-40:\\mipmap-xxhdpi\\ic_launcher_round.png"
+        "merged": "com.duplicateremover.app-merged_res-38:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.duplicateremover.app-main-40:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-merged_res-38:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-main-40:\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "com.duplicateremover.app-merged_res-38:/layout_activity_settings.xml.flat",
+        "source": "com.duplicateremover.app-main-40:/layout/activity_settings.xml"
     },
     {
-        "merged": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-merged_res-38:\\raw_people_contact.mp4.flat",
-        "source": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-main-40:\\raw\\people_contact.mp4"
+        "merged": "com.duplicateremover.app-merged_res-38:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.duplicateremover.app-main-40:/mipmap-hdpi/ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-merged_res-38:\\drawable_decorative_circle.xml.flat",
-        "source": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-main-40:\\drawable\\decorative_circle.xml"
+        "merged": "com.duplicateremover.app-merged_res-38:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.duplicateremover.app-main-40:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-merged_res-38:\\mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-main-40:\\mipmap-xhdpi\\ic_launcher_round.png"
+        "merged": "com.duplicateremover.app-merged_res-38:/drawable_rating.png.flat",
+        "source": "com.duplicateremover.app-main-40:/drawable/rating.png"
     },
     {
-        "merged": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-merged_res-38:\\mipmap-xhdpi_ic_launcher_foreground.png.flat",
-        "source": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-main-40:\\mipmap-xhdpi\\ic_launcher_foreground.png"
+        "merged": "com.duplicateremover.app-merged_res-38:/layout_activity_video_scan.xml.flat",
+        "source": "com.duplicateremover.app-main-40:/layout/activity_video_scan.xml"
     },
     {
-        "merged": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-merged_res-38:\\drawable_cloud_storage.png.flat",
-        "source": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-main-40:\\drawable\\cloud_storage.png"
+        "merged": "com.duplicateremover.app-merged_res-38:/raw_others.mp4.flat",
+        "source": "com.duplicateremover.app-main-40:/raw/others.mp4"
     },
     {
-        "merged": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-merged_res-38:\\mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-main-40:\\mipmap-xhdpi\\ic_launcher.png"
+        "merged": "com.duplicateremover.app-merged_res-38:/drawable_circular_progress_gradient.xml.flat",
+        "source": "com.duplicateremover.app-main-40:/drawable/circular_progress_gradient.xml"
     },
     {
-        "merged": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-merged_res-38:\\drawable_linear_progress_gap.xml.flat",
-        "source": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-main-40:\\drawable\\linear_progress_gap.xml"
+        "merged": "com.duplicateremover.app-merged_res-38:/layout_activity_contact_scan.xml.flat",
+        "source": "com.duplicateremover.app-main-40:/layout/activity_contact_scan.xml"
     },
     {
-        "merged": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-merged_res-38:\\drawable_logo.png.flat",
-        "source": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-main-40:\\drawable\\logo.png"
+        "merged": "com.duplicateremover.app-merged_res-38:/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "com.duplicateremover.app-main-40:/mipmap-xxhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-merged_res-38:\\mipmap-hdpi_ic_launcher_foreground.png.flat",
-        "source": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-main-40:\\mipmap-hdpi\\ic_launcher_foreground.png"
+        "merged": "com.duplicateremover.app-merged_res-38:/drawable_check.png.flat",
+        "source": "com.duplicateremover.app-main-40:/drawable/check.png"
     },
     {
-        "merged": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-merged_res-38:\\layout_item_duplicate_group.xml.flat",
-        "source": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-main-40:\\layout\\item_duplicate_group.xml"
+        "merged": "com.duplicateremover.app-merged_res-38:/layout_activity_others_scan.xml.flat",
+        "source": "com.duplicateremover.app-main-40:/layout/activity_others_scan.xml"
     },
     {
-        "merged": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-merged_res-38:\\layout_item_photo.xml.flat",
-        "source": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-main-40:\\layout\\item_photo.xml"
+        "merged": "com.duplicateremover.app-merged_res-38:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.duplicateremover.app-main-40:/mipmap-xxhdpi/ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-merged_res-38:\\layout_activity_audio_scan.xml.flat",
-        "source": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-main-40:\\layout\\activity_audio_scan.xml"
+        "merged": "com.duplicateremover.app-merged_res-38:/drawable_backlog.png.flat",
+        "source": "com.duplicateremover.app-main-40:/drawable/backlog.png"
     },
     {
-        "merged": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-merged_res-38:\\mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-main-40:\\mipmap-hdpi\\ic_launcher_round.png"
+        "merged": "com.duplicateremover.app-merged_res-38:/drawable_ic_chevron_right.xml.flat",
+        "source": "com.duplicateremover.app-main-40:/drawable/ic_chevron_right.xml"
     },
     {
-        "merged": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-merged_res-38:\\layout_dialog_custom_delete.xml.flat",
-        "source": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-main-40:\\layout\\dialog_custom_delete.xml"
+        "merged": "com.duplicateremover.app-merged_res-38:/drawable_logo.png.flat",
+        "source": "com.duplicateremover.app-main-40:/drawable/logo.png"
     },
     {
-        "merged": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-merged_res-38:\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-main-40:\\mipmap-xxxhdpi\\ic_launcher_round.png"
+        "merged": "com.duplicateremover.app-merged_res-38:/drawable_about.png.flat",
+        "source": "com.duplicateremover.app-main-40:/drawable/about.png"
     },
     {
-        "merged": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-merged_res-38:\\drawable_circular_progress_gradient.xml.flat",
-        "source": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-main-40:\\drawable\\circular_progress_gradient.xml"
+        "merged": "com.duplicateremover.app-merged_res-38:/layout_activity_scan.xml.flat",
+        "source": "com.duplicateremover.app-main-40:/layout/activity_scan.xml"
     },
     {
-        "merged": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-merged_res-38:\\drawable_backlog.png.flat",
-        "source": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-main-40:\\drawable\\backlog.png"
+        "merged": "com.duplicateremover.app-merged_res-38:/drawable_audio.png.flat",
+        "source": "com.duplicateremover.app-main-40:/drawable/audio.png"
     },
     {
-        "merged": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-merged_res-38:\\layout_activity_categories.xml.flat",
-        "source": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-main-40:\\layout\\activity_categories.xml"
+        "merged": "com.duplicateremover.app-merged_res-38:/drawable_back.png.flat",
+        "source": "com.duplicateremover.app-main-40:/drawable/back.png"
     },
     {
-        "merged": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-merged_res-38:\\raw_send.mp4.flat",
-        "source": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-main-40:\\raw\\send.mp4"
+        "merged": "com.duplicateremover.app-merged_res-38:/drawable_circular_progress.xml.flat",
+        "source": "com.duplicateremover.app-main-40:/drawable/circular_progress.xml"
     },
     {
-        "merged": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-merged_res-38:\\drawable_gradient_card_background.xml.flat",
-        "source": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-main-40:\\drawable\\gradient_card_background.xml"
+        "merged": "com.duplicateremover.app-merged_res-38:/drawable_share.png.flat",
+        "source": "com.duplicateremover.app-main-40:/drawable/share.png"
+    },
+    {
+        "merged": "com.duplicateremover.app-merged_res-38:/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "com.duplicateremover.app-main-40:/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.duplicateremover.app-merged_res-38:/drawable_circular_background_ring.xml.flat",
+        "source": "com.duplicateremover.app-main-40:/drawable/circular_background_ring.xml"
+    },
+    {
+        "merged": "com.duplicateremover.app-merged_res-38:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.duplicateremover.app-main-40:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.duplicateremover.app-merged_res-38:/drawable_gradient_card_background.xml.flat",
+        "source": "com.duplicateremover.app-main-40:/drawable/gradient_card_background.xml"
+    },
+    {
+        "merged": "com.duplicateremover.app-merged_res-38:/layout_activity_all_files_scan.xml.flat",
+        "source": "com.duplicateremover.app-main-40:/layout/activity_all_files_scan.xml"
+    },
+    {
+        "merged": "com.duplicateremover.app-merged_res-38:/drawable_people.png.flat",
+        "source": "com.duplicateremover.app-main-40:/drawable/people.png"
+    },
+    {
+        "merged": "com.duplicateremover.app-merged_res-38:/layout_activity_photo_scan.xml.flat",
+        "source": "com.duplicateremover.app-main-40:/layout/activity_photo_scan.xml"
+    },
+    {
+        "merged": "com.duplicateremover.app-merged_res-38:/drawable_fileaccess.png.flat",
+        "source": "com.duplicateremover.app-main-40:/drawable/fileaccess.png"
+    },
+    {
+        "merged": "com.duplicateremover.app-merged_res-38:/mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.duplicateremover.app-main-40:/mipmap-xhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.duplicateremover.app-merged_res-38:/layout_activity_apk_scan.xml.flat",
+        "source": "com.duplicateremover.app-main-40:/layout/activity_apk_scan.xml"
+    },
+    {
+        "merged": "com.duplicateremover.app-merged_res-38:/drawable_more.png.flat",
+        "source": "com.duplicateremover.app-main-40:/drawable/more.png"
+    },
+    {
+        "merged": "com.duplicateremover.app-merged_res-38:/mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "com.duplicateremover.app-main-40:/mipmap-hdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.duplicateremover.app-merged_res-38:/drawable_decorative_circle.xml.flat",
+        "source": "com.duplicateremover.app-main-40:/drawable/decorative_circle.xml"
+    },
+    {
+        "merged": "com.duplicateremover.app-merged_res-38:/raw_trash_bin.mp4.flat",
+        "source": "com.duplicateremover.app-main-40:/raw/trash_bin.mp4"
+    },
+    {
+        "merged": "com.duplicateremover.app-merged_res-38:/raw_send.mp4.flat",
+        "source": "com.duplicateremover.app-main-40:/raw/send.mp4"
+    },
+    {
+        "merged": "com.duplicateremover.app-merged_res-38:/drawable_linear_progress_gap.xml.flat",
+        "source": "com.duplicateremover.app-main-40:/drawable/linear_progress_gap.xml"
     },
     {
         "merged": "com.duplicateremover.app-merged_res-38:/layout_activity_main.xml.flat",
         "source": "com.duplicateremover.app-main-40:/layout/activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-merged_res-38:\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-main-40:\\layout\\activity_main.xml"
+        "merged": "com.duplicateremover.app-merged_res-38:/layout_item_photo.xml.flat",
+        "source": "com.duplicateremover.app-main-40:/layout/item_photo.xml"
     },
     {
-        "merged": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-merged_res-38:\\layout_item_category.xml.flat",
-        "source": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-main-40:\\layout\\item_category.xml"
+        "merged": "com.duplicateremover.app-merged_res-38:/layout_item_category.xml.flat",
+        "source": "com.duplicateremover.app-main-40:/layout/item_category.xml"
     },
     {
-        "merged": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-merged_res-38:\\mipmap-xxhdpi_ic_launcher_foreground.png.flat",
-        "source": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-main-40:\\mipmap-xxhdpi\\ic_launcher_foreground.png"
+        "merged": "com.duplicateremover.app-merged_res-38:/drawable_video_editor.png.flat",
+        "source": "com.duplicateremover.app-main-40:/drawable/video_editor.png"
     },
     {
-        "merged": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-merged_res-38:\\drawable_circular_background_ring.xml.flat",
-        "source": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-main-40:\\drawable\\circular_background_ring.xml"
-    },
-    {
-        "merged": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-merged_res-38:\\drawable_circular_progress.xml.flat",
-        "source": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-main-40:\\drawable\\circular_progress.xml"
+        "merged": "com.duplicateremover.app-merged_res-38:/layout_activity_audio_scan.xml.flat",
+        "source": "com.duplicateremover.app-main-40:/layout/activity_audio_scan.xml"
     }
 ]

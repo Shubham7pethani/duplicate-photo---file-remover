@@ -109,6 +109,11 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        binding.settingsButton.setOnClickListener {
+            val intent = Intent(this, SettingsActivity::class.java)
+            startActivity(intent)
+        }
+
         // All Files
         binding.categoryAllFiles.setOnClickListener {
             val intent = Intent(this, AllFilesScanActivity::class.java)

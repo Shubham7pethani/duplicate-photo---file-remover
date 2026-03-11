@@ -4,6 +4,7 @@ package com.duplicateremover.app.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.VideoView;
@@ -27,6 +28,9 @@ public final class ActivityAllFilesScanBinding implements ViewBinding {
   private final CoordinatorLayout rootView;
 
   @NonNull
+  public final ImageView backButton;
+
+  @NonNull
   public final CardView bottomBar;
 
   @NonNull
@@ -48,6 +52,9 @@ public final class ActivityAllFilesScanBinding implements ViewBinding {
   public final CircularProgressView scanProgressCircle;
 
   @NonNull
+  public final TextView scanTitleText;
+
+  @NonNull
   public final LinearLayout scanningContainer;
 
   @NonNull
@@ -60,16 +67,22 @@ public final class ActivityAllFilesScanBinding implements ViewBinding {
   public final MaterialToolbar toolbar;
 
   @NonNull
+  public final TextView toolbarTitle;
+
+  @NonNull
   public final TextView totalSizeText;
 
   private ActivityAllFilesScanBinding(@NonNull CoordinatorLayout rootView,
-      @NonNull CardView bottomBar, @NonNull MaterialButton deleteButton,
-      @NonNull LinearLayout emptyView, @NonNull TextView fileCountText,
-      @NonNull RecyclerView resultsRecyclerView, @NonNull VideoView scanAnimation,
-      @NonNull CircularProgressView scanProgressCircle, @NonNull LinearLayout scanningContainer,
+      @NonNull ImageView backButton, @NonNull CardView bottomBar,
+      @NonNull MaterialButton deleteButton, @NonNull LinearLayout emptyView,
+      @NonNull TextView fileCountText, @NonNull RecyclerView resultsRecyclerView,
+      @NonNull VideoView scanAnimation, @NonNull CircularProgressView scanProgressCircle,
+      @NonNull TextView scanTitleText, @NonNull LinearLayout scanningContainer,
       @NonNull TextView selectedStatsText, @NonNull TextView statusText,
-      @NonNull MaterialToolbar toolbar, @NonNull TextView totalSizeText) {
+      @NonNull MaterialToolbar toolbar, @NonNull TextView toolbarTitle,
+      @NonNull TextView totalSizeText) {
     this.rootView = rootView;
+    this.backButton = backButton;
     this.bottomBar = bottomBar;
     this.deleteButton = deleteButton;
     this.emptyView = emptyView;
@@ -77,10 +90,12 @@ public final class ActivityAllFilesScanBinding implements ViewBinding {
     this.resultsRecyclerView = resultsRecyclerView;
     this.scanAnimation = scanAnimation;
     this.scanProgressCircle = scanProgressCircle;
+    this.scanTitleText = scanTitleText;
     this.scanningContainer = scanningContainer;
     this.selectedStatsText = selectedStatsText;
     this.statusText = statusText;
     this.toolbar = toolbar;
+    this.toolbarTitle = toolbarTitle;
     this.totalSizeText = totalSizeText;
   }
 
@@ -111,6 +126,12 @@ public final class ActivityAllFilesScanBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.backButton;
+      ImageView backButton = ViewBindings.findChildViewById(rootView, id);
+      if (backButton == null) {
+        break missingId;
+      }
+
       id = R.id.bottomBar;
       CardView bottomBar = ViewBindings.findChildViewById(rootView, id);
       if (bottomBar == null) {
@@ -153,6 +174,12 @@ public final class ActivityAllFilesScanBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.scanTitleText;
+      TextView scanTitleText = ViewBindings.findChildViewById(rootView, id);
+      if (scanTitleText == null) {
+        break missingId;
+      }
+
       id = R.id.scanningContainer;
       LinearLayout scanningContainer = ViewBindings.findChildViewById(rootView, id);
       if (scanningContainer == null) {
@@ -177,15 +204,22 @@ public final class ActivityAllFilesScanBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.toolbarTitle;
+      TextView toolbarTitle = ViewBindings.findChildViewById(rootView, id);
+      if (toolbarTitle == null) {
+        break missingId;
+      }
+
       id = R.id.totalSizeText;
       TextView totalSizeText = ViewBindings.findChildViewById(rootView, id);
       if (totalSizeText == null) {
         break missingId;
       }
 
-      return new ActivityAllFilesScanBinding((CoordinatorLayout) rootView, bottomBar, deleteButton,
-          emptyView, fileCountText, resultsRecyclerView, scanAnimation, scanProgressCircle,
-          scanningContainer, selectedStatsText, statusText, toolbar, totalSizeText);
+      return new ActivityAllFilesScanBinding((CoordinatorLayout) rootView, backButton, bottomBar,
+          deleteButton, emptyView, fileCountText, resultsRecyclerView, scanAnimation,
+          scanProgressCircle, scanTitleText, scanningContainer, selectedStatsText, statusText,
+          toolbar, toolbarTitle, totalSizeText);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

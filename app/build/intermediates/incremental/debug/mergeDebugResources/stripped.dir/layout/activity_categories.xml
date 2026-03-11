@@ -20,11 +20,13 @@
 
             <ImageButton
                 android:id="@+id/backBtn"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:src="@android:drawable/ic_menu_close_clear_cancel"
-                android:background="@android:color/transparent"
-                app:tint="?attr/colorOnSurface" />
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:src="@drawable/cross"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="6dp"
+                android:scaleType="fitCenter"
+                app:tint="@null" />
 
             <TextView
                 android:layout_width="wrap_content"

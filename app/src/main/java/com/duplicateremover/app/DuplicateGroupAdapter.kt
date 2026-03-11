@@ -8,6 +8,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.bumptech.glide.request.RequestOptions
 import com.duplicateremover.app.databinding.ItemDuplicateGroupBinding
 import com.duplicateremover.app.databinding.ItemPhotoBinding
 
@@ -108,13 +109,35 @@ class PhotoAdapter(
 
         fun bind(file: MediaFile, isOriginal: Boolean) {
             val context = binding.root.context
+
+            binding.fileNameText.text = file.name
             
-            // Load image
+            val lowerName = file.name.lowercase()
+            val lowerMime = file.mimeType.lowercase()
+
+            val isVideo = lowerMime.startsWith("video/") || lowerName.endsWith(".mp4") || lowerName.endsWith(".mkv") || lowerName.endsWith(".3gp") || lowerName.endsWith(".webm")
+            val isAudio = lowerMime.startsWith("audio/") || lowerName.endsWith(".mp3") || lowerName.endsWith(".wav") || lowerName.endsWith(".ogg") || lowerName.endsWith(".aac") || lowerName.endsWith(".m4a")
+            val isApk = lowerMime == "application/vnd.android.package-archive" || lowerName.endsWith(".apk") || lowerName.endsWith(".apks") || lowerName.endsWith(".xapk")
+            val isDoc = lowerMime == "application/pdf" || lowerMime.startsWith("text/") || lowerName.endsWith(".pdf") || lowerName.endsWith(".doc") || lowerName.endsWith(".docx") || lowerName.endsWith(".xls") || lowerName.endsWith(".xlsx") || lowerName.endsWith(".ppt") || lowerName.endsWith(".pptx") || lowerName.endsWith(".txt")
+            val isContact = file.size == 0L && file.path.isNotBlank() && lowerMime.isNotBlank() && lowerMime == file.name.lowercase()
+
+            val (fallbackIcon, crop) = when {
+                isVideo -> Pair(R.drawable.video_editor, true)
+                isAudio -> Pair(R.drawable.audio, false)
+                isApk -> Pair(R.drawable.file, false)
+                isDoc -> Pair(R.drawable.file, false)
+                isContact -> Pair(R.drawable.people, false)
+                else -> Pair(R.drawable.more, false)
+            }
+
+            val requestOptions = RequestOptions()
+                .placeholder(fallbackIcon)
+                .error(fallbackIcon)
+
             Glide.with(context)
                 .load(file.path)
-                .placeholder(android.R.drawable.ic_menu_gallery)
-                .error(android.R.drawable.ic_menu_gallery)
-                .centerCrop()
+                .apply(requestOptions)
+                .let { req -> if (crop) req.centerCrop() else req.fitCenter() }
                 .into(binding.photoImageView)
             
             // Show/hide original label

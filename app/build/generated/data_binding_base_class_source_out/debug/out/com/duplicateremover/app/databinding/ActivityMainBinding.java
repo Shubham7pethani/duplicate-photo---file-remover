@@ -4,6 +4,7 @@ package com.duplicateremover.app.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -86,6 +87,9 @@ public final class ActivityMainBinding implements ViewBinding {
   public final MaterialButton selectAllButton;
 
   @NonNull
+  public final ImageButton settingsButton;
+
+  @NonNull
   public final TextView statusText;
 
   @NonNull
@@ -106,6 +110,9 @@ public final class ActivityMainBinding implements ViewBinding {
   @NonNull
   public final Toolbar toolbar;
 
+  @NonNull
+  public final TextView toolbarTitle;
+
   private ActivityMainBinding(@NonNull CoordinatorLayout rootView,
       @NonNull MaterialButton backButton, @NonNull TextView canSaveText,
       @NonNull CardView categoryAllFiles, @NonNull CardView categoryAudios,
@@ -116,10 +123,11 @@ public final class ActivityMainBinding implements ViewBinding {
       @NonNull LinearLayout homeContainer, @NonNull NestedScrollView homeScrollView,
       @NonNull LinearProgressView linearProgress, @NonNull ProgressBar progressBar,
       @NonNull RecyclerView recyclerView, @NonNull LinearLayout scanResultsContainer,
-      @NonNull MaterialButton selectAllButton, @NonNull TextView statusText,
-      @NonNull CardView storageCard, @NonNull TextView storagePercentText,
-      @NonNull CircularProgressView storageProgress, @NonNull TextView storageTotalText,
-      @NonNull TextView storageUsedText, @NonNull Toolbar toolbar) {
+      @NonNull MaterialButton selectAllButton, @NonNull ImageButton settingsButton,
+      @NonNull TextView statusText, @NonNull CardView storageCard,
+      @NonNull TextView storagePercentText, @NonNull CircularProgressView storageProgress,
+      @NonNull TextView storageTotalText, @NonNull TextView storageUsedText,
+      @NonNull Toolbar toolbar, @NonNull TextView toolbarTitle) {
     this.rootView = rootView;
     this.backButton = backButton;
     this.canSaveText = canSaveText;
@@ -140,6 +148,7 @@ public final class ActivityMainBinding implements ViewBinding {
     this.recyclerView = recyclerView;
     this.scanResultsContainer = scanResultsContainer;
     this.selectAllButton = selectAllButton;
+    this.settingsButton = settingsButton;
     this.statusText = statusText;
     this.storageCard = storageCard;
     this.storagePercentText = storagePercentText;
@@ -147,6 +156,7 @@ public final class ActivityMainBinding implements ViewBinding {
     this.storageTotalText = storageTotalText;
     this.storageUsedText = storageUsedText;
     this.toolbar = toolbar;
+    this.toolbarTitle = toolbarTitle;
   }
 
   @Override
@@ -290,6 +300,12 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.settingsButton;
+      ImageButton settingsButton = ViewBindings.findChildViewById(rootView, id);
+      if (settingsButton == null) {
+        break missingId;
+      }
+
       id = R.id.statusText;
       TextView statusText = ViewBindings.findChildViewById(rootView, id);
       if (statusText == null) {
@@ -332,12 +348,19 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.toolbarTitle;
+      TextView toolbarTitle = ViewBindings.findChildViewById(rootView, id);
+      if (toolbarTitle == null) {
+        break missingId;
+      }
+
       return new ActivityMainBinding((CoordinatorLayout) rootView, backButton, canSaveText,
           categoryAllFiles, categoryAudios, categoryContacts, categoryDocs, categoryPhotos,
           categoryVideos, deleteButton, duplicatesCountText, emptyView, freeSpaceText,
           homeContainer, homeScrollView, linearProgress, progressBar, recyclerView,
-          scanResultsContainer, selectAllButton, statusText, storageCard, storagePercentText,
-          storageProgress, storageTotalText, storageUsedText, toolbar);
+          scanResultsContainer, selectAllButton, settingsButton, statusText, storageCard,
+          storagePercentText, storageProgress, storageTotalText, storageUsedText, toolbar,
+          toolbarTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

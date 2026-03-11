@@ -63,6 +63,18 @@
             android:name=".CategoriesActivity"
             android:exported="false"
             android:theme="@style/Theme.DuplicateRemover" />
+        <activity
+            android:name=".ApkScanActivity"
+            android:exported="false"
+            android:theme="@style/Theme.DuplicateRemover" />
+        <activity
+            android:name=".OthersScanActivity"
+            android:exported="false"
+            android:theme="@style/Theme.DuplicateRemover" />
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false"
+            android:theme="@style/Theme.DuplicateRemover" />
     </application>
 
 </manifest>

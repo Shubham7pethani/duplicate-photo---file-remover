@@ -2,6 +2,7 @@ package com.duplicateremover.app
 
 import android.Manifest
 import android.app.RecoverableSecurityException
+import android.content.ContentUris
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.net.Uri
@@ -36,6 +37,9 @@ class PhotoScanActivity : AppCompatActivity() {
     private val deleteLauncher = registerForActivityResult(ActivityResultContracts.StartIntentSenderForResult()) { result ->
         if (result.resultCode == RESULT_OK) {
             pendingFilesToDelete?.let { finalizeDeletion(it) }
+        } else {
+            pendingFilesToDelete = null
+            Toast.makeText(this, "Delete cancelled", Toast.LENGTH_SHORT).show()
         }
     }
 
@@ -80,8 +84,8 @@ class PhotoScanActivity : AppCompatActivity() {
     }
 
     private fun setupToolbar() {
-        binding.toolbar.setNavigationOnClickListener {
-            finish()
+        binding.backButton.setOnClickListener {
+            onBackPressed()
         }
     }
 
@@ -278,7 +282,9 @@ class PhotoScanActivity : AppCompatActivity() {
 
         dialogView.findViewById<android.widget.TextView>(R.id.dialogTitle).text = "Delete Duplicates?"
         dialogView.findViewById<android.widget.TextView>(R.id.dialogMessage).text = 
-            "Delete ${files.size} duplicate photos (${formatSize(totalSize)})?\nOriginal photos will be kept safe."
+            "Delete ${files.size} duplicate photos (${formatSize(totalSize)})"
+        dialogView.findViewById<android.widget.TextView>(R.id.dialogSubMessage).text = 
+            "Original photos will be kept safe."
 
         dialogView.findViewById<com.google.android.material.button.MaterialButton>(R.id.btnCancel).setOnClickListener {
             dialog.dismiss()
@@ -295,50 +301,103 @@ class PhotoScanActivity : AppCompatActivity() {
 
     private fun deleteFiles(files: List<MediaFile>) {
         lifecycleScope.launch(Dispatchers.IO) {
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
-                val uris = files.map { 
-                    Uri.withAppendedPath(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, it.id.toString())
-                }
-                val editPendingIntent = MediaStore.createDeleteRequest(contentResolver, uris)
-                pendingFilesToDelete = files
-                val intentSenderRequest = IntentSenderRequest.Builder(editPendingIntent.intentSender).build()
+            try {
                 withContext(Dispatchers.Main) {
-                    deleteLauncher.launch(intentSenderRequest)
+                    showDeleteProgress()
                 }
-            } else {
-                var deleted = 0
-                files.forEach { file ->
-                    try {
-                        val f = File(file.path)
-                        if (f.exists() && f.delete()) {
-                            deleted++
-                            contentResolver.delete(
-                                MediaStore.Images.Media.EXTERNAL_CONTENT_URI,
-                                "${MediaStore.Images.Media._ID} = ?",
-                                arrayOf(file.id.toString())
-                            )
-                        }
-                    } catch (e: Exception) {
-                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q && e is RecoverableSecurityException) {
-                            pendingFilesToDelete = listOf(file)
-                            val intentSenderRequest = IntentSenderRequest.Builder(e.userAction.actionIntent.intentSender).build()
+
+                val total = files.size
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+                    val uris = files.map {
+                        ContentUris.withAppendedId(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, it.id)
+                    }
+                    val editPendingIntent = MediaStore.createDeleteRequest(contentResolver, uris)
+                    pendingFilesToDelete = files
+                    val intentSenderRequest = IntentSenderRequest.Builder(editPendingIntent.intentSender).build()
+                    withContext(Dispatchers.Main) {
+                        deleteLauncher.launch(intentSenderRequest)
+                    }
+                } else {
+                    for ((index, file) in files.withIndex()) {
+                        try {
+                            val itemUri = ContentUris.withAppendedId(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, file.id)
+                            contentResolver.delete(itemUri, null, null)
+                            
+                            val progress = ((index + 1) * 100) / total
                             withContext(Dispatchers.Main) {
-                                deleteLauncher.launch(intentSenderRequest)
+                                binding.scanProgressCircle.setProgress(progress)
+                                binding.statusText.text = "Deleting duplicates..."
+                                binding.fileCountText.text = "Deleted ${index + 1}/$total"
                             }
-                            return@launch
+                        } catch (e: Exception) {
+                            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q && e is RecoverableSecurityException) {
+                                pendingFilesToDelete = files.drop(index)
+                                val intentSenderRequest = IntentSenderRequest.Builder(e.userAction.actionIntent.intentSender).build()
+                                withContext(Dispatchers.Main) {
+                                    deleteLauncher.launch(intentSenderRequest)
+                                }
+                                return@launch
+                            }
                         }
                     }
+                    withContext(Dispatchers.Main) {
+                        finalizeDeletion(files)
+                    }
                 }
+            } catch (e: Exception) {
                 withContext(Dispatchers.Main) {
-                    finalizeDeletion(files)
+                    binding.scanningContainer.visibility = View.GONE
+                    binding.resultsRecyclerView.visibility = View.VISIBLE
+                    binding.bottomBar.visibility = View.VISIBLE
+                    pendingFilesToDelete = null
+                    Toast.makeText(this@PhotoScanActivity, "Delete failed: ${e.message}", Toast.LENGTH_SHORT).show()
                 }
             }
         }
     }
 
-    private fun finalizeDeletion(files: List<MediaFile>) {
-        Toast.makeText(this, "Deleted ${files.size} photos", Toast.LENGTH_SHORT).show()
+    private fun showDeleteProgress() {
+        binding.scanningContainer.visibility = View.VISIBLE
+        binding.resultsRecyclerView.visibility = View.GONE
+        binding.bottomBar.visibility = View.GONE
+        binding.emptyView.visibility = View.GONE
+        
+        binding.scanTitleText.text = "Deleting Photos"
+        binding.scanProgressCircle.setProgress(0)
+        binding.fileCountText.text = "Starting deletion..."
+        binding.statusText.text = "Removing duplicates..."
+        
+        val videoUri = Uri.parse("android.resource://$packageName/${R.raw.trash_bin}")
+        binding.scanAnimation.setVideoURI(videoUri)
+        binding.scanAnimation.start()
+    }
+
+    private fun finalizeDeletion(deletedFiles: List<MediaFile>) {
+        val deletedIds = deletedFiles.map { it.id }.toSet()
+        
+        // Remove deleted files from the groups
+        val updatedGroups = duplicateGroups.map { group ->
+            group.filter { it.id !in deletedIds }
+        }.filter { it.size > 1 } // Only keep groups that still have duplicates
+
+        duplicateGroups.clear()
+        duplicateGroups.addAll(updatedGroups)
+        
+        binding.scanningContainer.visibility = View.GONE
         pendingFilesToDelete = null
-        startScanning()
+        
+        if (duplicateGroups.isEmpty()) {
+            binding.emptyView.visibility = View.VISIBLE
+            binding.resultsRecyclerView.visibility = View.GONE
+            binding.bottomBar.visibility = View.GONE
+        } else {
+            binding.emptyView.visibility = View.GONE
+            binding.resultsRecyclerView.visibility = View.VISIBLE
+            binding.bottomBar.visibility = View.VISIBLE
+            duplicateAdapter.submitList(duplicateGroups.toList())
+            updateBottomBarStats()
+        }
+        
+        Toast.makeText(this, "Deleted ${deletedFiles.size} photos", Toast.LENGTH_SHORT).show()
     }
 }

@@ -34,16 +34,21 @@ public final class DialogCustomDeleteBinding implements ViewBinding {
   public final TextView dialogMessage;
 
   @NonNull
+  public final TextView dialogSubMessage;
+
+  @NonNull
   public final TextView dialogTitle;
 
   private DialogCustomDeleteBinding(@NonNull CardView rootView, @NonNull MaterialButton btnCancel,
       @NonNull MaterialButton btnDelete, @NonNull ImageView dialogIcon,
-      @NonNull TextView dialogMessage, @NonNull TextView dialogTitle) {
+      @NonNull TextView dialogMessage, @NonNull TextView dialogSubMessage,
+      @NonNull TextView dialogTitle) {
     this.rootView = rootView;
     this.btnCancel = btnCancel;
     this.btnDelete = btnDelete;
     this.dialogIcon = dialogIcon;
     this.dialogMessage = dialogMessage;
+    this.dialogSubMessage = dialogSubMessage;
     this.dialogTitle = dialogTitle;
   }
 
@@ -98,6 +103,12 @@ public final class DialogCustomDeleteBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.dialogSubMessage;
+      TextView dialogSubMessage = ViewBindings.findChildViewById(rootView, id);
+      if (dialogSubMessage == null) {
+        break missingId;
+      }
+
       id = R.id.dialogTitle;
       TextView dialogTitle = ViewBindings.findChildViewById(rootView, id);
       if (dialogTitle == null) {
@@ -105,7 +116,7 @@ public final class DialogCustomDeleteBinding implements ViewBinding {
       }
 
       return new DialogCustomDeleteBinding((CardView) rootView, btnCancel, btnDelete, dialogIcon,
-          dialogMessage, dialogTitle);
+          dialogMessage, dialogSubMessage, dialogTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -36,6 +36,7 @@ class CategoryAdapter(
                 dotView.backgroundTintList = ColorStateList.valueOf(Color.parseColor(item.colorHex))
             }
             
+            root.setOnClickListener { onScanClick(item) }
             scanBtn.setOnClickListener { onScanClick(item) }
         }
     }

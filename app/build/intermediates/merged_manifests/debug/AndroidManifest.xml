@@ -77,6 +77,18 @@
             android:name="com.duplicateremover.app.CategoriesActivity"
             android:exported="false"
             android:theme="@style/Theme.DuplicateRemover" />
+        <activity
+            android:name="com.duplicateremover.app.ApkScanActivity"
+            android:exported="false"
+            android:theme="@style/Theme.DuplicateRemover" />
+        <activity
+            android:name="com.duplicateremover.app.OthersScanActivity"
+            android:exported="false"
+            android:theme="@style/Theme.DuplicateRemover" />
+        <activity
+            android:name="com.duplicateremover.app.SettingsActivity"
+            android:exported="false"
+            android:theme="@style/Theme.DuplicateRemover" />
 
         <provider
             android:name="androidx.startup.InitializationProvider"

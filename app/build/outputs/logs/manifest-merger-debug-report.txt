@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\ompet\OneDrive\Desktop\duplicate remover\app\src\main\AndroidManifest.xml:2:1-68:12
-INJECTED from C:\Users\ompet\OneDrive\Desktop\duplicate remover\app\src\main\AndroidManifest.xml:2:1-68:12
-INJECTED from C:\Users\ompet\OneDrive\Desktop\duplicate remover\app\src\main\AndroidManifest.xml:2:1-68:12
-INJECTED from C:\Users\ompet\OneDrive\Desktop\duplicate remover\app\src\main\AndroidManifest.xml:2:1-68:12
+ADDED from C:\Users\ompet\OneDrive\Desktop\duplicate remover\app\src\main\AndroidManifest.xml:2:1-80:12
+INJECTED from C:\Users\ompet\OneDrive\Desktop\duplicate remover\app\src\main\AndroidManifest.xml:2:1-80:12
+INJECTED from C:\Users\ompet\OneDrive\Desktop\duplicate remover\app\src\main\AndroidManifest.xml:2:1-80:12
+INJECTED from C:\Users\ompet\OneDrive\Desktop\duplicate remover\app\src\main\AndroidManifest.xml:2:1-80:12
 MERGED from [androidx.databinding:viewbinding:8.2.2] C:\Users\ompet\.gradle\caches\transforms-3\f922cabddc3594542a781c57cee92c8b\transformed\viewbinding-8.2.2\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\ompet\.gradle\caches\transforms-3\bec7de6f5493746bd6b85bdfc260f89d\transformed\material-1.11.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\ompet\.gradle\caches\transforms-3\5b1e847eb52da651a87fd4b6c66d222b\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
@@ -102,8 +102,8 @@ ADDED from C:\Users\ompet\OneDrive\Desktop\duplicate remover\app\src\main\Androi
 	android:name
 		ADDED from C:\Users\ompet\OneDrive\Desktop\duplicate remover\app\src\main\AndroidManifest.xml:14:22-79
 application
-ADDED from C:\Users\ompet\OneDrive\Desktop\duplicate remover\app\src\main\AndroidManifest.xml:17:5-66:19
-INJECTED from C:\Users\ompet\OneDrive\Desktop\duplicate remover\app\src\main\AndroidManifest.xml:17:5-66:19
+ADDED from C:\Users\ompet\OneDrive\Desktop\duplicate remover\app\src\main\AndroidManifest.xml:17:5-78:19
+INJECTED from C:\Users\ompet\OneDrive\Desktop\duplicate remover\app\src\main\AndroidManifest.xml:17:5-78:19
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\ompet\.gradle\caches\transforms-3\bec7de6f5493746bd6b85bdfc260f89d\transformed\material-1.11.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\ompet\.gradle\caches\transforms-3\bec7de6f5493746bd6b85bdfc260f89d\transformed\material-1.11.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\ompet\.gradle\caches\transforms-3\5b1e847eb52da651a87fd4b6c66d222b\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -220,6 +220,30 @@ ADDED from C:\Users\ompet\OneDrive\Desktop\duplicate remover\app\src\main\Androi
 		ADDED from C:\Users\ompet\OneDrive\Desktop\duplicate remover\app\src\main\AndroidManifest.xml:65:13-58
 	android:name
 		ADDED from C:\Users\ompet\OneDrive\Desktop\duplicate remover\app\src\main\AndroidManifest.xml:63:13-47
+activity#com.duplicateremover.app.ApkScanActivity
+ADDED from C:\Users\ompet\OneDrive\Desktop\duplicate remover\app\src\main\AndroidManifest.xml:66:9-69:61
+	android:exported
+		ADDED from C:\Users\ompet\OneDrive\Desktop\duplicate remover\app\src\main\AndroidManifest.xml:68:13-37
+	android:theme
+		ADDED from C:\Users\ompet\OneDrive\Desktop\duplicate remover\app\src\main\AndroidManifest.xml:69:13-58
+	android:name
+		ADDED from C:\Users\ompet\OneDrive\Desktop\duplicate remover\app\src\main\AndroidManifest.xml:67:13-44
+activity#com.duplicateremover.app.OthersScanActivity
+ADDED from C:\Users\ompet\OneDrive\Desktop\duplicate remover\app\src\main\AndroidManifest.xml:70:9-73:61
+	android:exported
+		ADDED from C:\Users\ompet\OneDrive\Desktop\duplicate remover\app\src\main\AndroidManifest.xml:72:13-37
+	android:theme
+		ADDED from C:\Users\ompet\OneDrive\Desktop\duplicate remover\app\src\main\AndroidManifest.xml:73:13-58
+	android:name
+		ADDED from C:\Users\ompet\OneDrive\Desktop\duplicate remover\app\src\main\AndroidManifest.xml:71:13-47
+activity#com.duplicateremover.app.SettingsActivity
+ADDED from C:\Users\ompet\OneDrive\Desktop\duplicate remover\app\src\main\AndroidManifest.xml:74:9-77:61
+	android:exported
+		ADDED from C:\Users\ompet\OneDrive\Desktop\duplicate remover\app\src\main\AndroidManifest.xml:76:13-37
+	android:theme
+		ADDED from C:\Users\ompet\OneDrive\Desktop\duplicate remover\app\src\main\AndroidManifest.xml:77:13-58
+	android:name
+		ADDED from C:\Users\ompet\OneDrive\Desktop\duplicate remover\app\src\main\AndroidManifest.xml:75:13-45
 uses-sdk
 INJECTED from C:\Users\ompet\OneDrive\Desktop\duplicate remover\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\ompet\OneDrive\Desktop\duplicate remover\app\src\main\AndroidManifest.xml

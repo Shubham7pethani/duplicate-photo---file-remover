@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Duplicate Remover</string>
+
+    <string name="developer_name">Your Name</string>
+    <string name="support_email">support@example.com</string>
+    <string name="share_app_text">Check out this app: %1$s</string>
+    <string name="share_app_link">https://play.google.com/store/apps/details?id=%1$s</string>
 </resources>

@@ -16,30 +16,41 @@
 
         <ImageView
             android:id="@+id/dialogIcon"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:layout_marginBottom="16dp"
-            android:src="@android:drawable/ic_delete"
-            app:tint="#FF5252" />
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/bin"
+            app:tint="@null" />
 
         <TextView
             android:id="@+id/dialogTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Delete Duplicates?"
-            android:textColor="#333333"
-            android:textSize="20sp"
+            android:textColor="#222222"
+            android:textSize="22sp"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/dialogMessage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="12dp"
             android:gravity="center"
-            android:text="Are you sure you want to delete these files? Original files will be kept safe."
-            android:textColor="#666666"
-            android:textSize="16sp" />
+            android:text="Delete 1 duplicate files (112 KB)"
+            android:textColor="#444444"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dialogSubMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:text="Original files will be kept safe."
+            android:textColor="#888888"
+            android:textSize="14sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -52,24 +63,29 @@
                 style="@style/Widget.MaterialComponents.Button.TextButton"
                 android:layout_width="0dp"
                 android:layout_height="56dp"
-                android:layout_marginEnd="8dp"
+                android:layout_marginEnd="12dp"
                 android:layout_weight="1"
                 android:text="Cancel"
                 android:textAllCaps="false"
-                android:textColor="#666666"
-                app:cornerRadius="16dp" />
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#888888"
+                app:cornerRadius="18dp" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnDelete"
                 android:layout_width="0dp"
                 android:layout_height="56dp"
-                android:layout_marginStart="8dp"
+                android:layout_marginStart="12dp"
                 android:layout_weight="1"
                 android:backgroundTint="#FF5252"
                 android:text="Delete"
                 android:textAllCaps="false"
+                android:textSize="16sp"
+                android:textStyle="bold"
                 android:textColor="#FFFFFF"
-                app:cornerRadius="16dp" />
+                app:cornerRadius="18dp"
+                app:elevation="4dp" />
 
         </LinearLayout>
 

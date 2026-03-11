@@ -4,8 +4,8 @@ package com.duplicateremover.app.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.FrameLayout;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -18,10 +18,13 @@ import java.lang.String;
 
 public final class ItemPhotoBinding implements ViewBinding {
   @NonNull
-  private final FrameLayout rootView;
+  private final LinearLayout rootView;
 
   @NonNull
   public final ImageView checkIcon;
+
+  @NonNull
+  public final TextView fileNameText;
 
   @NonNull
   public final TextView originalLabel;
@@ -32,11 +35,12 @@ public final class ItemPhotoBinding implements ViewBinding {
   @NonNull
   public final View selectionOverlay;
 
-  private ItemPhotoBinding(@NonNull FrameLayout rootView, @NonNull ImageView checkIcon,
-      @NonNull TextView originalLabel, @NonNull ImageView photoImageView,
-      @NonNull View selectionOverlay) {
+  private ItemPhotoBinding(@NonNull LinearLayout rootView, @NonNull ImageView checkIcon,
+      @NonNull TextView fileNameText, @NonNull TextView originalLabel,
+      @NonNull ImageView photoImageView, @NonNull View selectionOverlay) {
     this.rootView = rootView;
     this.checkIcon = checkIcon;
+    this.fileNameText = fileNameText;
     this.originalLabel = originalLabel;
     this.photoImageView = photoImageView;
     this.selectionOverlay = selectionOverlay;
@@ -44,7 +48,7 @@ public final class ItemPhotoBinding implements ViewBinding {
 
   @Override
   @NonNull
-  public FrameLayout getRoot() {
+  public LinearLayout getRoot() {
     return rootView;
   }
 
@@ -75,6 +79,12 @@ public final class ItemPhotoBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.fileNameText;
+      TextView fileNameText = ViewBindings.findChildViewById(rootView, id);
+      if (fileNameText == null) {
+        break missingId;
+      }
+
       id = R.id.originalLabel;
       TextView originalLabel = ViewBindings.findChildViewById(rootView, id);
       if (originalLabel == null) {
@@ -93,8 +103,8 @@ public final class ItemPhotoBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ItemPhotoBinding((FrameLayout) rootView, checkIcon, originalLabel, photoImageView,
-          selectionOverlay);
+      return new ItemPhotoBinding((LinearLayout) rootView, checkIcon, fileNameText, originalLabel,
+          photoImageView, selectionOverlay);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -90,11 +90,6 @@ class CategoriesActivity : AppCompatActivity() {
             title = "Documents", typeName = "Docs", color = "#45D3FF", iconResId = R.drawable.file)
         result.add(docInfo)
 
-        // APKs
-        val apkInfo = getFileInfo("application/vnd.android.package-archive", 
-            title = "APK's", typeName = "APK's", color = "#45FFF5", iconResId = R.drawable.apk)
-        result.add(apkInfo)
-
         // Calculate 'Others' as the remaining used space
         val totalUsedSize = StorageUtils.getStorageStats(this).usedBytes
         val categorizedSize = result.sumOf { it.totalSize }
@@ -146,7 +141,7 @@ class CategoriesActivity : AppCompatActivity() {
                 "Videos" -> Intent(this, VideoScanActivity::class.java)
                 "Documents" -> Intent(this, DocScanActivity::class.java)
                 "Audios" -> Intent(this, AudioScanActivity::class.java)
-                "APK's" -> Intent(this, ScanActivity::class.java).putExtra("CATEGORY", "APK's")
+                "Others" -> Intent(this, OthersScanActivity::class.java)
                 else -> Intent(this, ScanActivity::class.java).putExtra("CATEGORY", item.title)
             }
             startActivity(intent)
