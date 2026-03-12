@@ -1,6 +1,8 @@
 package com.duplicateremover.app
 
 import android.content.Intent
+import android.graphics.Bitmap
+import android.graphics.BitmapFactory
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
@@ -9,7 +11,10 @@ import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AlertDialog
+import androidx.core.content.FileProvider
 import com.duplicateremover.app.databinding.ActivitySettingsBinding
+import java.io.File
+import java.io.FileOutputStream
 
 class SettingsActivity : AppCompatActivity() {
 
@@ -39,7 +44,7 @@ class SettingsActivity : AppCompatActivity() {
         }
 
         binding.privacyPolicyCard.setOnClickListener {
-            Toast.makeText(this, "Privacy policy screen coming soon", Toast.LENGTH_SHORT).show()
+            startActivity(Intent(this, PrivacyPolicyActivity::class.java))
         }
 
         binding.aboutAppCard.setOnClickListener {
@@ -81,28 +86,26 @@ class SettingsActivity : AppCompatActivity() {
     }
 
     private fun showAboutDialog() {
+        val dialogView = layoutInflater.inflate(R.layout.dialog_about, null)
+        val dialog = AlertDialog.Builder(this)
+            .setView(dialogView)
+            .create()
+
+        // Make dialog background transparent to show our card's rounded corners
+        dialog.window?.setBackgroundDrawableResource(android.R.color.transparent)
+
         val versionName = try {
-            packageManager.getPackageInfo(packageName, 0).versionName ?: ""
+            packageManager.getPackageInfo(packageName, 0).versionName ?: "1.0"
         } catch (_: Exception) {
-            ""
+            "1.0"
         }
 
-        val message = buildString {
-            append("App: ")
-            append(getString(R.string.app_name))
-            if (versionName.isNotBlank()) {
-                append("\nVersion: ")
-                append(versionName)
-            }
-            append("\nDeveloper: ")
-            append(getString(R.string.developer_name))
+        dialogView.findViewById<android.widget.TextView>(R.id.appVersion).text = "Version $versionName"
+        dialogView.findViewById<com.google.android.material.button.MaterialButton>(R.id.okButton).setOnClickListener {
+            dialog.dismiss()
         }
 
-        AlertDialog.Builder(this)
-            .setTitle("About")
-            .setMessage(message)
-            .setPositiveButton("OK", null)
-            .show()
+        dialog.show()
     }
 
     private fun openPlayStore() {
@@ -127,6 +130,43 @@ class SettingsActivity : AppCompatActivity() {
         val link = getString(R.string.share_app_link, packageName)
         val text = getString(R.string.share_app_text, link)
 
+        try {
+            val bitmap = BitmapFactory.decodeResource(resources, R.drawable.sharelogo)
+            val cachePath = File(cacheDir, "images")
+            cachePath.mkdirs()
+            val file = File(cachePath, "share_logo.png")
+            val stream = FileOutputStream(file)
+            bitmap.compress(Bitmap.CompressFormat.PNG, 100, stream)
+            stream.close()
+
+            val contentUri = FileProvider.getUriForFile(this, "$packageName.fileprovider", file)
+
+            if (contentUri != null) {
+                val intent = Intent(Intent.ACTION_SEND).apply {
+                    type = "image/png"
+                    putExtra(Intent.EXTRA_STREAM, contentUri)
+                    putExtra(Intent.EXTRA_TEXT, text)
+                    addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
+                }
+                
+                // Grant permission to all apps that can handle the intent
+                val resInfoList = packageManager.queryIntentActivities(intent, android.content.pm.PackageManager.MATCH_DEFAULT_ONLY)
+                for (resolveInfo in resInfoList) {
+                    val packageName = resolveInfo.activityInfo.packageName
+                    grantUriPermission(packageName, contentUri, Intent.FLAG_GRANT_READ_URI_PERMISSION)
+                }
+                
+                startActivity(Intent.createChooser(intent, "Share with"))
+            } else {
+                shareTextOnly(text)
+            }
+        } catch (e: Exception) {
+            e.printStackTrace()
+            shareTextOnly(text)
+        }
+    }
+
+    private fun shareTextOnly(text: String) {
         val intent = Intent(Intent.ACTION_SEND).apply {
             type = "text/plain"
             putExtra(Intent.EXTRA_TEXT, text)

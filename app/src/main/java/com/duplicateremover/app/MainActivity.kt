@@ -4,9 +4,12 @@ import android.Manifest
 import android.app.ActivityManager
 import android.content.Intent
 import android.content.pm.PackageManager
+import android.database.ContentObserver
 import android.os.Build
 import android.os.Bundle
 import android.os.Environment
+import android.os.Handler
+import android.os.Looper
 import android.os.StatFs
 import android.provider.MediaStore
 import android.util.Log
@@ -20,6 +23,8 @@ import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.duplicateremover.app.databinding.ActivityMainBinding
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.Job
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import java.io.File
@@ -44,6 +49,10 @@ class MainActivity : AppCompatActivity() {
     private lateinit var duplicateAdapter: DuplicateGroupAdapter
     private val duplicateGroups = mutableListOf<List<MediaFile>>()
     private val allMediaFiles = mutableListOf<MediaFile>()
+
+    private val mainHandler = Handler(Looper.getMainLooper())
+    private var duplicatesRefreshJob: Job? = null
+    private var mediaStoreObserver: ContentObserver? = null
 
     private val permissionLauncher = registerForActivityResult(
         ActivityResultContracts.RequestMultiplePermissions()
@@ -90,6 +99,18 @@ class MainActivity : AppCompatActivity() {
         updateStorageStats()
         showHomeScreen()
         checkAllFilesPermission()
+    }
+
+    override fun onStart() {
+        super.onStart()
+        registerMediaStoreObserver()
+    }
+
+    override fun onStop() {
+        super.onStop()
+        unregisterMediaStoreObserver()
+        duplicatesRefreshJob?.cancel()
+        duplicatesRefreshJob = null
     }
 
     private fun setupRecyclerView() {
@@ -194,6 +215,70 @@ class MainActivity : AppCompatActivity() {
         calculateActualDuplicates()
     }
 
+    private fun scheduleDuplicatesRefresh() {
+        duplicatesRefreshJob?.cancel()
+        duplicatesRefreshJob = lifecycleScope.launch {
+            // debounce to avoid re-scanning repeatedly during downloads/copies
+            delay(1200)
+            updateStorageStats()
+            calculateActualDuplicates()
+        }
+    }
+
+    private fun registerMediaStoreObserver() {
+        if (mediaStoreObserver != null) return
+        mediaStoreObserver = object : ContentObserver(mainHandler) {
+            override fun onChange(selfChange: Boolean) {
+                super.onChange(selfChange)
+                scheduleDuplicatesRefresh()
+            }
+
+            override fun onChange(selfChange: Boolean, uri: android.net.Uri?) {
+                super.onChange(selfChange, uri)
+                scheduleDuplicatesRefresh()
+            }
+        }
+
+        try {
+            contentResolver.registerContentObserver(
+                MediaStore.Images.Media.EXTERNAL_CONTENT_URI,
+                true,
+                mediaStoreObserver!!
+            )
+            contentResolver.registerContentObserver(
+                MediaStore.Video.Media.EXTERNAL_CONTENT_URI,
+                true,
+                mediaStoreObserver!!
+            )
+            contentResolver.registerContentObserver(
+                MediaStore.Audio.Media.EXTERNAL_CONTENT_URI,
+                true,
+                mediaStoreObserver!!
+            )
+            val filesUri = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+                MediaStore.Files.getContentUri(MediaStore.VOLUME_EXTERNAL)
+            } else {
+                MediaStore.Files.getContentUri("external")
+            }
+            contentResolver.registerContentObserver(
+                filesUri,
+                true,
+                mediaStoreObserver!!
+            )
+        } catch (_: Exception) {
+            // ignore; app will still refresh onResume
+        }
+    }
+
+    private fun unregisterMediaStoreObserver() {
+        val observer = mediaStoreObserver ?: return
+        try {
+            contentResolver.unregisterContentObserver(observer)
+        } catch (_: Exception) {
+        }
+        mediaStoreObserver = null
+    }
+
     private fun updateStorageStats() {
         val stats = StorageUtils.getStorageStats(this)
         val usedString = StorageUtils.formatSize(stats.usedBytes)
@@ -254,6 +339,25 @@ class MainActivity : AppCompatActivity() {
             totalCount += videoDupes.sumOf { it.size - 1 }
             totalSize += videoDupes.sumOf { group -> group.drop(1).sumOf { it.size } }
 
+            // Scan Audio
+            val audio = queryFiles(MediaStore.Audio.Media.EXTERNAL_CONTENT_URI)
+            val audioDupes = findDuplicatesForFiles(audio)
+            totalCount += audioDupes.sumOf { it.size - 1 }
+            totalSize += audioDupes.sumOf { group -> group.drop(1).sumOf { it.size } }
+
+            // Scan Documents and Others (using MediaStore.Files)
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+                val filesUri = MediaStore.Files.getContentUri(MediaStore.VOLUME_EXTERNAL)
+                // Exclude media already scanned to avoid double counting
+                val selection = "${MediaStore.Files.FileColumns.MEDIA_TYPE} != ${MediaStore.Files.FileColumns.MEDIA_TYPE_IMAGE} AND " +
+                               "${MediaStore.Files.FileColumns.MEDIA_TYPE} != ${MediaStore.Files.FileColumns.MEDIA_TYPE_VIDEO} AND " +
+                               "${MediaStore.Files.FileColumns.MEDIA_TYPE} != ${MediaStore.Files.FileColumns.MEDIA_TYPE_AUDIO}"
+                val otherFiles = queryFiles(filesUri, selection)
+                val otherDupes = findDuplicatesForFiles(otherFiles)
+                totalCount += otherDupes.sumOf { it.size - 1 }
+                totalSize += otherDupes.sumOf { group -> group.drop(1).sumOf { it.size } }
+            }
+
             withContext(Dispatchers.Main) {
                 binding.duplicatesCountText.text = "$totalCount files"
                 binding.canSaveText.text = StorageUtils.formatSize(totalSize)
@@ -261,7 +365,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun queryFiles(uri: android.net.Uri): List<MediaFile> {
+    private fun queryFiles(uri: android.net.Uri, selection: String? = null): List<MediaFile> {
         val files = mutableListOf<MediaFile>()
         val projection = arrayOf(
             MediaStore.MediaColumns._ID,
@@ -271,7 +375,7 @@ class MainActivity : AppCompatActivity() {
             MediaStore.MediaColumns.DATE_ADDED,
             MediaStore.MediaColumns.MIME_TYPE
         )
-        contentResolver.query(uri, projection, null, null, null)?.use { cursor ->
+        contentResolver.query(uri, projection, selection, null, null)?.use { cursor ->
             val idCol = cursor.getColumnIndexOrThrow(MediaStore.MediaColumns._ID)
             val pathCol = cursor.getColumnIndexOrThrow(MediaStore.MediaColumns.DATA)
             val nameCol = cursor.getColumnIndexOrThrow(MediaStore.MediaColumns.DISPLAY_NAME)
@@ -279,14 +383,17 @@ class MainActivity : AppCompatActivity() {
             val dateCol = cursor.getColumnIndexOrThrow(MediaStore.MediaColumns.DATE_ADDED)
             val mimeCol = cursor.getColumnIndexOrThrow(MediaStore.MediaColumns.MIME_TYPE)
             while (cursor.moveToNext()) {
-                files.add(MediaFile(
-                    cursor.getLong(idCol),
-                    cursor.getString(pathCol),
-                    cursor.getString(nameCol),
-                    cursor.getLong(sizeCol),
-                    cursor.getLong(dateCol),
-                    cursor.getString(mimeCol) ?: ""
-                ))
+                val size = cursor.getLong(sizeCol)
+                if (size > 0) { // Ignore empty files
+                    files.add(MediaFile(
+                        cursor.getLong(idCol),
+                        cursor.getString(pathCol) ?: "",
+                        cursor.getString(nameCol) ?: "",
+                        size,
+                        cursor.getLong(dateCol),
+                        cursor.getString(mimeCol) ?: ""
+                    ))
+                }
             }
         }
         return files

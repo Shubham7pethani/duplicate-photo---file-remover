@@ -3114,6 +3114,7 @@ drawable privacy_policy
 drawable rating
 drawable setting
 drawable share
+drawable sharelogo
 drawable support
 drawable test_level_drawable
 drawable tooltip_frame_dark
@@ -3204,6 +3205,9 @@ id animateToEnd
 id animateToStart
 id antiClockwise
 id anticipate
+id appLogo
+id appName
+id appVersion
 id arc
 id asConfigured
 id async
@@ -3293,6 +3297,7 @@ id design_menu_item_action_area
 id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
+id developerName
 id dialogIcon
 id dialogMessage
 id dialogSubMessage
@@ -3480,6 +3485,7 @@ id notification_background
 id notification_main_column
 id notification_main_column_container
 id off
+id okButton
 id on
 id onInterceptTouchReturnSwipe
 id open_search_bar_text_view
@@ -3679,6 +3685,7 @@ id view_tree_saved_state_registry_owner
 id view_tree_view_model_store_owner
 id visible
 id visible_removing_fragment_view_tag
+id webView
 id west
 id withText
 id with_icon
@@ -3811,6 +3818,7 @@ layout activity_doc_scan
 layout activity_main
 layout activity_others_scan
 layout activity_photo_scan
+layout activity_privacy_policy
 layout activity_scan
 layout activity_settings
 layout activity_video_scan
@@ -3830,6 +3838,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout dialog_about
 layout dialog_custom_delete
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
@@ -5355,3 +5364,4 @@ styleable ViewPager2 android_orientation
 styleable ViewStubCompat android_id android_layout android_inflatedId
 styleable ViewTransition android_id SharedValue SharedValueId clearsTag duration ifTagNotSet ifTagSet motionInterpolator motionTarget onStateTransition pathMotionArc setsTag transitionDisable upDuration viewTransitionMode
 styleable include constraintSet
+xml file_paths

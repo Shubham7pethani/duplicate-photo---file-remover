@@ -1,66 +1,78 @@
 [
     {
-        "merged": "com.duplicateremover.app-mergeDebugResources-37:/layout/dialog_custom_delete.xml",
-        "source": "com.duplicateremover.app-main-40:/layout/dialog_custom_delete.xml"
+        "merged": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-mergeDebugResources-37:\\layout\\activity_others_scan.xml",
+        "source": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-main-40:\\layout\\activity_others_scan.xml"
     },
     {
-        "merged": "com.duplicateremover.app-mergeDebugResources-37:/layout/activity_all_files_scan.xml",
-        "source": "com.duplicateremover.app-main-40:/layout/activity_all_files_scan.xml"
+        "merged": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-mergeDebugResources-37:\\layout\\activity_contact_scan.xml",
+        "source": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-main-40:\\layout\\activity_contact_scan.xml"
     },
     {
-        "merged": "com.duplicateremover.app-mergeDebugResources-37:/layout/activity_main.xml",
-        "source": "com.duplicateremover.app-main-40:/layout/activity_main.xml"
+        "merged": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-mergeDebugResources-37:\\layout\\item_duplicate_group.xml",
+        "source": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-main-40:\\layout\\item_duplicate_group.xml"
     },
     {
-        "merged": "com.duplicateremover.app-mergeDebugResources-37:/layout/activity_photo_scan.xml",
-        "source": "com.duplicateremover.app-main-40:/layout/activity_photo_scan.xml"
+        "merged": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-mergeDebugResources-37:\\layout\\activity_all_files_scan.xml",
+        "source": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-main-40:\\layout\\activity_all_files_scan.xml"
     },
     {
-        "merged": "com.duplicateremover.app-mergeDebugResources-37:/layout/activity_doc_scan.xml",
-        "source": "com.duplicateremover.app-main-40:/layout/activity_doc_scan.xml"
+        "merged": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-mergeDebugResources-37:\\layout\\activity_apk_scan.xml",
+        "source": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-main-40:\\layout\\activity_apk_scan.xml"
     },
     {
-        "merged": "com.duplicateremover.app-mergeDebugResources-37:/layout/activity_settings.xml",
-        "source": "com.duplicateremover.app-main-40:/layout/activity_settings.xml"
+        "merged": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-mergeDebugResources-37:\\layout\\activity_audio_scan.xml",
+        "source": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-main-40:\\layout\\activity_audio_scan.xml"
     },
     {
-        "merged": "com.duplicateremover.app-mergeDebugResources-37:/layout/item_category.xml",
-        "source": "com.duplicateremover.app-main-40:/layout/item_category.xml"
+        "merged": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-mergeDebugResources-37:\\layout\\activity_scan.xml",
+        "source": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-main-40:\\layout\\activity_scan.xml"
     },
     {
-        "merged": "com.duplicateremover.app-mergeDebugResources-37:/layout/activity_categories.xml",
-        "source": "com.duplicateremover.app-main-40:/layout/activity_categories.xml"
+        "merged": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-mergeDebugResources-37:\\layout\\activity_photo_scan.xml",
+        "source": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-main-40:\\layout\\activity_photo_scan.xml"
     },
     {
-        "merged": "com.duplicateremover.app-mergeDebugResources-37:/layout/item_duplicate_group.xml",
-        "source": "com.duplicateremover.app-main-40:/layout/item_duplicate_group.xml"
+        "merged": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-mergeDebugResources-37:\\layout\\item_photo.xml",
+        "source": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-main-40:\\layout\\item_photo.xml"
     },
     {
-        "merged": "com.duplicateremover.app-mergeDebugResources-37:/layout/activity_contact_scan.xml",
-        "source": "com.duplicateremover.app-main-40:/layout/activity_contact_scan.xml"
+        "merged": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-mergeDebugResources-37:\\layout\\activity_video_scan.xml",
+        "source": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-main-40:\\layout\\activity_video_scan.xml"
     },
     {
-        "merged": "com.duplicateremover.app-mergeDebugResources-37:/layout/activity_video_scan.xml",
-        "source": "com.duplicateremover.app-main-40:/layout/activity_video_scan.xml"
+        "merged": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-mergeDebugResources-37:\\layout\\dialog_about.xml",
+        "source": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-main-40:\\layout\\dialog_about.xml"
     },
     {
-        "merged": "com.duplicateremover.app-mergeDebugResources-37:/layout/activity_others_scan.xml",
-        "source": "com.duplicateremover.app-main-40:/layout/activity_others_scan.xml"
+        "merged": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-mergeDebugResources-37:\\layout\\activity_categories.xml",
+        "source": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-main-40:\\layout\\activity_categories.xml"
+    },
+    {
+        "merged": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-mergeDebugResources-37:\\layout\\activity_doc_scan.xml",
+        "source": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-main-40:\\layout\\activity_doc_scan.xml"
+    },
+    {
+        "merged": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-mergeDebugResources-37:\\layout\\activity_settings.xml",
+        "source": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-main-40:\\layout\\activity_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-mergeDebugResources-37:\\layout\\activity_privacy_policy.xml",
+        "source": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-main-40:\\layout\\activity_privacy_policy.xml"
     },
     {
         "merged": "com.duplicateremover.app-mergeDebugResources-37:/layout/item_photo.xml",
         "source": "com.duplicateremover.app-main-40:/layout/item_photo.xml"
     },
     {
-        "merged": "com.duplicateremover.app-mergeDebugResources-37:/layout/activity_scan.xml",
-        "source": "com.duplicateremover.app-main-40:/layout/activity_scan.xml"
+        "merged": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-mergeDebugResources-37:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-main-40:\\layout\\activity_main.xml"
     },
     {
-        "merged": "com.duplicateremover.app-mergeDebugResources-37:/layout/activity_audio_scan.xml",
-        "source": "com.duplicateremover.app-main-40:/layout/activity_audio_scan.xml"
+        "merged": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-mergeDebugResources-37:\\layout\\item_category.xml",
+        "source": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-main-40:\\layout\\item_category.xml"
     },
     {
-        "merged": "com.duplicateremover.app-mergeDebugResources-37:/layout/activity_apk_scan.xml",
-        "source": "com.duplicateremover.app-main-40:/layout/activity_apk_scan.xml"
+        "merged": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-mergeDebugResources-37:\\layout\\dialog_custom_delete.xml",
+        "source": "C:\\Users\\ompet\\.gradle\\daemon\\8.2\\com.duplicateremover.app-main-40:\\layout\\dialog_custom_delete.xml"
     }
 ]

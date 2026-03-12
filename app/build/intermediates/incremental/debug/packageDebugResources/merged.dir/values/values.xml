@@ -8,11 +8,11 @@
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="white">#FFFFFFFF</color>
-    <string name="app_name">Duplicate Remover</string>
-    <string name="developer_name">Your Name</string>
+    <string name="app_name">Duplicate Photo - File Remover</string>
+    <string name="developer_name">ompethani07</string>
     <string name="share_app_link">https://play.google.com/store/apps/details?id=%1$s</string>
     <string name="share_app_text">Check out this app: %1$s</string>
-    <string name="support_email">support@example.com</string>
+    <string name="support_email">duplicatesupportremover@gmail.com</string>
     <style name="CustomDialogTheme" parent="Theme.MaterialComponents.Light.Dialog">
         <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:windowIsTranslucent">true</item>

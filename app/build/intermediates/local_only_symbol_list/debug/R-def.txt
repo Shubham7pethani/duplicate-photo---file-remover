@@ -43,6 +43,7 @@ drawable privacy_policy
 drawable rating
 drawable setting
 drawable share
+drawable sharelogo
 drawable support
 drawable video_editor
 id aboutAppCard
@@ -50,6 +51,9 @@ id allFilesAccessCard
 id allFilesAccessStatus
 id allScanBtn
 id allScanVideo
+id appLogo
+id appName
+id appVersion
 id backBtn
 id backButton
 id bottomBar
@@ -70,6 +74,7 @@ id categoryVideos
 id checkIcon
 id contactSupportCard
 id deleteButton
+id developerName
 id dialogIcon
 id dialogMessage
 id dialogSubMessage
@@ -85,6 +90,7 @@ id groupTitle
 id homeContainer
 id homeScrollView
 id linearProgress
+id okButton
 id originalLabel
 id photoImageView
 id photosRecyclerView
@@ -115,6 +121,7 @@ id storageUsedText
 id toolbar
 id toolbarTitle
 id totalSizeText
+id webView
 layout activity_all_files_scan
 layout activity_apk_scan
 layout activity_audio_scan
@@ -124,9 +131,11 @@ layout activity_doc_scan
 layout activity_main
 layout activity_others_scan
 layout activity_photo_scan
+layout activity_privacy_policy
 layout activity_scan
 layout activity_settings
 layout activity_video_scan
+layout dialog_about
 layout dialog_custom_delete
 layout item_category
 layout item_duplicate_group
@@ -153,3 +162,4 @@ string support_email
 style CustomDialogTheme
 style Theme.DuplicateRemover
 styleable CircularProgressView cpv_progressColor cpv_backgroundColor cpv_fillEnabled cpv_fillColor cpv_strokeWidth cpv_useTrackStyle cpv_progress cpv_max
+xml file_paths
