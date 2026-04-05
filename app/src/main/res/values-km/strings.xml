@@ -1,0 +1,99 @@
+<resources>
+    <string name="app_name">Duplicate Photo - File Remover</string>
+    <string name="developer_name">ompethani07</string>
+    <string name="support_email">duplicatesupportremover@gmail.com</string>
+    <string name="share_app_text">ពិនិត្យមើលកម្មវិធីនេះ៖ %1$s</string>
+    <string name="share_app_link">https://play.google.com/store/apps/details?id=%1$s</string>
+
+    <!-- General -->
+    <string name="scan">ស្កែន</string>
+    <string name="ram_used">RAM ដែលបានប្រើ</string>
+    <string name="all_scan">ស្កែនទាំងអស់</string>
+    <string name="delete">លុប</string>
+    <string name="cancel">បោះបង់</string>
+    <string name="close">បិទ</string>
+    <string name="back">ត្រឡប់ក្រោយ</string>
+    <string name="select_all">ជ្រើសរើសទាំងអស់</string>
+    <string name="status_allowed">ស្ថានភាព៖ អនុញ្ញាត</string>
+    <string name="status_not_allowed">ស្ថានភាព៖ មិនអនុញ្ញាត</string>
+    <string name="original">ដើម</string>
+    <string name="group">ក្រុម</string>
+    <string name="duplicates_count">%1$d ចម្លង</string>
+    <string name="files_selected">បានជ្រើសរើស %1$d ឯកសារ</string>
+    <string name="total_size">សរុប៖ %1$s</string>
+    <string name="tap_scan_to_find">ប៉ះស្កែនដើម្បីស្វែងរកឯកសារចម្លង</string>
+    <string name="duplicate_scan">ស្កែនឯកសារចម្លង</string>
+    <string name="storage_used">អង្គផ្ទុកទិន្នន័យដែលបានប្រើ</string>
+    <string name="of_total">នៃសរុប %1$s</string>
+    <string name="free_space">ទំហំទំនេរ</string>
+    <string name="duplicates">ឯកសារចម្លង</string>
+    <string name="can_save">អាចសន្សំបាន</string>
+    <string name="categories">ប្រភេទ</string>
+    <string name="files_count">%1$d ឯកសារ</string>
+    <string name="items_size_format">%1$d ធាតុ | %2$s</string>
+    <string name="apk_scan">ស្កែន APK</string>
+    <string name="audio_scan">ស្កែនសំឡេង</string>
+    <string name="photo_scan">ស្កែនរូបថត</string>
+    <string name="doc_scan">ស្កែនឯកសារ</string>
+    <string name="others_scan">ស្កែនផ្សេងៗ</string>
+    <string name="contact_scan">ស្កែនទំនាក់ទំនង</string>
+    <string name="all_files_scan">ស្កែនឯកសារទាំងអស់</string>
+    <string name="videos_scan">ស្កែនវីដេអូ</string>
+    <string name="version_text">កំណែ %1$s</string>
+
+    <!-- Categories -->
+    <string name="photos">រូបថត</string>
+    <string name="videos">វីដេអូ</string>
+    <string name="audio">សំឡេង</string>
+    <string name="documents">ឯកសារ</string>
+    <string name="apks">APK</string>
+    <string name="others">ផ្សេងៗ</string>
+    <string name="contacts">ទំនាក់ទំនង</string>
+    <string name="all_files">ឯកសារទាំងអស់</string>
+
+    <!-- Settings -->
+    <string name="settings">ការកំណត់</string>
+    <string name="notifications">ការជូនដំណឹង</string>
+    <string name="notification_desc">ស្ថានភាព៖ មិនអនុញ្ញាត</string>
+    <string name="all_files_access">ការចូលប្រើឯកសារទាំងអស់</string>
+    <string name="file_access_desc">ស្ថានភាព៖ មិនអនុញ្ញាត</string>
+    <string name="language">ភាសា</string>
+    <string name="select_language">ជ្រើសរើសភាសា</string>
+    <string name="privacy_policy">គោលការណ៍ឯកជនភាព</string>
+    <string name="privacy_desc">មិនមានទិន្នន័យត្រូវបានបង្ហោះទៅម៉ាស៊ីនមេណាមួយឡើយ</string>
+    <string name="about_app">អំពីកម្មវិធី</string>
+    <string name="about_desc">ព័ត៌មានកំណែ និងអ្នកអភិវឌ្ឍន៍</string>
+    <string name="rate_app">វាយតម្លៃកម្មវិធី</string>
+    <string name="rate_desc">បើក Play Store</string>
+    <string name="share_app">ចែករំលែកកម្មវិធី</string>
+    <string name="share_desc">ចែករំលែកជាមួយមិត្តភក្តិ</string>
+    <string name="contact_support">ទាក់ទងផ្នែកគាំទ្រ</string>
+    <string name="support_desc">ផ្ញើអ៊ីមែលសម្រាប់ជំនួយ</string>
+
+    <!-- Dialogs -->
+    <string name="delete_dialog_title">លុបឯកសារចម្លង?</string>
+    <string name="delete_dialog_message">លុបឯកសារចម្លង %1$d (%2$s)</string>
+    <string name="delete_dialog_warning">ឯកសារដើមនឹងត្រូវបានរក្សាទុកដោយសុវត្ថិភាព។</string>
+    <string name="about_version">កំណែ %1$s</string>
+    <string name="developed_by">បង្កើតដោយ</string>
+
+    <!-- Scan Screens -->
+    <string name="scanning_photos">កំពុងស្កែនរូបថត</string>
+    <string name="photos_scanned">បានស្កែនរូបថត %1$d</string>
+    <string name="scanning_audio">កំពុងស្កែនសំឡេង</string>
+    <string name="audio_scanned">បានស្កែនសំឡេង %1$d</string>
+    <string name="scanning_docs">កំពុងស្កែនឯកសារ</string>
+    <string name="docs_scanned">បានស្កែនឯកសារ %1$d</string>
+    <string name="scanning_all">កំពុងស្កែនឯកសារទាំងអស់</string>
+    <string name="all_scanned">បានស្កែនឯកសារ %1$d</string>
+    <string name="scanning_contacts">កំពុងស្កែនទំនាក់ទំនង</string>
+    <string name="contacts_scanned">បានស្កែនទំនាក់ទំនង %1$d</string>
+    <string name="scanning_apks">កំពុងស្កែន APK</string>
+    <string name="apks_scanned">បានស្កែន APK %1$d</string>
+    <string name="scanning_others">កំពុងស្កែនផ្សេងៗ</string>
+    <string name="others_scanned">បានស្កែនឯកសារ %1$d</string>
+    <string name="scanning_videos">កំពុងស្កែនវីដេអូ</string>
+    <string name="searching_duplicates">កំពុងស្វែងរកឯកសារចម្លង...</string>
+    <string name="videos_scanned">បានស្កែនវីដេអូ %1$d</string>
+    <string name="no_duplicates_found">រកមិនឃើញឯកសារចម្លងទេ</string>
+</resources>

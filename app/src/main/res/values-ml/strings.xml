@@ -1,0 +1,99 @@
+<resources>
+    <string name="app_name">ഡ്യൂപ്ലിക്കേറ്റ് ഫോട്ടോ - ഫയൽ റിമൂവർ</string>
+    <string name="developer_name">ompethani07</string>
+    <string name="support_email">duplicatesupportremover@gmail.com</string>
+    <string name="share_app_text">ഈ ആപ്പ് നോക്കൂ: %1$s</string>
+    <string name="share_app_link">https://play.google.com/store/apps/details?id=%1$s</string>
+
+    <!-- General -->
+    <string name="scan">സ്കാൻ</string>
+    <string name="ram_used">റാം ഉപയോഗിച്ചു</string>
+    <string name="all_scan">എല്ലാം സ്കാൻ ചെയ്യുക</string>
+    <string name="delete">ഡിലീറ്റ്</string>
+    <string name="cancel">റദ്ദാക്കുക</string>
+    <string name="close">അടയ്ക്കുക</string>
+    <string name="back">പിന്നിലേക്ക്</string>
+    <string name="select_all">എല്ലാം തിരഞ്ഞെടുക്കുക</string>
+    <string name="status_allowed">നില: അനുവദിച്ചു</string>
+    <string name="status_not_allowed">നില: അനുവദിച്ചില്ല</string>
+    <string name="original">ഒറിജിനൽ</string>
+    <string name="group">ഗ്രൂപ്പ്</string>
+    <string name="duplicates_count">%1$d ഡ്യൂപ്ലിക്കേറ്റുകൾ</string>
+    <string name="files_selected">%1$d ഫയലുകൾ തിരഞ്ഞെടുത്തു</string>
+    <string name="total_size">മൊത്തം: %1$s</string>
+    <string name="tap_scan_to_find">ഡ്യൂപ്ലിക്കേറ്റുകൾ കണ്ടെത്താൻ സ്കാൻ ടാപ്പ് ചെയ്യുക</string>
+    <string name="duplicate_scan">ഡ്യൂപ്ലിക്കേറ്റ് സ്കാൻ</string>
+    <string name="storage_used">സ്റ്റോറേജ് ഉപയോഗിച്ചു</string>
+    <string name="of_total">%1$s മൊത്തത്തിൽ</string>
+    <string name="free_space">ഫ്രീ സ്പേസ്</string>
+    <string name="duplicates">ഡ്യൂപ്ലിക്കേറ്റുകൾ</string>
+    <string name="can_save">സേവ് ചെയ്യാം</string>
+    <string name="categories">വിഭാഗങ്ങൾ</string>
+    <string name="files_count">%1$d ഫയലുകൾ</string>
+    <string name="items_size_format">%1$d ഇനങ്ങൾ | %2$s</string>
+    <string name="apk_scan">APK സ്കാൻ</string>
+    <string name="audio_scan">ഓഡിയോ സ്കാൻ</string>
+    <string name="photo_scan">ഫോട്ടോ സ്കാൻ</string>
+    <string name="doc_scan">ഡോക്യുമെന്റ് സ്കാൻ</string>
+    <string name="others_scan">മറ്റുള്ളവ സ്കാൻ</string>
+    <string name="contact_scan">കോൺടാക്റ്റ് സ്കാൻ</string>
+    <string name="all_files_scan">എല്ലാ ഫയലുകളും സ്കാൻ</string>
+    <string name="videos_scan">വീഡിയോ സ്കാൻ</string>
+    <string name="version_text">പതിപ്പ് %1$s</string>
+
+    <!-- Categories -->
+    <string name="photos">ഫോട്ടോകൾ</string>
+    <string name="videos">വീഡിയോകൾ</string>
+    <string name="audio">ഓഡിയോ</string>
+    <string name="documents">പ്രമാണങ്ങൾ</string>
+    <string name="apks">APK-കൾ</string>
+    <string name="others">മറ്റുള്ളവ</string>
+    <string name="contacts">കോൺടാക്റ്റുകൾ</string>
+    <string name="all_files">എല്ലാ ഫയലുകളും</string>
+
+    <!-- Settings -->
+    <string name="settings">ക്രമീകരണങ്ങൾ</string>
+    <string name="notifications">അറിയിപ്പുകൾ</string>
+    <string name="notification_desc">നില: അനുവദിച്ചില്ല</string>
+    <string name="all_files_access">എല്ലാ ഫയലുകളിലേക്കും പ്രവേശനം</string>
+    <string name="file_access_desc">നില: അനുവദിച്ചില്ല</string>
+    <string name="language">ഭാഷ</string>
+    <string name="select_language">ഭാഷ തിരഞ്ഞെടുക്കുക</string>
+    <string name="privacy_policy">സ്വകാര്യതാ നയം</string>
+    <string name="privacy_desc">ഡാറ്റയൊന്നും സെർവറിലേക്ക് അപ്‌ലോഡ് ചെയ്യുന്നില്ല</string>
+    <string name="about_app">ആപ്പിനെക്കുറിച്ച്</string>
+    <string name="about_desc">പതിപ്പും ഡെവലപ്പർ വിവരങ്ങളും</string>
+    <string name="rate_app">ആപ്പ് റേറ്റ് ചെയ്യുക</string>
+    <string name="rate_desc">പ്ലേ സ്റ്റോർ തുറക്കുക</string>
+    <string name="share_app">ആപ്പ് പങ്കിടുക</string>
+    <string name="share_desc">കൂട്ടുകാരുമായി പങ്കിടുക</string>
+    <string name="contact_support">സപ്പോർട്ടുമായി ബന്ധപ്പെടുക</string>
+    <string name="support_desc">സഹായത്തിനായി ഇമെയിൽ അയയ്ക്കുക</string>
+
+    <!-- Dialogs -->
+    <string name="delete_dialog_title">ഡ്യൂപ്ലിക്കേറ്റുകൾ നീക്കം ചെയ്യണോ?</string>
+    <string name="delete_dialog_message">%1$d ഡ്യൂപ്ലിക്കേറ്റ് ഫയലുകൾ നീക്കം ചെയ്യുക (%2$s)</string>
+    <string name="delete_dialog_warning">ഒറിജിനൽ ഫയലുകൾ സുരക്ഷിതമായിരിക്കും.</string>
+    <string name="about_version">പതിപ്പ് %1$s</string>
+    <string name="developed_by">വികസിപ്പിച്ചത്</string>
+
+    <!-- Scan Screens -->
+    <string name="scanning_photos">ഫോട്ടോകൾ സ്കാൻ ചെയ്യുന്നു</string>
+    <string name="photos_scanned">%1$d ഫോട്ടോകൾ സ്കാൻ ചെയ്തു</string>
+    <string name="scanning_audio">ഓഡിയോ സ്കാൻ ചെയ്യുന്നു</string>
+    <string name="audio_scanned">%1$d ഓഡിയോ സ്കാൻ ചെയ്തു</string>
+    <string name="scanning_docs">പ്രമാണങ്ങൾ സ്കான் ചെയ്യുന്നു</string>
+    <string name="docs_scanned">%1$d പ്രമാണങ്ങൾ സ്കാൻ ചെയ്തു</string>
+    <string name="scanning_all">എല്ലാ ഫയലുകളും സ്കാൻ ചെയ്യുന്നു</string>
+    <string name="all_scanned">%1$d ഫയലുകൾ സ്കാൻ ചെയ്തു</string>
+    <string name="scanning_contacts">കോൺടാക്റ്റുകൾ സ്കാൻ ചെയ്യുന്നു</string>
+    <string name="contacts_scanned">%1$d കോൺടാക്റ്റുകൾ സ്കാൻ ചെയ്തു</string>
+    <string name="scanning_apks">APK-കൾ സ്കാൻ ചെയ്യുന്നു</string>
+    <string name="apks_scanned">%1$d APK-കൾ സ്ಕാൻ ചെയ്തു</string>
+    <string name="scanning_others">മറ്റുള്ളവ സ്കാൻ ചെയ്യുന്നു</string>
+    <string name="others_scanned">%1$d ഫയലുകൾ സ്കാൻ ചെയ്തു</string>
+    <string name="scanning_videos">വീഡിയോകൾ സ്കാൻ ചെയ്യുന്നു</string>
+    <string name="searching_duplicates">ഡ്യൂപ്ലിക്കേറ്റുകൾക്കായി തിരയുന്നു...</string>
+    <string name="videos_scanned">%1$d വീഡിയോകൾ സ്കാൻ ചെയ്തു</string>
+    <string name="no_duplicates_found">ഡ്യൂപ്ലിക്കേറ്റുകളൊന്നും കണ്ടെത്തിയില്ല</string>
+</resources>

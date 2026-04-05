@@ -1,0 +1,99 @@
+<resources>
+    <string name="app_name">நகல் புகைப்படம் - கோப்பு நீக்கி</string>
+    <string name="developer_name">ompethani07</string>
+    <string name="support_email">duplicatesupportremover@gmail.com</string>
+    <string name="share_app_text">இந்த பயன்பாட்டைப் பாருங்கள்: %1$s</string>
+    <string name="share_app_link">https://play.google.com/store/apps/details?id=%1$s</string>
+
+    <!-- General -->
+    <string name="scan">ஸ்கேன்</string>
+    <string name="ram_used">ரேம் பயன்படுத்தப்பட்டது</string>
+    <string name="all_scan">அனைத்தையும் ஸ்கேன் செய்</string>
+    <string name="delete">அழி</string>
+    <string name="cancel">ரத்துசெய்</string>
+    <string name="close">மூடு</string>
+    <string name="back">பின்செல்</string>
+    <string name="select_all">அனைத்தையும் தேர்ந்தெடு</string>
+    <string name="status_allowed">நிலை: அனுமதிக்கப்பட்டது</string>
+    <string name="status_not_allowed">நிலை: அனுமதிக்கப்படவில்லை</string>
+    <string name="original">அசல்</string>
+    <string name="group">குழு</string>
+    <string name="duplicates_count">%1$d நகல்கள்</string>
+    <string name="files_selected">%1$d கோப்புகள் தேர்ந்தெடுக்கப்பட்டன</string>
+    <string name="total_size">மொத்தம்: %1$s</string>
+    <string name="tap_scan_to_find">நகல்களைக் கண்டறிய ஸ்கேன் என்பதைத் தட்டவும்</string>
+    <string name="duplicate_scan">நகல் ஸ்கேன்</string>
+    <string name="storage_used">பயன்படுத்தப்பட்ட சேமிப்பு</string>
+    <string name="of_total">%1$s மொத்தத்தில்</string>
+    <string name="free_space">வெற்று இடம்</string>
+    <string name="duplicates">நகல்கள்</string>
+    <string name="can_save">சேமிக்க முடியும்</string>
+    <string name="categories">வகைகள்</string>
+    <string name="files_count">%1$d கோப்புகள்</string>
+    <string name="items_size_format">%1$d உருப்படிகள் | %2$s</string>
+    <string name="apk_scan">APK ஸ்கேன்</string>
+    <string name="audio_scan">ஆடியோ ஸ்கேன்</string>
+    <string name="photo_scan">புகைப்பட ஸ்கேன்</string>
+    <string name="doc_scan">ஆவண ஸ்கேன்</string>
+    <string name="others_scan">பிற ஸ்கேன்</string>
+    <string name="contact_scan">தொடர்பு ஸ்கேன்</string>
+    <string name="all_files_scan">அனைத்து கோப்புகள் ஸ்கேன்</string>
+    <string name="videos_scan">வீடியோ ஸ்கேன்</string>
+    <string name="version_text">பதிப்பு %1$s</string>
+
+    <!-- Categories -->
+    <string name="photos">புகைப்படங்கள்</string>
+    <string name="videos">வீடியோக்கள்</string>
+    <string name="audio">ஆடியோ</string>
+    <string name="documents">ஆவணங்கள்</string>
+    <string name="apks">APKகள்</string>
+    <string name="others">மற்றவை</string>
+    <string name="contacts">தொடர்புகள்</string>
+    <string name="all_files">அனைத்து கோப்புகளும்</string>
+
+    <!-- Settings -->
+    <string name="settings">அமைப்புகள்</string>
+    <string name="notifications">அறிவிப்புகள்</string>
+    <string name="notification_desc">நிலை: அனுமதிக்கப்படவில்லை</string>
+    <string name="all_files_access">அனைத்து கோப்புகளுக்கான அணுகல்</string>
+    <string name="file_access_desc">நிலை: அனுமதிக்கப்படவில்லை</string>
+    <string name="language">மொழி</string>
+    <string name="select_language">மொழியைத் தேர்ந்தெடுக்கவும்</string>
+    <string name="privacy_policy">தனியுரிமைக் கொள்கை</string>
+    <string name="privacy_desc">எந்தத் தரவும் எந்த சேவையகத்திலும் பதிவேற்றப்படவில்லை</string>
+    <string name="about_app">பயன்பாட்டைப் பற்றி</string>
+    <string name="about_desc">பதிப்பு மற்றும் டெவலப்பர் தகவல்</string>
+    <string name="rate_app">பயன்பாட்டை மதிப்பிடவும்</string>
+    <string name="rate_desc">பிளே ஸ்டோரைத் திறக்கவும்</string>
+    <string name="share_app">பயன்பாட்டைப் பகிரவும்</string>
+    <string name="share_desc">நண்பர்களுடன் பகிரவும்</string>
+    <string name="contact_support">ஆதரவைத் தொடர்பு கொள்ளவும்</string>
+    <string name="support_desc">உதவிக்கு மின்னஞ்சல் அனுப்பவும்</string>
+
+    <!-- Dialogs -->
+    <string name="delete_dialog_title">நகல்களை அழிக்கவா?</string>
+    <string name="delete_dialog_message">%1$d நகல் கோப்புகளை அழி (%2$s)</string>
+    <string name="delete_dialog_warning">அசல் கோப்புகள் பாதுகாப்பாக வைக்கப்படும்.</string>
+    <string name="about_version">பதிப்பு %1$s</string>
+    <string name="developed_by">உருவாக்கியவர்</string>
+
+    <!-- Scan Screens -->
+    <string name="scanning_photos">புகைப்படங்களை ஸ்கேன் செய்கிறது</string>
+    <string name="photos_scanned">%1$d புகைப்படங்கள் ஸ்கேன் செய்யப்பட்டன</string>
+    <string name="scanning_audio">ஆடியோவை ஸ்கேன் செய்கிறது</string>
+    <string name="audio_scanned">%1$d ஆடியோ ஸ்கேன் செய்யப்பட்டது</string>
+    <string name="scanning_docs">ஆவணங்களை ஸ்கேன் செய்கிறது</string>
+    <string name="docs_scanned">%1$d ஆவணங்கள் ஸ்கேன் செய்யப்பட்டன</string>
+    <string name="scanning_all">அனைத்து கோப்புகளையும் ஸ்கேன் செய்கிறது</string>
+    <string name="all_scanned">%1$d கோப்புகள் ஸ்கேன் செய்யப்பட்டன</string>
+    <string name="scanning_contacts">தொடர்புகளை ஸ்கேன் செய்கிறது</string>
+    <string name="contacts_scanned">%1$d தொடர்புகள் ஸ்கேன் செய்யப்பட்டன</string>
+    <string name="scanning_apks">APKகளை ஸ்கேன் செய்கிறது</string>
+    <string name="apks_scanned">%1$d APKகள் ஸ்கேன் செய்யப்பட்டன</string>
+    <string name="scanning_others">மற்றவற்றை ஸ்கேன் செய்கிறது</string>
+    <string name="others_scanned">%1$d கோப்புகள் ஸ்கேன் செய்யப்பட்டன</string>
+    <string name="scanning_videos">வீடியோக்களை ஸ்கேன் செய்கிறது</string>
+    <string name="searching_duplicates">நகல்களைத் தேடுகிறது...</string>
+    <string name="videos_scanned">%1$d வீடியோக்கள் ஸ்கேன் செய்யப்பட்டன</string>
+    <string name="no_duplicates_found">நகல்கள் எதுவும் கிடைக்கவில்லை</string>
+</resources>

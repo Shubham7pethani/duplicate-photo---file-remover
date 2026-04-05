@@ -1,0 +1,98 @@
+<resources>
+    <string name="app_name">Duplicate Photo - File Remover</string>
+    <string name="developer_name">ompethani07</string>
+    <string name="support_email">duplicatesupportremover@gmail.com</string>
+    <string name="share_app_text">이 앱을 확인해 보세요: %1$s</string>
+    <string name="share_app_link">https://play.google.com/store/apps/details?id=%1$s</string>
+
+    <!-- General -->
+    <string name="scan">스캔</string>
+    <string name="delete">삭제</string>
+    <string name="cancel">취소</string>
+    <string name="close">닫기</string>
+    <string name="back">뒤로</string>
+    <string name="select_all">전체 선택</string>
+    <string name="status_allowed">상태: 허용됨</string>
+    <string name="status_not_allowed">상태: 허용되지 않음</string>
+    <string name="original">원본</string>
+    <string name="group">그룹</string>
+    <string name="duplicates_count">%1$d개 중복</string>
+    <string name="files_selected">%1$d개 파일 선택됨</string>
+    <string name="total_size">합계: %1$s</string>
+    <string name="tap_scan_to_find">중복 파일을 찾으려면 스캔을 누르세요</string>
+    <string name="duplicate_scan">중복 스캔</string>
+    <string name="storage_used">사용 중인 저장공간</string>
+    <string name="of_total">전체 %1$s 중</string>
+    <string name="free_space">여유 공간</string>
+    <string name="duplicates">중복</string>
+    <string name="can_save">절약 가능</string>
+    <string name="categories">카테고리</string>
+    <string name="files_count">%1$d개 파일</string>
+    <string name="ram_used">RAM 사용됨</string>
+    <string name="all_scan">전체 스캔</string>
+    <string name="apk_scan">APK 스캔</string>
+    <string name="audio_scan">오디오 스캔</string>
+    <string name="photo_scan">사진 스캔</string>
+    <string name="doc_scan">문서 스캔</string>
+    <string name="others_scan">기타 스캔</string>
+    <string name="contact_scan">연락처 스캔</string>
+    <string name="all_files_scan">모든 파일 스캔</string>
+    <string name="videos_scan">동영상 스캔</string>
+    <string name="version_text">버전 %1$s</string>
+
+    <!-- Categories -->
+    <string name="photos">사진</string>
+    <string name="videos">동영상</string>
+    <string name="audio">오디오</string>
+    <string name="documents">문서</string>
+    <string name="apks">APK</string>
+    <string name="others">기타</string>
+    <string name="contacts">연락처</string>
+    <string name="all_files">모든 파일</string>
+
+    <!-- Settings -->
+    <string name="settings">설정</string>
+    <string name="notifications">알림</string>
+    <string name="notification_desc">상태: 허용되지 않음</string>
+    <string name="all_files_access">모든 파일 접근 권한</string>
+    <string name="file_access_desc">상태: 허용되지 않음</string>
+    <string name="language">언어</string>
+    <string name="select_language">언어 선택</string>
+    <string name="privacy_policy">개인정보 처리방침</string>
+    <string name="privacy_desc">어떠한 데이터도 서버로 업로드되지 않습니다</string>
+    <string name="about_app">앱 정보</string>
+    <string name="about_desc">버전 및 개발자 정보</string>
+    <string name="rate_app">앱 평가하기</string>
+    <string name="rate_desc">플레이 스토어 열기</string>
+    <string name="share_app">앱 공유하기</string>
+    <string name="share_desc">친구와 공유</string>
+    <string name="contact_support">고객 지원</string>
+    <string name="support_desc">도움이 필요하면 이메일 보내기</string>
+
+    <!-- Dialogs -->
+    <string name="delete_dialog_title">중복 파일을 삭제하시겠습니까?</string>
+    <string name="delete_dialog_message">%1$d개의 중복 파일(%2$s)을 삭제하시겠습니까?</string>
+    <string name="delete_dialog_warning">원본 파일은 안전하게 보관됩니다.</string>
+    <string name="about_version">버전 %1$s</string>
+    <string name="developed_by">개발자:</string>
+
+    <!-- Scan Screens -->
+    <string name="scanning_photos">사진 스캔 중</string>
+    <string name="photos_scanned">%1$d개 사진 스캔됨</string>
+    <string name="scanning_audio">오디오 스캔 중</string>
+    <string name="audio_scanned">%1$d개 오디오 파일 스캔됨</string>
+    <string name="scanning_docs">문서 스캔 중</string>
+    <string name="docs_scanned">%1$d개 문서 스캔됨</string>
+    <string name="scanning_all">모든 파일 스캔 중</string>
+    <string name="all_scanned">%1$d개 파일 스캔됨</string>
+    <string name="scanning_contacts">연락처 스캔 중</string>
+    <string name="contacts_scanned">%1$d개 연락처 스캔됨</string>
+    <string name="scanning_apks">APK 스캔 중</string>
+    <string name="apks_scanned">%1$d개 APK 스캔됨</string>
+    <string name="scanning_others">기타 파일 스캔 중</string>
+    <string name="others_scanned">%1$d개 파일 스캔됨</string>
+    <string name="scanning_videos">동영상 스캔 중</string>
+    <string name="searching_duplicates">중복 파일 찾는 중...</string>
+    <string name="videos_scanned">%1$d개 동영상 스캔됨</string>
+    <string name="no_duplicates_found">중복 파일 없음</string>
+</resources>

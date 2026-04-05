@@ -1,0 +1,99 @@
+<resources>
+    <string name="app_name">డూప్లికేట్ ఫోటో - ఫైల్ రిమూవర్</string>
+    <string name="developer_name">ompethani07</string>
+    <string name="support_email">duplicatesupportremover@gmail.com</string>
+    <string name="share_app_text">ఈ యాప్‌ను చూడండి: %1$s</string>
+    <string name="share_app_link">https://play.google.com/store/apps/details?id=%1$s</string>
+
+    <!-- General -->
+    <string name="scan">స్కాన్</string>
+    <string name="ram_used">ర్యామ్ ఉపయోగించబడింది</string>
+    <string name="all_scan">అన్నీ స్కాన్ చేయండి</string>
+    <string name="delete">తొలగించు</string>
+    <string name="cancel">రద్దు చేయండి</string>
+    <string name="close">మూసివేయి</string>
+    <string name="back">వెనుకకు</string>
+    <string name="select_all">అన్నీ ఎంచుకోండి</string>
+    <string name="status_allowed">స్థితి: అనుమతించబడింది</string>
+    <string name="status_not_allowed">స్థితి: అనుమతించబడలేదు</string>
+    <string name="original">అసలైనది</string>
+    <string name="group">సమూహం</string>
+    <string name="duplicates_count">%1$d నకిలీలు</string>
+    <string name="files_selected">%1$d ఫైల్స్ ఎంపిక చేయబడ్డాయి</string>
+    <string name="total_size">మొత్తం: %1$s</string>
+    <string name="tap_scan_to_find">నకిలీలను కనుగొనడానికి స్కాన్ నొక్కండి</string>
+    <string name="duplicate_scan">నకిలీ స్కాన్</string>
+    <string name="storage_used">స్టోరేజ్ ఉపయోగించబడింది</string>
+    <string name="of_total">%1$s మొత్తంలో</string>
+    <string name="free_space">ఖాళీ స్థలం</string>
+    <string name="duplicates">నకిలీలు</string>
+    <string name="can_save">ఆదా చేయవచ్చు</string>
+    <string name="categories">వర్గాలు</string>
+    <string name="files_count">%1$d ఫైల్స్</string>
+    <string name="items_size_format">%1$d అంశాలు | %2$s</string>
+    <string name="apk_scan">APK స్కాన్</string>
+    <string name="audio_scan">ఆడియో స్కాన్</string>
+    <string name="photo_scan">ఫోటో స్కాన్</string>
+    <string name="doc_scan">డాక్యుమెంట్ స్కాన్</string>
+    <string name="others_scan">ఇతర స్కాన్</string>
+    <string name="contact_scan">కాంటాక్ట్ స్కాన్</string>
+    <string name="all_files_scan">అన్ని ఫైల్స్ స్కాన్</string>
+    <string name="videos_scan">వీడియో స్కాన్</string>
+    <string name="version_text">వెర్షన్ %1$s</string>
+
+    <!-- Categories -->
+    <string name="photos">ఫోటోలు</string>
+    <string name="videos">వీడియోలు</string>
+    <string name="audio">ఆడియో</string>
+    <string name="documents">డాక్యుమెంట్లు</string>
+    <string name="apks">APKలు</string>
+    <string name="others">ఇతరములు</string>
+    <string name="contacts">కాంటాక్ట్స్</string>
+    <string name="all_files">అన్ని ఫైల్స్</string>
+
+    <!-- Settings -->
+    <string name="settings">సెట్టింగ్‌లు</string>
+    <string name="notifications">నోటిఫికేషన్లు</string>
+    <string name="notification_desc">స్థితి: అనుమతించబడలేదు</string>
+    <string name="all_files_access">అన్ని ఫైల్స్ యాక్సెస్</string>
+    <string name="file_access_desc">స్థితి: అనుమతించబడలేదు</string>
+    <string name="language">భాష</string>
+    <string name="select_language">భాషను ఎంచుకోండి</string>
+    <string name="privacy_policy">గోప్యతా విధానం</string>
+    <string name="privacy_desc">ఏ డేటా సర్వర్‌కు అప్‌లోడ్ చేయబడదు</string>
+    <string name="about_app">యాప్ గురించి</string>
+    <string name="about_desc">వెర్షన్ మరియు డెవలపర్ సమాచారం</string>
+    <string name="rate_app">యాప్‌ను రేట్ చేయండి</string>
+    <string name="rate_desc">ప్లే స్టోర్‌ను ప్రారంభించండి</string>
+    <string name="share_app">యాప్‌ను షేర్ చేయండి</string>
+    <string name="share_desc">మిత్రులతో షేర్ చేయండి</string>
+    <string name="contact_support">సహాయం కోసం సంప్రదించండి</string>
+    <string name="support_desc">సహాయం కోసం ఈమెయిల్ పంపండి</string>
+
+    <!-- Dialogs -->
+    <string name="delete_dialog_title">నకిలీలను తొలగించాలా?</string>
+    <string name="delete_dialog_message">%1$d నకిలీ ఫైల్స్ తొలగించండి (%2$s)</string>
+    <string name="delete_dialog_warning">అసలు ఫైల్స్ సురక్షితంగా ఉంటాయి.</string>
+    <string name="about_version">వెర్షన్ %1$s</string>
+    <string name="developed_by">అభివృద్ధి చేసినవారు</string>
+
+    <!-- Scan Screens -->
+    <string name="scanning_photos">ఫోటోలను స్కాన్ చేస్తోంది</string>
+    <string name="photos_scanned">%1$d ఫోటోలు స్కాన్ చేయబడ్డాయి</string>
+    <string name="scanning_audio">ఆడియోను స్కాన్ చేస్తోంది</string>
+    <string name="audio_scanned">%1$d ఆడియో స్కాన్ చేయబడింది</string>
+    <string name="scanning_docs">డాక్యుమెంట్లను స్కాన్ చేస్తోంది</string>
+    <string name="docs_scanned">%1$d డాక్యుమెంట్లు స్కాన్ చేయబడ్డాయి</string>
+    <string name="scanning_all">అన్ని ఫైల్స్ స్కాన్ చేస్తోంది</string>
+    <string name="all_scanned">%1$d ఫైల్స్ స్కాన్ చేయబడ్డాయి</string>
+    <string name="scanning_contacts">కాంటాక్ట్స్ స్కాన్ చేస్తోంది</string>
+    <string name="contacts_scanned">%1$d కాంటాక్ట్స్ స్కాన్ చేయబడ్డాయి</string>
+    <string name="scanning_apks">APKలను స్కాన్ చేస్తోంది</string>
+    <string name="apks_scanned">%1$d APKలు స్కాన్ చేయబడ్డాయి</string>
+    <string name="scanning_others">ఇతరాలను స్కాన్ చేస్తోంది</string>
+    <string name="others_scanned">%1$d ఫైల్స్ స్కాన్ చేయబడ్డాయి</string>
+    <string name="scanning_videos">వీడియోలను స్కాన్ చేస్తోంది</string>
+    <string name="searching_duplicates">నకిలీల కోసం వెతుకుతోంది...</string>
+    <string name="videos_scanned">%1$d వీడియోలు స్కాన్ చేయబడ్డాయి</string>
+    <string name="no_duplicates_found">నకిలీలు కనుగొనబడలేదు</string>
+</resources>

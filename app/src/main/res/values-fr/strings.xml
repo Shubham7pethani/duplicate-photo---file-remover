@@ -1,0 +1,99 @@
+<resources>
+    <string name="app_name">Duplicate Photo - File Remover</string>
+    <string name="developer_name">ompethani07</string>
+    <string name="support_email">duplicatesupportremover@gmail.com</string>
+    <string name="share_app_text">Regardez cette application : %1$s</string>
+    <string name="share_app_link">https://play.google.com/store/apps/details?id=%1$s</string>
+
+    <!-- General -->
+    <string name="ram_used">RAM utilisée</string>
+    <string name="all_scan">Tout analyser</string>
+    <string name="scan">Scanner</string>
+    <string name="delete">Supprimer</string>
+    <string name="cancel">Annuler</string>
+    <string name="close">Fermer</string>
+    <string name="back">Retour</string>
+    <string name="select_all">Tout sélectionner</string>
+    <string name="status_allowed">Statut : Autorisé</string>
+    <string name="status_not_allowed">Statut : Non autorisé</string>
+    <string name="original">ORIGINAL</string>
+    <string name="group">Groupe</string>
+    <string name="duplicates_count">%1$d doublons</string>
+    <string name="files_selected">%1$d fichiers sélectionnés</string>
+    <string name="total_size">Total : %1$s</string>
+    <string name="tap_scan_to_find">Appuyez sur Scanner pour trouver des doublons</string>
+    <string name="duplicate_scan">Analyse des doublons</string>
+    <string name="storage_used">Stockage utilisé</string>
+    <string name="of_total">sur %1$s au total</string>
+    <string name="free_space">Espace libre</string>
+    <string name="duplicates">Doublons</string>
+    <string name="can_save">Économie possible</string>
+    <string name="categories">Catégories</string>
+    <string name="files_count">%1$d Fichiers</string>
+    <string name="items_size_format">%1$d Articles | %2$s</string>
+    <string name="apk_scan">Analyse APK</string>
+    <string name="audio_scan">Analyse Audio</string>
+    <string name="photo_scan">Analyse Photo</string>
+    <string name="doc_scan">Analyse Documents</string>
+    <string name="others_scan">Analyse Autres</string>
+    <string name="contact_scan">Analyse Contacts</string>
+    <string name="all_files_scan">Analyse Tous les Fichiers</string>
+    <string name="videos_scan">Analyse Vidéo</string>
+    <string name="version_text">Version %1$s</string>
+
+    <!-- Categories -->
+    <string name="photos">Photos</string>
+    <string name="videos">Vidéos</string>
+    <string name="audio">Audio</string>
+    <string name="documents">Documents</string>
+    <string name="apks">APKs</string>
+    <string name="others">Autres</string>
+    <string name="contacts">Contacts</string>
+    <string name="all_files">Tous les fichiers</string>
+
+    <!-- Settings -->
+    <string name="settings">Paramètres</string>
+    <string name="notifications">Notifications</string>
+    <string name="notification_desc">Statut : Non autorisé</string>
+    <string name="all_files_access">Accès à tous les fichiers</string>
+    <string name="file_access_desc">Statut : Non autorisé</string>
+    <string name="language">Langue</string>
+    <string name="select_language">Sélectionner la langue</string>
+    <string name="privacy_policy">Politique de confidentialité</string>
+    <string name="privacy_desc">Aucune donnée n\'est téléchargée sur un serveur</string>
+    <string name="about_app">À propos de l\'app</string>
+    <string name="about_desc">Version et infos développeur</string>
+    <string name="rate_app">Évaluer l\'app</string>
+    <string name="rate_desc">Ouvrir le Play Store</string>
+    <string name="share_app">Partager l\'app</string>
+    <string name="share_desc">Partager avec des amis</string>
+    <string name="contact_support">Contacter le support</string>
+    <string name="support_desc">Envoyer un email pour de l\'aide</string>
+
+    <!-- Dialogs -->
+    <string name="delete_dialog_title">Supprimer les doublons ?</string>
+    <string name="delete_dialog_message">Supprimer %1$d fichiers en double (%2$s) ?</string>
+    <string name="delete_dialog_warning">Les fichiers originaux seront conservés.</string>
+    <string name="about_version">Version %1$s</string>
+    <string name="developed_by">Développé par</string>
+
+    <!-- Scan Screens -->
+    <string name="scanning_photos">Analyse des photos</string>
+    <string name="photos_scanned">%1$d photos analysées</string>
+    <string name="scanning_audio">Analyse de l\'audio</string>
+    <string name="audio_scanned">%1$d fichiers audio analysés</string>
+    <string name="scanning_docs">Analyse des documents</string>
+    <string name="docs_scanned">%1$d documents analysés</string>
+    <string name="scanning_all">Analyse de tous les fichiers</string>
+    <string name="all_scanned">%1$d fichiers analysés</string>
+    <string name="scanning_contacts">Analyse des contacts</string>
+    <string name="contacts_scanned">%1$d contacts analysés</string>
+    <string name="scanning_apks">Analyse des APKs</string>
+    <string name="apks_scanned">%1$d APKs analysés</string>
+    <string name="scanning_others">Analyse d\'autres fichiers</string>
+    <string name="others_scanned">%1$d fichiers analysés</string>
+    <string name="scanning_videos">Analyse des vidéos</string>
+    <string name="searching_duplicates">Recherche de doublons...</string>
+    <string name="videos_scanned">%1$d vidéos analysées</string>
+    <string name="no_duplicates_found">Aucun doublon trouvé</string>
+</resources>

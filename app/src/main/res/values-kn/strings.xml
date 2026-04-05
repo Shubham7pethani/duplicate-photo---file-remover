@@ -1,0 +1,99 @@
+<resources>
+    <string name="app_name">ನಕಲಿ ಫೋಟೋ - ಫೈಲ್ ರಿಮೂವರ್</string>
+    <string name="developer_name">ompethani07</string>
+    <string name="support_email">duplicatesupportremover@gmail.com</string>
+    <string name="share_app_text">ಈ ಅಪ್ಲಿಕೇಶನ್ ನೋಡಿ: %1$s</string>
+    <string name="share_app_link">https://play.google.com/store/apps/details?id=%1$s</string>
+
+    <!-- General -->
+    <string name="scan">ಸ್ಕ್ಯಾನ್</string>
+    <string name="ram_used">RAM ಬಳಸಲಾಗಿದೆ</string>
+    <string name="all_scan">ಎಲ್ಲಾ ಸ್ಕ್ಯಾನ್</string>
+    <string name="delete">ಅಳಿಸಿ</string>
+    <string name="cancel">ರದ್ದುಮಾಡಿ</string>
+    <string name="close">ಮುಚ್ಚಿ</string>
+    <string name="back">ಹಿಂದಕ್ಕೆ</string>
+    <string name="select_all">ಎಲ್ಲವನ್ನೂ ಆರಿಸಿ</string>
+    <string name="status_allowed">ಸ್ಥಿತಿ: ಅನುಮತಿಸಲಾಗಿದೆ</string>
+    <string name="status_not_allowed">ಸ್ಥಿತಿ: ಅನುಮತಿಸಲಾಗಿಲ್ಲ</string>
+    <string name="original">ಮೂಲ</string>
+    <string name="group">ಗುಂಪು</string>
+    <string name="duplicates_count">%1$d ನಕಲಿಗಳು</string>
+    <string name="files_selected">%1$d ಫೈಲ್‌ಗಳನ್ನು ಆಯ್ಕೆ ಮಾಡಲಾಗಿದೆ</string>
+    <string name="total_size">ಒಟ್ಟು: %1$s</string>
+    <string name="tap_scan_to_find">ನಕಲಿಗಳನ್ನು ಹುಡುಕಲು ಸ್ಕ್ಯಾನ್ ಟ್ಯಾಪ್ ಮಾಡಿ</string>
+    <string name="duplicate_scan">ನಕಲಿ ಸ್ಕ್ಯಾನ್</string>
+    <string name="storage_used">ಶೇಖರಣೆ ಬಳಸಲಾಗಿದೆ</string>
+    <string name="of_total">%1$s ಒಟ್ಟು ಮೊತ್ತದಲ್ಲಿ</string>
+    <string name="free_space">ಖಾಲಿ ಜಾಗ</string>
+    <string name="duplicates">ನಕಲಿಗಳು</string>
+    <string name="can_save">ಉಳಿಸಬಹುದು</string>
+    <string name="categories">ವರ್ಗಗಳು</string>
+    <string name="files_count">%1$d ಫೈಲ್‌ಗಳು</string>
+    <string name="items_size_format">%1$d ಐಟಂಗಳು | %2$s</string>
+    <string name="apk_scan">APK ಸ್ಕ್ಯಾನ್</string>
+    <string name="audio_scan">ಆಡಿಯೋ ಸ್ಕ್ಯಾನ್</string>
+    <string name="photo_scan">ಫೋಟೋ ಸ್ಕ್ಯಾನ್</string>
+    <string name="doc_scan">ಡಾಕ್ಯುಮೆಂಟ್ ಸ್ಕ್ಯಾನ್</string>
+    <string name="others_scan">ಇತರ ಸ್ಕ್ಯಾನ್</string>
+    <string name="contact_scan">ಸಂಪರ್ಕ ಸ್ಕ್ಯಾನ್</string>
+    <string name="all_files_scan">ಎಲ್ಲಾ ಫೈಲ್ ಸ್ಕ್ಯಾನ್</string>
+    <string name="videos_scan">ವಿಡಿಯೋ ಸ್ಕ್ಯಾನ್</string>
+    <string name="version_text">ಆವೃತ್ತಿ %1$s</string>
+
+    <!-- Categories -->
+    <string name="photos">ಫೋಟೋಗಳು</string>
+    <string name="videos">ವಿಡಿಯೋಗಳು</string>
+    <string name="audio">ಆಡಿಯೋ</string>
+    <string name="documents">ಡಾಕ್ಯುಮೆಂಟ್‌ಗಳು</string>
+    <string name="apks">APK ಗಳು</string>
+    <string name="others">ಇತರರು</string>
+    <string name="contacts">ಸಂಪರ್ಕಗಳು</string>
+    <string name="all_files">ಎಲ್ಲಾ ಫೈಲ್‌ಗಳು</string>
+
+    <!-- Settings -->
+    <string name="settings">ಸೆಟ್ಟಿಂಗ್‌ಗಳು</string>
+    <string name="notifications">ಅಧಿಸೂಚನೆಗಳು</string>
+    <string name="notification_desc">ಸ್ಥಿತಿ: ಅನುಮತಿಸಲಾಗಿಲ್ಲ</string>
+    <string name="all_files_access">ಎಲ್ಲಾ ಫೈಲ್ ಪ್ರವೇಶ</string>
+    <string name="file_access_desc">ಸ್ಥಿತಿ: ಅನುಮತಿಸಲಾಗಿಲ್ಲ</string>
+    <string name="language">ಭಾಷೆ</string>
+    <string name="select_language">ಭಾಷೆಯನ್ನು ಆಯ್ಕೆ ಮಾಡಿ</string>
+    <string name="privacy_policy">ಗೌಪ್ಯತಾ ನೀತಿ</string>
+    <string name="privacy_desc">ಯಾವುದೇ ಡೇಟಾವನ್ನು ಸರ್ವರ್‌ಗೆ ಅಪ್‌ಲೋಡ್ ಮಾಡಲಾಗುವುದಿಲ್ಲ</string>
+    <string name="about_app">ಅಪ್ಲಿಕೇಶನ್ ಬಗ್ಗೆ</string>
+    <string name="about_desc">ಆವೃತ್ತಿ ಮತ್ತು ಡೆವಲಪರ್ ಮಾಹಿತಿ</string>
+    <string name="rate_app">ಅಪ್ಲಿಕೇಶನ್ ರೇಟ್ ಮಾಡಿ</string>
+    <string name="rate_desc">ಪ್ಲೇ ಸ್ಟೋರ್ ತೆರೆಯಿರಿ</string>
+    <string name="share_app">ಅಪ್ಲಿಕೇಶನ್ ಹಂಚಿಕೊಳ್ಳಿ</string>
+    <string name="share_desc">ಸ್ನೇಹಿತರೊಂದಿಗೆ ಹಂಚಿಕೊಳ್ಳಿ</string>
+    <string name="contact_support">ಬೆಂಬಲಕ್ಕಾಗಿ ಸಂಪರ್ಕಿಸಿ</string>
+    <string name="support_desc">ಸಹಾಯಕ್ಕಾಗಿ ಇಮೇಲ್ ಕಳುಹಿಸಿ</string>
+
+    <!-- Dialogs -->
+    <string name="delete_dialog_title">ನಕಲಿಗಳನ್ನು ಅಳಿಸುವುದೇ?</string>
+    <string name="delete_dialog_message">%1$d ನಕಲಿ ಫೈಲ್‌ಗಳನ್ನು ಅಳಿಸಿ (%2$s)</string>
+    <string name="delete_dialog_warning">ಮೂಲ ಫೈಲ್‌ಗಳು ಸುರಕ್ಷಿತವಾಗಿರುತ್ತವೆ.</string>
+    <string name="about_version">ಆವೃತ್ತಿ %1$s</string>
+    <string name="developed_by">ಅಭಿವೃದ್ಧಿಪಡಿಸಿದವರು</string>
+
+    <!-- Scan Screens -->
+    <string name="scanning_photos">ಫೋಟೋಗಳನ್ನು ಸ್ಕ್ಯಾನ್ ಮಾಡಲಾಗುತ್ತಿದೆ</string>
+    <string name="photos_scanned">%1$d ಫೋಟೋಗಳನ್ನು ಸ್ಕ್ಯಾನ್ ಮಾಡಲಾಗಿದೆ</string>
+    <string name="scanning_audio">ಆಡಿಯೋ ಸ್ಕ್ಯಾನ್ ಮಾಡಲಾಗುತ್ತಿದೆ</string>
+    <string name="audio_scanned">%1$d ಆಡಿಯೋ ಸ್ಕ್ಯಾನ್ ಮಾಡಲಾಗಿದೆ</string>
+    <string name="scanning_docs">ಡಾಕ್ಯುಮೆಂಟ್‌ಗಳನ್ನು ಸ್ಕ್ಯಾನ್ ಮಾಡಲಾಗುತ್ತಿದೆ</string>
+    <string name="docs_scanned">%1$d ಡಾಕ್ಯುಮೆಂಟ್‌ಗಳನ್ನು ಸ್ಕ್ಯಾನ್ ಮಾಡಲಾಗಿದೆ</string>
+    <string name="scanning_all">ಎಲ್ಲಾ ಫೈಲ್‌ಗಳನ್ನು ಸ್ಕ್ಯಾನ್ ಮಾಡಲಾಗುತ್ತಿದೆ</string>
+    <string name="all_scanned">%1$d ಫೈಲ್‌ಗಳನ್ನು ಸ್ಕ್ಯಾನ್ ಮಾಡಲಾಗಿದೆ</string>
+    <string name="scanning_contacts">ಸಂಪರ್ಕಗಳನ್ನು ಸ್ಕ್ಯಾನ್ ಮಾಡಲಾಗುತ್ತಿದೆ</string>
+    <string name="contacts_scanned">%1$d ಸಂಪರ್ಕಗಳನ್ನು ಸ್ಕ್ಯಾನ್ ಮಾಡಲಾಗಿದೆ</string>
+    <string name="scanning_apks">APK ಗಳನ್ನು ಸ್ಕ್ಯಾನ್ ಮಾಡಲಾಗುತ್ತಿದೆ</string>
+    <string name="apks_scanned">%1$d APK ಗಳನ್ನು ಸ್ಕ್ಯಾನ್ ಮಾಡಲಾಗಿದೆ</string>
+    <string name="scanning_others">ಇತರವುಗಳನ್ನು ಸ್ಕ್ಯಾನ್ ಮಾಡಲಾಗುತ್ತಿದೆ</string>
+    <string name="others_scanned">%1$d ಫೈಲ್‌ಗಳನ್ನು ಸ್ಕ್ಯಾನ್ ಮಾಡಲಾಗಿದೆ</string>
+    <string name="scanning_videos">ವಿಡಿಯೋಗಳನ್ನು ಸ್ಕ್ಯಾನ್ ಮಾಡಲಾಗುತ್ತಿದೆ</string>
+    <string name="searching_duplicates">ನಕಲಿಗಳಿಗಾಗಿ ಹುಡುಕಲಾಗುತ್ತಿದೆ...</string>
+    <string name="videos_scanned">%1$d ವಿಡಿಯೋಗಳನ್ನು ಸ್ಕ್ಯಾನ್ ಮಾಡಲಾಗಿದೆ</string>
+    <string name="no_duplicates_found">ನಕಲಿಗಳು ಕಂಡುಬಂದಿಲ್ಲ</string>
+</resources>

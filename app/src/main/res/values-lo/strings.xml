@@ -1,0 +1,99 @@
+<resources>
+    <string name="app_name">Duplicate Photo - File Remover</string>
+    <string name="developer_name">ompethani07</string>
+    <string name="support_email">duplicatesupportremover@gmail.com</string>
+    <string name="share_app_text">ເບິ່ງແອັບນີ້: %1$s</string>
+    <string name="share_app_link">https://play.google.com/store/apps/details?id=%1$s</string>
+
+    <!-- General -->
+    <string name="scan">ສະແກນ</string>
+    <string name="ram_used">RAM ທີ່ໃຊ້</string>
+    <string name="all_scan">ສະແກນທັງໝົດ</string>
+    <string name="delete">ລຶບ</string>
+    <string name="cancel">ຍົກເລີກ</string>
+    <string name="close">ປິດ</string>
+    <string name="back">ກັບຄືນ</string>
+    <string name="select_all">ເລືອກທັງໝົດ</string>
+    <string name="status_allowed">ສະຖານະ: ອະນຸຍາດ</string>
+    <string name="status_not_allowed">ສະຖານະ: ບໍ່ອະນຸຍາດ</string>
+    <string name="original">ຕົ້ນສະບັບ</string>
+    <string name="group">ກຸ່ມ</string>
+    <string name="duplicates_count">%1$d ທີ່ຊໍ້າກັນ</string>
+    <string name="files_selected">ເລືອກແລ້ວ %1$d ໄຟລ໌</string>
+    <string name="total_size">ທັງໝົດ: %1$s</string>
+    <string name="tap_scan_to_find">ແຕະສະແກນເພື່ອຊອກຫາໄຟລ໌ທີ່ຊໍ້າກັນ</string>
+    <string name="duplicate_scan">ສະແກນໄຟລ໌ຊໍ້າ</string>
+    <string name="storage_used">ບ່ອນຈັດເກັບຂໍ້ມູນທີ່ໃຊ້</string>
+    <string name="of_total">ຈາກທັງໝົດ %1$s</string>
+    <string name="free_space">ບ່ອນວ່າງ</string>
+    <string name="duplicates">ໄຟລ໌ຊໍ້າກັນ</string>
+    <string name="can_save">ສາມາດປະຢັດໄດ້</string>
+    <string name="categories">ໝວດໝູ່</string>
+    <string name="files_count">%1$d ໄຟລ໌</string>
+    <string name="items_size_format">%1$d ລາຍການ | %2$s</string>
+    <string name="apk_scan">ສະແກນ APK</string>
+    <string name="audio_scan">ສະແກນສຽງ</string>
+    <string name="photo_scan">ສະແກນຮູບພາບ</string>
+    <string name="doc_scan">ສະແກນເອກະສານ</string>
+    <string name="others_scan">ສະແກນອື່ນໆ</string>
+    <string name="contact_scan">ສະແກນລາຍຊື່ຜູ້ຕິດຕໍ່</string>
+    <string name="all_files_scan">ສະແກນໄຟລ໌ທັງໝົດ</string>
+    <string name="videos_scan">ສະແກນວິດີໂອ</string>
+    <string name="version_text">ເວີຊັນ %1$s</string>
+
+    <!-- Categories -->
+    <string name="photos">ຮູບພາບ</string>
+    <string name="videos">ວິດີໂອ</string>
+    <string name="audio">ສຽງ</string>
+    <string name="documents">ເອກະສານ</string>
+    <string name="apks">APK</string>
+    <string name="others">ອື່ນໆ</string>
+    <string name="contacts">ລາຍຊື່ຜູ້ຕິດຕໍ່</string>
+    <string name="all_files">ໄຟລ໌ທັງໝົດ</string>
+
+    <!-- Settings -->
+    <string name="settings">ການຕັ້ງຄ່າ</string>
+    <string name="notifications">ການແຈ້ງເຕືອນ</string>
+    <string name="notification_desc">ສະຖານະ: ບໍ່ອະນຸຍາດ</string>
+    <string name="all_files_access">ການເຂົ້າເຖິງໄຟລ໌ທັງໝົດ</string>
+    <string name="file_access_desc">ສະຖານະ: ບໍ່ອະນຸຍາດ</string>
+    <string name="language">ພາສາ</string>
+    <string name="select_language">ເລືອກພາສາ</string>
+    <string name="privacy_policy">ນະໂຍບາຍຄວາມເປັນສ່ວນຕົວ</string>
+    <string name="privacy_desc">ບໍ່ມີການອັບໂຫລດຂໍ້ມູນໄປຍັງເຊີບເວີໃດໆ</string>
+    <string name="about_app">ກ່ຽວກັບແອັບ</string>
+    <string name="about_desc">ຂໍ້ມູນເວີຊັນ ແລະ ຜູ້ພັດທະນາ</string>
+    <string name="rate_app">ໃຫ້ຄະແນນແອັບ</string>
+    <string name="rate_desc">ເປີດ Play Store</string>
+    <string name="share_app">ແບ່ງປັນແອັບ</string>
+    <string name="share_desc">ແບ່ງປັນກັບໝູ່ເພື່ອນ</string>
+    <string name="contact_support">ຕິດຕໍ່ຝ່າຍສະໜັບສະໜູນ</string>
+    <string name="support_desc">ສົ່ງອີເມວເພື່ອຂໍຄວາມຊ່ວຍເຫຼືອ</string>
+
+    <!-- Dialogs -->
+    <string name="delete_dialog_title">ລຶບໄຟລ໌ທີ່ຊໍ້າກັນບໍ?</string>
+    <string name="delete_dialog_message">ລຶບ %1$d ໄຟລ໌ທີ່ຊໍ້າກັນ (%2$s)</string>
+    <string name="delete_dialog_warning">ໄຟລ໌ຕົ້ນສະບັບຈະຖືກເກັບຮັກສາໄວ້ຢ່າງປອດໄພ.</string>
+    <string name="about_version">ເວີຊັນ %1$s</string>
+    <string name="developed_by">ພັດທະນາໂດຍ</string>
+
+    <!-- Scan Screens -->
+    <string name="scanning_photos">ກຳລັງສະແກນຮູບພາບ</string>
+    <string name="photos_scanned">ສະແກນຮູບພາບແລ້ວ %1$d</string>
+    <string name="scanning_audio">ກຳລັງສະແກນສຽງ</string>
+    <string name="audio_scanned">ສະແກນສຽງແລ້ວ %1$d</string>
+    <string name="scanning_docs">ກຳລັງສະແກນເອກະສານ</string>
+    <string name="docs_scanned">ສະແກນເອກະສານແລ້ວ %1$d</string>
+    <string name="scanning_all">ກຳລັງສະແກນໄຟລ໌ທັງໝົດ</string>
+    <string name="all_scanned">ສະແກນໄຟລ໌ແລ້ວ %1$d</string>
+    <string name="scanning_contacts">ກຳລັງສະແກນລາຍຊື່ຜູ້ຕິດຕໍ່</string>
+    <string name="contacts_scanned">ສະແກນລາຍຊື່ຜູ້ຕິດຕໍ່ແລ້ວ %1$d</string>
+    <string name="scanning_apks">ກຳລັງສະແກນ APK</string>
+    <string name="apks_scanned">ສະແກນ APK ແລ້ວ %1$d</string>
+    <string name="scanning_others">ກຳລັງສະແກນອື່ນໆ</string>
+    <string name="others_scanned">ສະແກນໄຟລ໌ແລ້ວ %1$d</string>
+    <string name="scanning_videos">ກຳລັງສະແກນວິດີໂອ</string>
+    <string name="searching_duplicates">ກຳລັງຊອກຫາໄຟລ໌ທີ່ຊໍ້າກັນ...</string>
+    <string name="videos_scanned">ສະແກນວິດີໂອແລ້ວ %1$d</string>
+    <string name="no_duplicates_found">ບໍ່ພົບໄຟລ໌ທີ່ຊໍ้าກັນ</string>
+</resources>

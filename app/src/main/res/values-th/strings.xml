@@ -1,0 +1,98 @@
+<resources>
+    <string name="app_name">Duplicate Photo - File Remover</string>
+    <string name="developer_name">ompethani07</string>
+    <string name="support_email">duplicatesupportremover@gmail.com</string>
+    <string name="share_app_text">Check out this app: %1$s</string>
+    <string name="share_app_link">https://play.google.com/store/apps/details?id=%1$s</string>
+
+    <!-- General -->
+    <string name="scan">Scan</string>
+    <string name="delete">ลบ</string>
+    <string name="cancel">ยกเลิก</string>
+    <string name="close">ปิด</string>
+    <string name="back">กลับ</string>
+    <string name="select_all">เลือกทั้งหมด</string>
+    <string name="status_allowed">สถานะ: อนุญาตแล้ว</string>
+    <string name="status_not_allowed">สถานะ: ยังไม่อนุญาต</string>
+    <string name="original">ต้นฉบับ</string>
+    <string name="group">กลุ่ม</string>
+    <string name="duplicates_count">พบไฟล์ซ้ำ %1$d ไฟล์</string>
+    <string name="files_selected">เลือกแล้ว %1$d ไฟล์</string>
+    <string name="total_size">รวม: %1$s</string>
+    <string name="tap_scan_to_find">แตะสแกนเพื่อค้นหาไฟล์ซ้ำ</string>
+    <string name="duplicate_scan">สแกนไฟล์ซ้ำ</string>
+    <string name="storage_used">พื้นที่ที่ใช้ไป</string>
+    <string name="of_total">จากทั้งหมด %1$s</string>
+    <string name="free_space">พื้นที่ว่าง</string>
+    <string name="duplicates">ไฟล์ซ้ำ</string>
+    <string name="can_save">ประหยัดพื้นที่ได้</string>
+    <string name="categories">หมวดหมู่</string>
+    <string name="files_count">%1$d ไฟล์</string>
+    <string name="ram_used">ใช้ RAM ไปแล้ว</string>
+    <string name="all_scan">สแกนทั้งหมด</string>
+    <string name="apk_scan">สแกน APK</string>
+    <string name="audio_scan">สแกนเสียง</string>
+    <string name="photo_scan">สแกนรูปภาพ</string>
+    <string name="doc_scan">สแกนเอกสาร</string>
+    <string name="others_scan">สแกนอื่นๆ</string>
+    <string name="contact_scan">สแกนผู้ติดต่อ</string>
+    <string name="all_files_scan">สแกนไฟล์ทั้งหมด</string>
+    <string name="videos_scan">สแกนวิดีโอ</string>
+    <string name="version_text">เวอร์ชัน %1$s</string>
+
+    <!-- Categories -->
+    <string name="photos">รูปภาพ</string>
+    <string name="videos">วิดีโอ</string>
+    <string name="audio">เสียง</string>
+    <string name="documents">เอกสาร</string>
+    <string name="apks">APK</string>
+    <string name="others">อื่นๆ</string>
+    <string name="contacts">ผู้ติดต่อ</string>
+    <string name="all_files">ไฟล์ทั้งหมด</string>
+
+    <!-- Settings -->
+    <string name="settings">การตั้งค่า</string>
+    <string name="notifications">การแจ้งเตือน</string>
+    <string name="notification_desc">สถานะ: ยังไม่อนุญาต</string>
+    <string name="all_files_access">การเข้าถึงไฟล์ทั้งหมด</string>
+    <string name="file_access_desc">สถานะ: ยังไม่อนุญาต</string>
+    <string name="language">ภาษา</string>
+    <string name="select_language">เลือกภาษา</string>
+    <string name="privacy_policy">นโยบายความเป็นส่วนตัว</string>
+    <string name="privacy_desc">ไม่มีการอัปโหลดข้อมูลไปยังเซิร์ฟเวอร์ใดๆ</string>
+    <string name="about_app">เกี่ยวกับแอป</string>
+    <string name="about_desc">ข้อมูลเวอร์ชันและผู้พัฒนา</string>
+    <string name="rate_app">ให้คะแนนแอป</string>
+    <string name="rate_desc">เปิด Play Store</string>
+    <string name="share_app">แชร์แอป</string>
+    <string name="share_desc">แชร์ให้เพื่อน</string>
+    <string name="contact_support">ติดต่อฝ่ายสนับสนุน</string>
+    <string name="support_desc">ส่งอีเมลเพื่อขอความช่วยเหลือ</string>
+
+    <!-- Dialogs -->
+    <string name="delete_dialog_title">ลบไฟล์ซ้ำหรือไม่?</string>
+    <string name="delete_dialog_message">ต้องการลบไฟล์ซ้ำ %1$d ไฟล์ (%2$s) หรือไม่?</string>
+    <string name="delete_dialog_warning">ไฟล์ต้นฉบับจะถูกเก็บไว้อย่างปลอดภัย</string>
+    <string name="about_version">เวอร์ชัน %1$s</string>
+    <string name="developed_by">พัฒนาโดย</string>
+
+    <!-- Scan Screens -->
+    <string name="scanning_photos">กำลังสแกนรูปภาพ</string>
+    <string name="photos_scanned">สแกนรูปภาพแล้ว %1$d รูป</string>
+    <string name="scanning_audio">กำลังสแกนเสียง</string>
+    <string name="audio_scanned">สแกนไฟล์เสียงแล้ว %1$d ไฟล์</string>
+    <string name="scanning_docs">กำลังสแกนเอกสาร</string>
+    <string name="docs_scanned">สแกนเอกสารแล้ว %1$d ฉบับ</string>
+    <string name="scanning_all">กำลังสแกนไฟล์ทั้งหมด</string>
+    <string name="all_scanned">สแกนไฟล์แล้ว %1$d ไฟล์</string>
+    <string name="scanning_contacts">กำลังสแกนผู้ติดต่อ</string>
+    <string name="contacts_scanned">สแกนผู้ติดต่อแล้ว %1$d รายการ</string>
+    <string name="scanning_apks">กำลังสแกน APK</string>
+    <string name="apks_scanned">สแกน APK แล้ว %1$d ไฟล์</string>
+    <string name="scanning_others">กำลังสแกนอื่นๆ</string>
+    <string name="others_scanned">สแกนไฟล์แล้ว %1$d ไฟล์</string>
+    <string name="scanning_videos">กำลังสแกนวิดีโอ</string>
+    <string name="searching_duplicates">กำลังค้นหาไฟล์ซ้ำ...</string>
+    <string name="videos_scanned">สแกนวิดีโอแล้ว %1$d ไฟล์</string>
+    <string name="no_duplicates_found">ไม่พบไฟล์ซ้ำ</string>
+</resources>

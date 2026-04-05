@@ -1,0 +1,99 @@
+<resources>
+    <string name="app_name">Duplicate Photo - File Remover</string>
+    <string name="developer_name">ompethani07</string>
+    <string name="support_email">duplicatesupportremover@gmail.com</string>
+    <string name="share_app_text">ဤအက်ပ်ကို ကြည့်ပါ- %1$s</string>
+    <string name="share_app_link">https://play.google.com/store/apps/details?id=%1$s</string>
+
+    <!-- General -->
+    <string name="scan">စကင်န်ဖတ်ရန်</string>
+    <string name="ram_used">RAM အသုံးပြုမှု</string>
+    <string name="all_scan">အားလုံး စကင်န်ဖတ်ရန်</string>
+    <string name="delete">ဖျက်ရန်</string>
+    <string name="cancel">ပယ်ဖျက်ရန်</string>
+    <string name="close">ပိတ်ရန်</string>
+    <string name="back">နောက်သို့</string>
+    <string name="select_all">အားလုံးရွေးရန်</string>
+    <string name="status_allowed">အခြေအနေ- ခွင့်ပြုသည်</string>
+    <string name="status_not_allowed">အခြေအနေ- ခွင့်မပြုပါ</string>
+    <string name="original">မူရင်း</string>
+    <string name="group">အုပ်စု</string>
+    <string name="duplicates_count">ထပ်နေသောဖိုင် %1$d ခု</string>
+    <string name="files_selected">ဖိုင် %1$d ခု ရွေးချယ်ထားသည်</string>
+    <string name="total_size">စုစုပေါင်း- %1$s</string>
+    <string name="tap_scan_to_find">ထပ်နေသည်များကို ရှာရန် Scan ကို နှိပ်ပါ</string>
+    <string name="duplicate_scan">ထပ်နေသည်များ စကင်န်ဖတ်ရန်</string>
+    <string name="storage_used">အသုံးပြုထားသော သိမ်းဆည်းမှု</string>
+    <string name="of_total">စုစုပေါင်း %1$s အနက်</string>
+    <string name="free_space">လွတ်လပ်သော နေရာ</string>
+    <string name="duplicates">ထပ်နေသောဖိုင်များ</string>
+    <string name="can_save">ချွေတာနိုင်သည်</string>
+    <string name="categories">အမျိုးအစားများ</string>
+    <string name="files_count">ဖိုင် %1$d ခု</string>
+    <string name="items_size_format">အရာ %1$d ခု | %2$s</string>
+    <string name="apk_scan">APK စကင်န်ဖတ်ရန်</string>
+    <string name="audio_scan">အသံဖိုင် စကင်န်ဖတ်ရန်</string>
+    <string name="photo_scan">ဓာတ်ပုံ စကင်န်ဖတ်ရန်</string>
+    <string name="doc_scan">စာရွက်စာတမ်း စကင်န်ဖတ်ရန်</string>
+    <string name="others_scan">အခြား စကင်န်ဖတ်ရန်</string>
+    <string name="contact_scan">အဆက်အသွယ် စကင်န်ဖတ်ရန်</string>
+    <string name="all_files_scan">ဖိုင်အားလုံး စကင်န်ဖတ်ရန်</string>
+    <string name="videos_scan">ဗီဒီယို စကင်န်ဖတ်ရန်</string>
+    <string name="version_text">ဗားရှင်း %1$s</string>
+
+    <!-- Categories -->
+    <string name="photos">ဓာတ်ပုံများ</string>
+    <string name="videos">ဗီဒီယိုများ</string>
+    <string name="audio">အသံများ</string>
+    <string name="documents">စာရွက်စာတမ်းများ</string>
+    <string name="apks">APK များ</string>
+    <string name="others">အခြား</string>
+    <string name="contacts">အဆက်အသွယ်များ</string>
+    <string name="all_files">ဖိုင်အားလုံး</string>
+
+    <!-- Settings -->
+    <string name="settings">ဆက်တင်များ</string>
+    <string name="notifications">အကြောင်းကြားချက်များ</string>
+    <string name="notification_desc">အခြေအနေ- ခွင့်မပြုပါ</string>
+    <string name="all_files_access">ဖိုင်အားလုံး ဝင်ရောက်ခွင့်</string>
+    <string name="file_access_desc">အခြေအနေ- ခွင့်မပြုပါ</string>
+    <string name="language">ဘာသာစကား</string>
+    <string name="select_language">ဘာသာစကား ရွေးချယ်ရန်</string>
+    <string name="privacy_policy">ကိုယ်ရေးကိုယ်တာ မူဝါဒ</string>
+    <string name="privacy_desc">မည်သည့်ဒေတာကိုမျှ ဆာဗာသို့ တင်မည်မဟုတ်ပါ</string>
+    <string name="about_app">အက်ပ်အကြောင်း</string>
+    <string name="about_desc">ဗားရှင်းနှင့် ဆော့ဖ်ဝဲရေးသားသူ အချက်အလက်</string>
+    <string name="rate_app">အက်ပ်ကို အဆင့်သတ်မှတ်ရန်</string>
+    <string name="rate_desc">Play Store ကို ဖွင့်ရန်</string>
+    <string name="share_app">အက်ပ်ကို မျှဝေရန်</string>
+    <string name="share_desc">သူငယ်ချင်းများနှင့် မျှဝေရန်</string>
+    <string name="contact_support">ပံ့ပိုးကူညီမှု ဆက်သွယ်ရန်</string>
+    <string name="support_desc">အကူအညီအတွက် အီးမေးလ် ပို့ရန်</string>
+
+    <!-- Dialogs -->
+    <string name="delete_dialog_title">ထပ်နေသည်များကို ဖျက်မလား?</string>
+    <string name="delete_dialog_message">ထပ်နေသောဖိုင် %1$d ခုကို ဖျက်ရန် (%2$s)</string>
+    <string name="delete_dialog_warning">မူရင်းဖိုင်များကို ဘေးကင်းစွာ ထားရှိပါမည်။</string>
+    <string name="about_version">ဗားရှင်း %1$s</string>
+    <string name="developed_by">ရေးသားသူ</string>
+
+    <!-- Scan Screens -->
+    <string name="scanning_photos">ဓာတ်ပုံများ စကင်န်ဖတ်နေသည်</string>
+    <string name="photos_scanned">ဓာတ်ပုံ %1$d ခု စကင်န်ဖတ်ပြီး</string>
+    <string name="scanning_audio">အသံများ စကင်န်ဖတ်နေသည်</string>
+    <string name="audio_scanned">အသံဖိုင် %1$d ခု စကင်န်ဖတ်ပြီး</string>
+    <string name="scanning_docs">စာရွက်စာတမ်းများ စကင်န်ဖတ်နေသည်</string>
+    <string name="docs_scanned">စာရွက်စာတမ်း %1$d ခု စကင်န်ဖတ်ပြီး</string>
+    <string name="scanning_all">ဖိုင်အားလုံး စကင်န်ဖတ်နေသည်</string>
+    <string name="all_scanned">ဖိုင် %1$d ခု စကင်န်ဖတ်ပြီး</string>
+    <string name="scanning_contacts">အဆက်အသွယ်များ စကင်န်ဖတ်နေသည်</string>
+    <string name="contacts_scanned">အဆက်အသွယ် %1$d ခု စကင်န်ဖတ်ပြီး</string>
+    <string name="scanning_apks">APK များ စကင်န်ဖတ်နေသည်</string>
+    <string name="apks_scanned">APK %1$d ခု စကင်န်ဖတ်ပြီး</string>
+    <string name="scanning_others">အခြားဖိုင်များ စကင်န်ဖတ်နေသည်</string>
+    <string name="others_scanned">ဖိုင် %1$d ခု စကင်န်ဖတ်ပြီး</string>
+    <string name="scanning_videos">ဗီဒီယိုများ စကင်န်ဖတ်နေသည်</string>
+    <string name="searching_duplicates">ထပ်နေသည်များကို ရှာဖွေနေသည်...</string>
+    <string name="videos_scanned">ဗီဒီယို %1$d ခု စကင်န်ဖတ်ပြီး</string>
+    <string name="no_duplicates_found">ထပ်နေသည်များ မတွေ့ရှိပါ</string>
+</resources>

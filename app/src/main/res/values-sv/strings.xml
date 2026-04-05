@@ -1,0 +1,99 @@
+<resources>
+    <string name="app_name">Duplicate Photo - File Remover</string>
+    <string name="developer_name">ompethani07</string>
+    <string name="support_email">duplicatesupportremover@gmail.com</string>
+    <string name="share_app_text">Kolla in den här appen: %1$s</string>
+    <string name="share_app_link">https://play.google.com/store/apps/details?id=%1$s</string>
+
+    <!-- General -->
+    <string name="scan">Skanna</string>
+    <string name="ram_used">RAM-användning</string>
+    <string name="all_scan">Skanna alla</string>
+    <string name="delete">Radera</string>
+    <string name="cancel">Avbryt</string>
+    <string name="close">Stäng</string>
+    <string name="back">Bakåt</string>
+    <string name="select_all">Välj alla</string>
+    <string name="status_allowed">Status: Tillåten</string>
+    <string name="status_not_allowed">Status: Ej tillåten</string>
+    <string name="original">ORIGINAL</string>
+    <string name="group">Grupp</string>
+    <string name="duplicates_count">%1$d dubbletter</string>
+    <string name="files_selected">%1$d filer valda</string>
+    <string name="total_size">Totalt: %1$s</string>
+    <string name="tap_scan_to_find">Tryck på Skanna för att hitta dubbletter</string>
+    <string name="duplicate_scan">Dubblettskanning</string>
+    <string name="storage_used">Lagring som används</string>
+    <string name="of_total">av %1$s totalt</string>
+    <string name="free_space">Ledigt utrymme</string>
+    <string name="duplicates">Dubbletter</string>
+    <string name="can_save">Kan spara</string>
+    <string name="categories">Kategorier</string>
+    <string name="files_count">%1$d filer</string>
+    <string name="items_size_format">%1$d objekt | %2$s</string>
+    <string name="apk_scan">APK-skanning</string>
+    <string name="audio_scan">Ljudskanning</string>
+    <string name="photo_scan">Fotoskanning</string>
+    <string name="doc_scan">Dokumentskanning</string>
+    <string name="others_scan">Annan skanning</string>
+    <string name="contact_scan">Kontaktskanning</string>
+    <string name="all_files_scan">Alla filer-skanning</string>
+    <string name="videos_scan">Videoskanning</string>
+    <string name="version_text">Version %1$s</string>
+
+    <!-- Categories -->
+    <string name="photos">Foton</string>
+    <string name="videos">Videor</string>
+    <string name="audio">Ljud</string>
+    <string name="documents">Dokument</string>
+    <string name="apks">APK:er</string>
+    <string name="others">Övrigt</string>
+    <string name="contacts">Kontakter</string>
+    <string name="all_files">Alla filer</string>
+
+    <!-- Settings -->
+    <string name="settings">Inställningar</string>
+    <string name="notifications">Aviseringar</string>
+    <string name="notification_desc">Status: Ej tillåten</string>
+    <string name="all_files_access">Tillgång till alla filer</string>
+    <string name="file_access_desc">Status: Ej tillåten</string>
+    <string name="language">Språk</string>
+    <string name="select_language">Välj språk</string>
+    <string name="privacy_policy">Integritetspolicy</string>
+    <string name="privacy_desc">Ingen data laddas upp till någon server</string>
+    <string name="about_app">Om appen</string>
+    <string name="about_desc">Version och utvecklarinfo</string>
+    <string name="rate_app">Betygsätt appen</string>
+    <string name="rate_desc">Öppna Play Store</string>
+    <string name="share_app">Dela appen</string>
+    <string name="share_desc">Dela med vänner</string>
+    <string name="contact_support">Kontakta support</string>
+    <string name="support_desc">Skicka e-post för hjälp</string>
+
+    <!-- Dialogs -->
+    <string name="delete_dialog_title">Radera dubbletter?</string>
+    <string name="delete_dialog_message">Radera %1$d dubblettfiler (%2$s)</string>
+    <string name="delete_dialog_warning">Originalfiler kommer att behållas säkert.</string>
+    <string name="about_version">Version %1$s</string>
+    <string name="developed_by">Utvecklad av</string>
+
+    <!-- Scan Screens -->
+    <string name="scanning_photos">Skannar foton</string>
+    <string name="photos_scanned">%1$d foton skannade</string>
+    <string name="scanning_audio">Skannar ljud</string>
+    <string name="audio_scanned">%1$d ljudfiler skannade</string>
+    <string name="scanning_docs">Skannar dokument</string>
+    <string name="docs_scanned">%1$d dokument skannade</string>
+    <string name="scanning_all">Skannar alla filer</string>
+    <string name="all_scanned">%1$d filer skannade</string>
+    <string name="scanning_contacts">Skannar kontakter</string>
+    <string name="contacts_scanned">%1$d kontakter skannade</string>
+    <string name="scanning_apks">Skannar APK:er</string>
+    <string name="apks_scanned">%1$d APK:er skannade</string>
+    <string name="scanning_others">Skannar övriga filer</string>
+    <string name="others_scanned">%1$d filer skannade</string>
+    <string name="scanning_videos">Skannar videor</string>
+    <string name="searching_duplicates">Söker efter dubbletter...</string>
+    <string name="videos_scanned">%1$d videor skannade</string>
+    <string name="no_duplicates_found">Inga dubbletter hittades</string>
+</resources>

@@ -1,0 +1,99 @@
+<resources>
+    <string name="app_name">Duplicate Photo - File Remover</string>
+    <string name="developer_name">ompethani07</string>
+    <string name="support_email">duplicatesupportremover@gmail.com</string>
+    <string name="share_app_text">Tutustu tähän sovellukseen: %1$s</string>
+    <string name="share_app_link">https://play.google.com/store/apps/details?id=%1$s</string>
+
+    <!-- General -->
+    <string name="scan">Skannaa</string>
+    <string name="ram_used">RAM käytössä</string>
+    <string name="all_scan">Skannaa kaikki</string>
+    <string name="delete">Poista</string>
+    <string name="cancel">Peruuta</string>
+    <string name="close">Sulje</string>
+    <string name="back">Takaisin</string>
+    <string name="select_all">Valitse kaikki</string>
+    <string name="status_allowed">Tila: Sallittu</string>
+    <string name="status_not_allowed">Tila: Ei sallittu</string>
+    <string name="original">ALKUPERÄINEN</string>
+    <string name="group">Ryhmä</string>
+    <string name="duplicates_count">%1$d kopiota</string>
+    <string name="files_selected">%1$d tiedostoa valittu</string>
+    <string name="total_size">Yhteensä: %1$s</string>
+    <string name="tap_scan_to_find">Etsi kopioita napauttamalla Skannaa</string>
+    <string name="duplicate_scan">Kopioiden skannaus</string>
+    <string name="storage_used">Tallennustila käytössä</string>
+    <string name="of_total">yhteensä %1$s:sta</string>
+    <string name="free_space">Vapaa tila</string>
+    <string name="duplicates">Kopiot</string>
+    <string name="can_save">Voidaan säästää</string>
+    <string name="categories">Luokat</string>
+    <string name="files_count">%1$d tiedostoa</string>
+    <string name="items_size_format">%1$d kohdetta | %2$s</string>
+    <string name="apk_scan">APK-skannaus</string>
+    <string name="audio_scan">Ääniskannaus</string>
+    <string name="photo_scan">Valokuvaskannaus</string>
+    <string name="doc_scan">Asiakirjaskannaus</string>
+    <string name="others_scan">Muu skannaus</string>
+    <string name="contact_scan">Yhteystietoskannaus</string>
+    <string name="all_files_scan">Kaikkien tiedostojen skannaus</string>
+    <string name="videos_scan">Videoskannaus</string>
+    <string name="version_text">Versio %1$s</string>
+
+    <!-- Categories -->
+    <string name="photos">Valokuvat</string>
+    <string name="videos">Videot</string>
+    <string name="audio">Ääni</string>
+    <string name="documents">Asiakirjat</string>
+    <string name="apks">APK:t</string>
+    <string name="others">Muut</string>
+    <string name="contacts">Yhteystiedot</string>
+    <string name="all_files">Kaikki tiedostot</string>
+
+    <!-- Settings -->
+    <string name="settings">Asetukset</string>
+    <string name="notifications">Ilmoitukset</string>
+    <string name="notification_desc">Tila: Ei sallittu</string>
+    <string name="all_files_access">Kaikkien tiedostojen käyttö</string>
+    <string name="file_access_desc">Tila: Ei sallittu</string>
+    <string name="language">Kieli</string>
+    <string name="select_language">Valitσε kieli</string>
+    <string name="privacy_policy">Tietosuojakäytäntö</string>
+    <string name="privacy_desc">Tietoja ei ladata millekään palvelimelle</string>
+    <string name="about_app">Tietoja sovelluksesta</string>
+    <string name="about_desc">Versio- ja kehittäjätiedot</string>
+    <string name="rate_app">Arvioi sovellus</string>
+    <string name="rate_desc">Avaa Play Store</string>
+    <string name="share_app">Jaa sovellus</string>
+    <string name="share_desc">Jaa ystävien kanssa</string>
+    <string name="contact_support">Ota yhteyttä tukeen</string>
+    <string name="support_desc">Lähetä sähköpostia apua varten</string>
+
+    <!-- Dialogs -->
+    <string name="delete_dialog_title">Poistetaanko kopiot?</string>
+    <string name="delete_dialog_message">Poista %1$d kopiotiedostoa (%2$s)</string>
+    <string name="delete_dialog_warning">Alkuperäiset tiedostot säilytetään turvassa.</string>
+    <string name="about_version">Versio %1$s</string>
+    <string name="developed_by">Kehittäjä:</string>
+
+    <!-- Scan Screens -->
+    <string name="scanning_photos">Skannataan valokuvia</string>
+    <string name="photos_scanned">%1$d valokuvaa skannattu</string>
+    <string name="scanning_audio">Skannataan ääntä</string>
+    <string name="audio_scanned">%1$d äänitiedostoa skannattu</string>
+    <string name="scanning_docs">Skannataan asiakirjoja</string>
+    <string name="docs_scanned">%1$d asiakirjaa skannattu</string>
+    <string name="scanning_all">Skannataan kaikkia tiedostoja</string>
+    <string name="all_scanned">%1$d tiedostoa skannattu</string>
+    <string name="scanning_contacts">Skannataan yhteystietoja</string>
+    <string name="contacts_scanned">%1$d yhteystietoa skannattu</string>
+    <string name="scanning_apks">Skannataan APK:ita</string>
+    <string name="apks_scanned">%1$d APK:ta skannattu</string>
+    <string name="scanning_others">Skannataan muita tiedostoja</string>
+    <string name="others_scanned">%1$d tiedostoa skannattu</string>
+    <string name="scanning_videos">Skannataan videoita</string>
+    <string name="searching_duplicates">Etsitään kopioita...</string>
+    <string name="videos_scanned">%1$d videota skannattu</string>
+    <string name="no_duplicates_found">Kopioita ei löytynyt</string>
+</resources>

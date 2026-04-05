@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.duplicateremover.app-mergeDebugResources-36:/values-large-v4/values-large-v4.xml",
+            "outputFile": "com.duplicateremover07.app-mergeDebugResources-53:/values-large-v4/values-large-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ompet\\.gradle\\caches\\transforms-3\\a41e6a68a8051e59a1bea027c058f81a\\transformed\\appcompat-1.6.1\\res\\values-large-v4\\values-large-v4.xml",
+                    "source": "C:\\Users\\ompet\\.gradle\\caches\\transforms-3\\e633eef4700a57dc4e6aeec658a86f34\\transformed\\appcompat-1.6.1\\res\\values-large-v4\\values-large-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\ompet\\.gradle\\caches\\transforms-3\\bec7de6f5493746bd6b85bdfc260f89d\\transformed\\material-1.11.0\\res\\values-large-v4\\values-large-v4.xml",
+                    "source": "C:\\Users\\ompet\\.gradle\\caches\\transforms-3\\343644c32944c3cd8cc952a2a17e8e2d\\transformed\\material-1.11.0\\res\\values-large-v4\\values-large-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

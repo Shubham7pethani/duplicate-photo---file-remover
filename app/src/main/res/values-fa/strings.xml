@@ -1,0 +1,99 @@
+<resources>
+    <string name="app_name">Duplicate Photo - File Remover</string>
+    <string name="developer_name">ompethani07</string>
+    <string name="support_email">duplicatesupportremover@gmail.com</string>
+    <string name="share_app_text">این برنامه را بررسی کنید: %1$s</string>
+    <string name="share_app_link">https://play.google.com/store/apps/details?id=%1$s</string>
+
+    <!-- General -->
+    <string name="scan">اسکن</string>
+    <string name="ram_used">رم استفاده شده</string>
+    <string name="all_scan">اسکن همه</string>
+    <string name="delete">حذف</string>
+    <string name="cancel">لغو</string>
+    <string name="close">بستن</string>
+    <string name="back">بازگشت</string>
+    <string name="select_all">انتخاب همه</string>
+    <string name="status_allowed">وضعیت: مجاز</string>
+    <string name="status_not_allowed">وضعیت: غیرمجاز</string>
+    <string name="original">اصلی</string>
+    <string name="group">گروه</string>
+    <string name="duplicates_count">%1$d مورد تکراری</string>
+    <string name="files_selected">%1$d فایل انتخاب شده</string>
+    <string name="total_size">مجموع: %1$s</string>
+    <string name="tap_scan_to_find">برای یافتن موارد تکراری، روی اسکن ضربه بزنید</string>
+    <string name="duplicate_scan">اسکن موارد تکراری</string>
+    <string name="storage_used">فضای ذخیره‌سازی استفاده شده</string>
+    <string name="of_total">از مجموع %1$s</string>
+    <string name="free_space">فضای خالی</string>
+    <string name="duplicates">موارد تکراری</string>
+    <string name="can_save">قابل صرفه‌جویی</string>
+    <string name="categories">دسته بندی‌ها</string>
+    <string name="files_count">%1$d فایل</string>
+    <string name="items_size_format">%1$d مورد | %2$s</string>
+    <string name="apk_scan">اسکن APK</string>
+    <string name="audio_scan">اسکن صوتی</string>
+    <string name="photo_scan">اسکن عکس</string>
+    <string name="doc_scan">اسکن اسناد</string>
+    <string name="others_scan">اسکن سایر</string>
+    <string name="contact_scan">اسکن مخاطبین</string>
+    <string name="all_files_scan">اسکن تمام فایل‌ها</string>
+    <string name="videos_scan">اسکن ویدیو</string>
+    <string name="version_text">نسخه %1$s</string>
+
+    <!-- Categories -->
+    <string name="photos">عکس‌ها</string>
+    <string name="videos">ویدیوها</string>
+    <string name="audio">صوت</string>
+    <string name="documents">اسناد</string>
+    <string name="apks">APKها</string>
+    <string name="others">سایر</string>
+    <string name="contacts">مخاطبین</string>
+    <string name="all_files">همه فایل‌ها</string>
+
+    <!-- Settings -->
+    <string name="settings">تنظیمات</string>
+    <string name="notifications">اعلان‌ها</string>
+    <string name="notification_desc">وضعیت: غیرمجاز</string>
+    <string name="all_files_access">دسترسی به همه فایل‌ها</string>
+    <string name="file_access_desc">وضعیت: غیرمجاز</string>
+    <string name="language">زبان</string>
+    <string name="select_language">انتخاب زبان</string>
+    <string name="privacy_policy">سیاست حفظ حریم خصوصی</string>
+    <string name="privacy_desc">هیچ داده‌ای به هیچ سروری آپلود نمی‌شود</string>
+    <string name="about_app">درباره برنامه</string>
+    <string name="about_desc">اطلاعات نسخه و توسعه‌دهنده</string>
+    <string name="rate_app">امتیاز به برنامه</string>
+    <string name="rate_desc">باز کردن پلی استور</string>
+    <string name="share_app">اشتراک‌گذاری برنامه</string>
+    <string name="share_desc">اشتراک‌گذاری با دوستان</string>
+    <string name="contact_support">تماس با پشتیبانی</string>
+    <string name="support_desc">ارسال ایمیل برای کمک</string>
+
+    <!-- Dialogs -->
+    <string name="delete_dialog_title">حذف موارد تکراری؟</string>
+    <string name="delete_dialog_message">حذف %1$d فایل تکراری (%2$s)</string>
+    <string name="delete_dialog_warning">فایل‌های اصلی ایمن خواهند ماند.</string>
+    <string name="about_version">نسخه %1$s</string>
+    <string name="developed_by">توسعه یافته توسط</string>
+
+    <!-- Scan Screens -->
+    <string name="scanning_photos">در حال اسکن عکس‌ها</string>
+    <string name="photos_scanned">%1$d عکس اسکن شد</string>
+    <string name="scanning_audio">در حال اسکن صوتی</string>
+    <string name="audio_scanned">%1$d فایل صوتی اسکن شد</string>
+    <string name="scanning_docs">در حال اسکن اسناد</string>
+    <string name="docs_scanned">%1$d سند اسکن شد</string>
+    <string name="scanning_all">در حال اسکن همه فایل‌ها</string>
+    <string name="all_scanned">%1$d فایل اسکن شد</string>
+    <string name="scanning_contacts">در حال اسکن مخاطبین</string>
+    <string name="contacts_scanned">%1$d مخاطب اسکن شد</string>
+    <string name="scanning_apks">در حال اسکن APKها</string>
+    <string name="apks_scanned">%1$d APK اسکن شد</string>
+    <string name="scanning_others">در حال اسکن سایر فایل‌ها</string>
+    <string name="others_scanned">%1$d فایل اسکن شد</string>
+    <string name="scanning_videos">در حال اسکن ویدیوها</string>
+    <string name="searching_duplicates">در حال جستجوی موارد تکراری...</string>
+    <string name="videos_scanned">%1$d ویدیو اسکن شد</string>
+    <string name="no_duplicates_found">مورد تکراری یافت نشد</string>
+</resources>

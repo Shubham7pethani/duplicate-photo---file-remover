@@ -1,0 +1,97 @@
+<resources>
+    <string name="app_name">Duplicate Photo - File Remover</string>
+    <string name="developer_name">ompethani07</string>
+    <string name="support_email">duplicatesupportremover@gmail.com</string>
+    <string name="share_app_text">تحقق من هذا التطبيق: %1$s</string>
+    <string name="share_app_link">https://play.google.com/store/apps/details?id=%1$s</string>
+
+    <!-- General -->
+    <string name="scan">مسح</string>
+    <string name="delete">حذف</string>
+    <string name="cancel">إلغاء</string>
+    <string name="close">إغلاق</string>
+    <string name="back">رجوع</string>
+    <string name="select_all">تحديد الكل</string>
+    <string name="status_allowed">الحالة: مسموح</string>
+    <string name="status_not_allowed">الحالة: غير مسموح</string>
+    <string name="original">أصلي</string>
+    <string name="group">مجموعة</string>
+    <string name="duplicates_count">%1$d مكررات</string>
+    <string name="files_selected">تم تحديد %1$d ملفات</string>
+    <string name="total_size">الإجمالي: %1$s</string>
+    <string name="tap_scan_to_find">انقر فوق مسح للعثور على المكررات</string>
+    <string name="duplicate_scan">مسح المكررات</string>
+    <string name="storage_used">المساحة المستخدمة</string>
+    <string name="of_total">من إجمالي %1$s</string>
+    <string name="free_space">المساحة المتوفرة</string>
+    <string name="duplicates">المكررات</string>
+    <string name="can_save">يمكن توفير</string>
+    <string name="categories">الفئات</string>
+    <string name="files_count">%1$d ملفات</string>
+    <string name="items_size_format">%1$d عناصر | %2$s</string>
+    <string name="apk_scan">مسح ملفات APK</string>
+    <string name="audio_scan">مسح الصوت</string>
+    <string name="photo_scan">مسح الصور</string>
+    <string name="doc_scan">مسح المستندات</string>
+    <string name="others_scan">مسح ملفات أخرى</string>
+    <string name="contact_scan">مسح جهات الاتصال</string>
+    <string name="all_files_scan">مسح جميع الملفات</string>
+    <string name="videos_scan">مسح الفيديو</string>
+    <string name="version_text">الإصدار %1$s</string>
+
+    <!-- Categories -->
+    <string name="photos">الصور</string>
+    <string name="videos">الفيديوهات</string>
+    <string name="audio">الصوتيات</string>
+    <string name="documents">المستندات</string>
+    <string name="apks">ملفات APK</string>
+    <string name="others">أخرى</string>
+    <string name="contacts">جهات الاتصال</string>
+    <string name="all_files">كل الملفات</string>
+
+    <!-- Settings -->
+    <string name="settings">الإعدادات</string>
+    <string name="notifications">الإشعارات</string>
+    <string name="notification_desc">الحالة: غير مسموح</string>
+    <string name="all_files_access">الوصول إلى جميع الملفات</string>
+    <string name="file_access_desc">الحالة: غير مسموح</string>
+    <string name="language">اللغة</string>
+    <string name="select_language">اختر اللغة</string>
+    <string name="privacy_policy">سياسة الخصوصية</string>
+    <string name="privacy_desc">لا يتم رفع أي بيانات إلى أي خادم</string>
+    <string name="about_app">عن التطبيق</string>
+    <string name="about_desc">الإصدار ومعلومات المطور</string>
+    <string name="rate_app">تقييم التطبيق</string>
+    <string name="rate_desc">افتح متجر Play</string>
+    <string name="share_app">مشاركة التطبيق</string>
+    <string name="share_desc">مشاركة مع الأصدقاء</string>
+    <string name="contact_support">اتصل بالدعم</string>
+    <string name="support_desc">إرسال بريد إلكتروني للمساعدة</string>
+
+    <!-- Dialogs -->
+    <string name="delete_dialog_title">حذف المكررات؟</string>
+    <string name="delete_dialog_message">حذف %1$d ملفات مكررة (%2$s)؟</string>
+    <string name="delete_dialog_warning">سيتم الاحتفاظ بالملفات الأصلية بأمان.</string>
+    <string name="about_version">الإصدار %1$s</string>
+    <string name="developed_by">تم التطوير بواسطة</string>
+
+    <!-- Scan Screens -->
+    <string name="scanning_photos">جاري مسح الصور</string>
+    <string name="photos_scanned">تم مسح %1$d صور</string>
+    <string name="scanning_audio">جاري مسح الصوت</string>
+    <string name="audio_scanned">تم مسح %1$d ملفات صوتية</string>
+    <string name="scanning_docs">جاري مسح المستندات</string>
+    <string name="docs_scanned">تم مسح %1$d مستندات</string>
+    <string name="scanning_all">جاري مسح جميع الملفات</string>
+    <string name="all_scanned">تم مسح %1$d ملفات</string>
+    <string name="scanning_contacts">جاري مسح جهات الاتصال</string>
+    <string name="contacts_scanned">تم مسح %1$d جهات اتصال</string>
+    <string name="scanning_apks">جاري مسح ملفات APK</string>
+    <string name="apks_scanned">تم مسح %1$d ملفات APK</string>
+    <string name="scanning_others">جاري مسح ملفات أخرى</string>
+    <string name="others_scanned">تم مسح %1$d ملفات</string>
+    <string name="scanning_videos">جاري مسح الفيديو</string>
+    <string name="searching_duplicates">البحث عن المكررات...</string>
+    <string name="videos_scanned">تم مسح %1$d فيديوهات</string>
+    <string name="no_duplicates_found">لم يتم العثور على مكررات</string>
+</resources>

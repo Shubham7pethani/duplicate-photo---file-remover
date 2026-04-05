@@ -50,7 +50,7 @@
                 android:id="@+id/catTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Photos"
+                android:text="@string/photos"
                 android:textColor="#333333"
                 android:textSize="17sp"
                 android:textStyle="bold" />
@@ -85,7 +85,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Scan"
+                    android:text="@string/scan"
                     android:textColor="#1D4ED8"
                     android:textStyle="bold"
                     android:textSize="14sp"
@@ -105,3 +105,4 @@
     </LinearLayout>
 
 </com.google.android.material.card.MaterialCardView>
+

@@ -1,0 +1,99 @@
+<resources>
+    <string name="app_name">ডুপ্লিকেট ফটো - ফাইল রিমুভার</string>
+    <string name="developer_name">ompethani07</string>
+    <string name="support_email">duplicatesupportremover@gmail.com</string>
+    <string name="share_app_text">এই অ্যাপটি দেখুন: %1$s</string>
+    <string name="share_app_link">https://play.google.com/store/apps/details?id=%1$s</string>
+
+    <!-- General -->
+    <string name="scan">স্ক্যান</string>
+    <string name="ram_used">র‌্যাম ব্যবহৃত</string>
+    <string name="all_scan">সব স্ক্যান</string>
+    <string name="delete">মুছে ফেলুন</string>
+    <string name="cancel">বাতিল করুন</string>
+    <string name="close">বন্ধ করুন</string>
+    <string name="back">ফিরে যান</string>
+    <string name="select_all">সব নির্বাচন করুন</string>
+    <string name="status_allowed">অবস্থা: অনুমোদিত</string>
+    <string name="status_not_allowed">অবস্থা: অনুমোদিত নয়</string>
+    <string name="original">আসল</string>
+    <string name="group">গ্রুপ</string>
+    <string name="duplicates_count">%1$d ডুপ্লিকেট</string>
+    <string name="files_selected">%1$d ফাইল নির্বাচিত</string>
+    <string name="total_size">মোট: %1$s</string>
+    <string name="tap_scan_to_find">ডুপ্লিকেট খুঁজে পেতে স্ক্যানে আলতো চাপুন</string>
+    <string name="duplicate_scan">ডুপ্লিকেট স্ক্যান</string>
+    <string name="storage_used">স্টোরেজ ব্যবহৃত</string>
+    <string name="of_total">মোট %1$s এর মধ্যে</string>
+    <string name="free_space">ফ্রি স্পেস</string>
+    <string name="duplicates">ডুপ্লিকেট</string>
+    <string name="can_save">সাশ্রয় করা যাবে</string>
+    <string name="categories">বিভাগ</string>
+    <string name="files_count">%1$d ফাইল</string>
+    <string name="items_size_format">%1$d আইটেম | %2$s</string>
+    <string name="apk_scan">APK স্ক্যান</string>
+    <string name="audio_scan">অডিও স্ক্যান</string>
+    <string name="photo_scan">ফটো স্ক্যান</string>
+    <string name="doc_scan">ডকুমেন্ট স্ক্যান</string>
+    <string name="others_scan">অন্যান্য স্ক্যান</string>
+    <string name="contact_scan">কন্টাক্ট স্ক্যান</string>
+    <string name="all_files_scan">সব ফাইল স্ক্যান</string>
+    <string name="videos_scan">ভিডিও স্ক্যান</string>
+    <string name="version_text">ভার্সন %1$s</string>
+
+    <!-- Categories -->
+    <string name="photos">ফটো</string>
+    <string name="videos">ভিডিও</string>
+    <string name="audio">অডিও</string>
+    <string name="documents">ডকুমেন্ট</string>
+    <string name="apks">APK গুলি</string>
+    <string name="others">অন্যান্য</string>
+    <string name="contacts">কন্টাক্ট</string>
+    <string name="all_files">সব ফাইল</string>
+
+    <!-- Settings -->
+    <string name="settings">সেটিংস</string>
+    <string name="notifications">নোটিফিকেশন</string>
+    <string name="notification_desc">অবস্থা: অনুমোদিত নয়</string>
+    <string name="all_files_access">সব ফাইল অ্যাক্সেস</string>
+    <string name="file_access_desc">অবস্থা: অনুমোদিত নয়</string>
+    <string name="language">ভাষা</string>
+    <string name="select_language">ভাষা নির্বাচন করুন</string>
+    <string name="privacy_policy">গোপনীয়তা নীতি</string>
+    <string name="privacy_desc">কোনো ডেটা সার্ভারে আপলোড করা হয় না</string>
+    <string name="about_app">অ্যাপ সম্পর্কে</string>
+    <string name="about_desc">ভার্সন এবং ডেভেলপার তথ্য</string>
+    <string name="rate_app">অ্যাপ রেট করুন</string>
+    <string name="rate_desc">প্লে স্টোর খুলুন</string>
+    <string name="share_app">অ্যাপ শেয়ার করুন</string>
+    <string name="share_desc">বন্ধুদের সাথে শেয়ার করুন</string>
+    <string name="contact_support">সাপোর্টের সাথে যোগাযোগ করুন</string>
+    <string name="support_desc">সাহায্যের জন্য ইমেল পাঠান</string>
+
+    <!-- Dialogs -->
+    <string name="delete_dialog_title">ডুপ্লিকেট মুছে ফেলবেন?</string>
+    <string name="delete_dialog_message">%1$d ডুপ্লিকেট ফাইল মুছে ফেলুন (%2$s)</string>
+    <string name="delete_dialog_warning">আসল ফাইলগুলি নিরাপদ থাকবে।</string>
+    <string name="about_version">ভার্সন %1$s</string>
+    <string name="developed_by">দ্বারা উন্নত</string>
+
+    <!-- Scan Screens -->
+    <string name="scanning_photos">ফটো স্ক্যান হচ্ছে</string>
+    <string name="photos_scanned">%1$d ফটো স্ক্যান করা হয়েছে</string>
+    <string name="scanning_audio">অডিও স্ক্যান হচ্ছে</string>
+    <string name="audio_scanned">%1$d অডিও স্ক্যান করা হয়েছে</string>
+    <string name="scanning_docs">ডকুমেন্ট স্ক্যান হচ্ছে</string>
+    <string name="docs_scanned">%1$d ডকুমেন্ট স্ক্যান করা হয়েছে</string>
+    <string name="scanning_all">সব ফাইল স্ক্যান হচ্ছে</string>
+    <string name="all_scanned">%1$d ফাইল স্ক্যান করা হয়েছে</string>
+    <string name="scanning_contacts">কন্টাক্ট স্ক্যান হচ্ছে</string>
+    <string name="contacts_scanned">%1$d কন্টাক্ট স্ক্যান করা হয়েছে</string>
+    <string name="scanning_apks">APK গুলি স্ক্যান হচ্ছে</string>
+    <string name="apks_scanned">%1$d APK স্ক্যান করা হয়েছে</string>
+    <string name="scanning_others">অন্যান্য স্ক্যান হচ্ছে</string>
+    <string name="others_scanned">%1$d ফাইল স্ক্যান করা হয়েছে</string>
+    <string name="scanning_videos">ভিডিও স্ক্যান হচ্ছে</string>
+    <string name="searching_duplicates">ডুপ্লিকেট খোঁজা হচ্ছে...</string>
+    <string name="videos_scanned">%1$d ভিডিও স্ক্যান করা হয়েছে</string>
+    <string name="no_duplicates_found">কোনো ডুপ্লিকেট পাওয়া যায়নি</string>
+</resources>

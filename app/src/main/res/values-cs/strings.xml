@@ -1,0 +1,99 @@
+<resources>
+    <string name="app_name">Duplicate Photo - File Remover</string>
+    <string name="developer_name">ompethani07</string>
+    <string name="support_email">duplicatesupportremover@gmail.com</string>
+    <string name="share_app_text">Podívejte se na tuto aplikaci: %1$s</string>
+    <string name="share_app_link">https://play.google.com/store/apps/details?id=%1$s</string>
+
+    <!-- General -->
+    <string name="scan">Skenovat</string>
+    <string name="ram_used">Využitá RAM</string>
+    <string name="all_scan">Skenovat vše</string>
+    <string name="delete">Smazat</string>
+    <string name="cancel">Zrušit</string>
+    <string name="close">Zavřít</string>
+    <string name="back">Zpět</string>
+    <string name="select_all">Vybrat vše</string>
+    <string name="status_allowed">Stav: Povoleno</string>
+    <string name="status_not_allowed">Stav: Nepovoleno</string>
+    <string name="original">ORIGINÁL</string>
+    <string name="group">Skupina</string>
+    <string name="duplicates_count">%1$d duplikátů</string>
+    <string name="files_selected">%1$d souborů vybráno</string>
+    <string name="total_size">Celkem: %1$s</string>
+    <string name="tap_scan_to_find">Klepnutím na Skenovat vyhledáte duplikáty</string>
+    <string name="duplicate_scan">Skenování duplikátů</string>
+    <string name="storage_used">Využité úložiště</string>
+    <string name="of_total">z celkových %1$s</string>
+    <string name="free_space">Volné místo</string>
+    <string name="duplicates">Duplikáty</string>
+    <string name="can_save">Lze ušetřit</string>
+    <string name="categories">Kategorie</string>
+    <string name="files_count">%1$d souborů</string>
+    <string name="items_size_format">%1$d položek | %2$s</string>
+    <string name="apk_scan">Skenování APK</string>
+    <string name="audio_scan">Skenování audia</string>
+    <string name="photo_scan">Skenování fotografií</string>
+    <string name="doc_scan">Skenování dokumentů</string>
+    <string name="others_scan">Ostatní skenování</string>
+    <string name="contact_scan">Skenování kontaktů</string>
+    <string name="all_files_scan">Skenování všech souborů</string>
+    <string name="videos_scan">Skenování videí</string>
+    <string name="version_text">Verze %1$s</string>
+
+    <!-- Categories -->
+    <string name="photos">Fotografie</string>
+    <string name="videos">Videa</string>
+    <string name="audio">Audio</string>
+    <string name="documents">Dokumenty</string>
+    <string name="apks">APK soubory</string>
+    <string name="others">Ostatní</string>
+    <string name="contacts">Kontakty</string>
+    <string name="all_files">Všechny soubory</string>
+
+    <!-- Settings -->
+    <string name="settings">Nastavení</string>
+    <string name="notifications">Oznámení</string>
+    <string name="notification_desc">Stav: Nepovoleno</string>
+    <string name="all_files_access">Přístup ke všem souborům</string>
+    <string name="file_access_desc">Stav: Nepovoleno</string>
+    <string name="language">Jazyk</string>
+    <string name="select_language">Vybrat jazyk</string>
+    <string name="privacy_policy">Zásady ochrany osobních údajů</string>
+    <string name="privacy_desc">Žádná data se nenahrávají na žádný server</string>
+    <string name="about_app">O aplikaci</string>
+    <string name="about_desc">Informace o verzi a vývojáři</string>
+    <string name="rate_app">Ohodnotit aplikaci</string>
+    <string name="rate_desc">Otevřít Play Store</string>
+    <string name="share_app">Sdílet aplikaci</string>
+    <string name="share_desc">Sdílet s přáteli</string>
+    <string name="contact_support">Kontaktovat podporu</string>
+    <string name="support_desc">Odeslat e-mail s žádostí o pomoc</string>
+
+    <!-- Dialogs -->
+    <string name="delete_dialog_title">Smazat duplikáty?</string>
+    <string name="delete_dialog_message">Smazat %1$d duplicitních souborů (%2$s)</string>
+    <string name="delete_dialog_warning">Originální soubory budou bezpečně uchovány.</string>
+    <string name="about_version">Verze %1$s</string>
+    <string name="developed_by">Vyvinuto</string>
+
+    <!-- Scan Screens -->
+    <string name="scanning_photos">Skenování fotografií</string>
+    <string name="photos_scanned">Naskenováno fotografií: %1$d</string>
+    <string name="scanning_audio">Skenování audia</string>
+    <string name="audio_scanned">Naskenováno audio souborů: %1$d</string>
+    <string name="scanning_docs">Skenování dokumentů</string>
+    <string name="docs_scanned">Naskenováno dokumentů: %1$d</string>
+    <string name="scanning_all">Skenování všech souborů</string>
+    <string name="all_scanned">Naskenováno souborů: %1$d</string>
+    <string name="scanning_contacts">Skenování kontaktů</string>
+    <string name="contacts_scanned">Naskenováno kontaktů: %1$d</string>
+    <string name="scanning_apks">Skenování APK souborů</string>
+    <string name="apks_scanned">Naskenováno APK souborů: %1$d</string>
+    <string name="scanning_others">Skenování ostatních souborů</string>
+    <string name="others_scanned">Naskenováno souborů: %1$d</string>
+    <string name="scanning_videos">Skenování videí</string>
+    <string name="searching_duplicates">Vyhledávání duplikátů...</string>
+    <string name="videos_scanned">Naskenováno videí: %1$d</string>
+    <string name="no_duplicates_found">Nebyly nalezeny žádné duplikáty</string>
+</resources>

@@ -1,0 +1,58 @@
+# Android Gradle
+.gradle/
+**/build/
+build/
+captures/
+.externalNativeBuild
+.cxx
+**/local.properties
+local.properties
+proguard-rules.pro.bak
+
+# Android Studio
+.idea/
+*.iml
+.idea/modules.xml
+.idea/workspace.xml
+.idea/navEditor.xml
+.idea/assetWizardSettings.xml
+captures/
+
+# Sensitive Files (Keystore, Keys & Certificates)
+*.jks
+*.keystore
+*.p12
+*.pem
+keystore_info.txt
+**/google-services.json
+google-services.json
+
+# API Keys and Secrets (General)
+secrets.xml
+apikey.xml
+keys.properties
+*/secrets.xml
+*/apikey.xml
+*/keys.properties
+firebase-debug.log
+
+# Build Outputs (Safety first)
+*.apk
+*.aab
+app/build/
+release/
+output.json
+
+# Signing & Properties
+signing.properties
+local.properties
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Others
+*.log
+.temp/
+.tmp/
+.gradle/

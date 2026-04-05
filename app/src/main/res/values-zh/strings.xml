@@ -1,0 +1,97 @@
+<resources>
+    <string name="app_name">Duplicate Photo - File Remover</string>
+    <string name="developer_name">ompethani07</string>
+    <string name="support_email">duplicatesupportremover@gmail.com</string>
+    <string name="share_app_text">查看此應用程序: %1$s</string>
+    <string name="share_app_link">https://play.google.com/store/apps/details?id=%1$s</string>
+
+    <!-- General -->
+    <string name="scan">掃描</string>
+    <string name="delete">刪除</string>
+    <string name="cancel">取消</string>
+    <string name="close">關閉</string>
+    <string name="back">返回</string>
+    <string name="select_all">全選</string>
+    <string name="status_allowed">狀態：已允許</string>
+    <string name="status_not_allowed">狀態：不允許</string>
+    <string name="original">原文件</string>
+    <string name="group">分組</string>
+    <string name="duplicates_count">%1$d 個重複項</string>
+    <string name="files_selected">已選擇 %1$d 個文件</string>
+    <string name="total_size">總計：%1$s</string>
+    <string name="tap_scan_to_find">點擊掃描以查找重複項</string>
+    <string name="duplicate_scan">重複項掃描</string>
+    <string name="storage_used">已用存儲</string>
+    <string name="of_total">總共 %1$s</string>
+    <string name="free_space">可用空間</string>
+    <string name="duplicates">重複文件</string>
+    <string name="can_save">可節省</string>
+    <string name="categories">分類</string>
+    <string name="files_count">%1$d 個文件</string>
+    <string name="items_size_format">%1$d 個項目 | %2$s</string>
+    <string name="apk_scan">APK 掃描</string>
+    <string name="audio_scan">音頻掃描</string>
+    <string name="photo_scan">圖片掃描</string>
+    <string name="doc_scan">文檔掃描</string>
+    <string name="others_scan">其他掃描</string>
+    <string name="contact_scan">聯繫人掃描</string>
+    <string name="all_files_scan">全文件掃描</string>
+    <string name="videos_scan">視頻掃描</string>
+    <string name="version_text">版本 %1$s</string>
+
+    <!-- Categories -->
+    <string name="photos">圖片</string>
+    <string name="videos">視頻</string>
+    <string name="audio">音頻</string>
+    <string name="documents">文檔</string>
+    <string name="apks">APK</string>
+    <string name="others">其他</string>
+    <string name="contacts">聯繫人</string>
+    <string name="all_files">所有文件</string>
+
+    <!-- Settings -->
+    <string name="settings">設置</string>
+    <string name="notifications">通知</string>
+    <string name="notification_desc">狀態：不允許</string>
+    <string name="all_files_access">所有文件訪問權限</string>
+    <string name="file_access_desc">狀態：不允許</string>
+    <string name="language">語言</string>
+    <string name="select_language">選擇語言</string>
+    <string name="privacy_policy">隱私政策</string>
+    <string name="privacy_desc">數據不會上傳到任何服務器</string>
+    <string name="about_app">關於應用</string>
+    <string name="about_desc">版本和開發者信息</string>
+    <string name="rate_app">給應用評分</string>
+    <string name="rate_desc">打開 Play 商店</string>
+    <string name="share_app">分享應用</string>
+    <string name="share_desc">與朋友分享</string>
+    <string name="contact_support">聯繫支持</string>
+    <string name="support_desc">發送郵件尋求幫助</string>
+
+    <!-- Dialogs -->
+    <string name="delete_dialog_title">刪除重複項？</string>
+    <string name="delete_dialog_message">刪除 %1$d 個重複文件 (%2$s)？</string>
+    <string name="delete_dialog_warning">原始文件將安全保留。</string>
+    <string name="about_version">版本 %1$s</string>
+    <string name="developed_by">開發者：</string>
+
+    <!-- Scan Screens -->
+    <string name="scanning_photos">正在掃描圖片</string>
+    <string name="photos_scanned">已掃描 %1$d 張圖片</string>
+    <string name="scanning_audio">正在掃描音頻</string>
+    <string name="audio_scanned">已掃描 %1$d 個音頻文件</string>
+    <string name="scanning_docs">正在掃描文檔</string>
+    <string name="docs_scanned">已掃描 %1$d 個文檔</string>
+    <string name="scanning_all">正在掃描所有文件</string>
+    <string name="all_scanned">已掃描 %1$d 個文件</string>
+    <string name="scanning_contacts">正在掃描聯繫人</string>
+    <string name="contacts_scanned">已掃描 %1$d 個聯繫人</string>
+    <string name="scanning_apks">正在掃描 APK</string>
+    <string name="apks_scanned">已掃描 %1$d 個 APK</string>
+    <string name="scanning_others">正在掃描其他文件</string>
+    <string name="others_scanned">已掃描 %1$d 個文件</string>
+    <string name="scanning_videos">正在掃描視頻</string>
+    <string name="searching_duplicates">正在查找重複項...</string>
+    <string name="videos_scanned">已掃描 %1$d 個視頻</string>
+    <string name="no_duplicates_found">未發現重複項</string>
+</resources>

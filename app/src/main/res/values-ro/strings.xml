@@ -1,0 +1,99 @@
+<resources>
+    <string name="app_name">Duplicate Photo - File Remover</string>
+    <string name="developer_name">ompethani07</string>
+    <string name="support_email">duplicatesupportremover@gmail.com</string>
+    <string name="share_app_text">Vedeți această aplicație: %1$s</string>
+    <string name="share_app_link">https://play.google.com/store/apps/details?id=%1$s</string>
+
+    <!-- General -->
+    <string name="scan">Scanare</string>
+    <string name="ram_used">RAM utilizat</string>
+    <string name="all_scan">Scanează tot</string>
+    <string name="delete">Ștergere</string>
+    <string name="cancel">Anulare</string>
+    <string name="close">Închide</string>
+    <string name="back">Înapoi</string>
+    <string name="select_all">Selectează tot</string>
+    <string name="status_allowed">Stare: Permis</string>
+    <string name="status_not_allowed">Stare: Nepermis</string>
+    <string name="original">ORIGINAL</string>
+    <string name="group">Grup</string>
+    <string name="duplicates_count">%1$d duplicate</string>
+    <string name="files_selected">%1$d fișiere selectate</string>
+    <string name="total_size">Total: %1$s</string>
+    <string name="tap_scan_to_find">Atingeți Scanare pentru a găsi duplicate</string>
+    <string name="duplicate_scan">Scanare duplicate</string>
+    <string name="storage_used">Spațiu utilizat</string>
+    <string name="of_total">din %1$s total</string>
+    <string name="free_space">Spațiu liber</string>
+    <string name="duplicates">Duplicate</string>
+    <string name="can_save">Se poate economisi</string>
+    <string name="categories">Categorii</string>
+    <string name="files_count">%1$d fișiere</string>
+    <string name="items_size_format">%1$d elemente | %2$s</string>
+    <string name="apk_scan">Scanare APK</string>
+    <string name="audio_scan">Scanare audio</string>
+    <string name="photo_scan">Scanare foto</string>
+    <string name="doc_scan">Scanare documente</string>
+    <string name="others_scan">Altă scanare</string>
+    <string name="contact_scan">Scanare contacte</string>
+    <string name="all_files_scan">Scanare toate fișierele</string>
+    <string name="videos_scan">Scanare video</string>
+    <string name="version_text">Versiune %1$s</string>
+
+    <!-- Categories -->
+    <string name="photos">Fotografii</string>
+    <string name="videos">Videoclipuri</string>
+    <string name="audio">Audio</string>
+    <string name="documents">Documente</string>
+    <string name="apks">APK-uri</string>
+    <string name="others">Altele</string>
+    <string name="contacts">Contacte</string>
+    <string name="all_files">Toate fișierele</string>
+
+    <!-- Settings -->
+    <string name="settings">Setări</string>
+    <string name="notifications">Notificări</string>
+    <string name="notification_desc">Stare: Nepermis</string>
+    <string name="all_files_access">Acces la toate fișierele</string>
+    <string name="file_access_desc">Stare: Nepermis</string>
+    <string name="language">Limbă</string>
+    <string name="select_language">Selectare limbă</string>
+    <string name="privacy_policy">Politică de confidențialitate</string>
+    <string name="privacy_desc">Nicio dată nu este încărcată pe niciun server</string>
+    <string name="about_app">Despre aplicație</string>
+    <string name="about_desc">Info versiune și dezvoltator</string>
+    <string name="rate_app">Evaluează aplicația</string>
+    <string name="rate_desc">Deschide Play Store</string>
+    <string name="share_app">Trimite aplicația</string>
+    <string name="share_desc">Trimite prietenilor</string>
+    <string name="contact_support">Contactează suportul</string>
+    <string name="support_desc">Trimite email pentru ajutor</string>
+
+    <!-- Dialogs -->
+    <string name="delete_dialog_title">Ștergeți duplicatele?</string>
+    <string name="delete_dialog_message">Ștergeți %1$d fișiere duplicate (%2$s)</string>
+    <string name="delete_dialog_warning">Fișierele originale vor fi păstrate în siguranță.</string>
+    <string name="about_version">Versiune %1$s</string>
+    <string name="developed_by">Dezvoltat de</string>
+
+    <!-- Scan Screens -->
+    <string name="scanning_photos">Se scanează fotografiile</string>
+    <string name="photos_scanned">%1$d fotografii scanate</string>
+    <string name="scanning_audio">Se scanează audio</string>
+    <string name="audio_scanned">%1$d fișiere audio scanate</string>
+    <string name="scanning_docs">Se scanează documentele</string>
+    <string name="docs_scanned">%1$d documente scanate</string>
+    <string name="scanning_all">Se scanează toate fișierele</string>
+    <string name="all_scanned">%1$d fișiere scanate</string>
+    <string name="scanning_contacts">Se scanează contactele</string>
+    <string name="contacts_scanned">%1$d contacte scanate</string>
+    <string name="scanning_apks">Se scanează APK-urile</string>
+    <string name="apks_scanned">%1$d APK-uri scanate</string>
+    <string name="scanning_others">Se scanează alte fișiere</string>
+    <string name="others_scanned">%1$d fișiere scanate</string>
+    <string name="scanning_videos">Se scanează videoclipurile</string>
+    <string name="searching_duplicates">Se caută duplicate...</string>
+    <string name="videos_scanned">%1$d videoclipuri scanate</string>
+    <string name="no_duplicates_found">Nu s-au găsit duplicate</string>
+</resources>

@@ -1,0 +1,99 @@
+<resources>
+    <string name="app_name">ડુપ્લિકેટ ફોટો - ફાઇલ રિમૂવર</string>
+    <string name="developer_name">ompethani07</string>
+    <string name="support_email">duplicatesupportremover@gmail.com</string>
+    <string name="share_app_text">આ એપ જુઓ: %1$s</string>
+    <string name="share_app_link">https://play.google.com/store/apps/details?id=%1$s</string>
+
+    <!-- General -->
+    <string name="ram_used">RAM વપરાશ</string>
+    <string name="all_scan">બધું સ્કેન</string>
+    <string name="scan">સ્કેન</string>
+    <string name="of_total">%1$s કુલ માંથી</string>
+    <string name="duplicate_scan">ડુપ્લિકેટ સ્કેન</string>
+    <string name="storage_used">વપરાયેલ સ્ટોરેજ</string>
+    <string name="delete">ડિલીટ</string>
+    <string name="cancel">રદ કરો</string>
+    <string name="close">બંધ કરો</string>
+    <string name="back">પીછે</string>
+    <string name="select_all">બધું પસંદ કરો</string>
+    <string name="status_allowed">સ્થિતિ: મંજૂરી છે</string>
+    <string name="status_not_allowed">સ્થિતિ: મંજૂરી નથી</string>
+    <string name="original">મૂળ</string>
+    <string name="group">જૂથ</string>
+    <string name="duplicates_count">%1$d ડુપ્લિકેટ</string>
+    <string name="files_selected">%1$d ફાઇલો પસંદ કરી</string>
+    <string name="total_size">કુલ: %1$s</string>
+    <string name="tap_scan_to_find">ડુપ્લિકેટ શોધવા માટે સ્કેન પર ટેપ કરો</string>
+    <string name="free_space">ખાલી જગ્યા</string>
+    <string name="duplicates">ડુપ્લિકેટ</string>
+    <string name="can_save">બચત થઈ શકે છે</string>
+    <string name="categories">શ્રેણીઓ</string>
+    <string name="files_count">%1$d ફાઇલો</string>
+    <string name="items_size_format">%1$d આઇટમ | %2$s</string>
+    <string name="apk_scan">APK સ્કેન</string>
+    <string name="audio_scan">ઓડિયો સ્કેન</string>
+    <string name="photo_scan">ફોટો સ્કેન</string>
+    <string name="doc_scan">દસ્તાવેજ સ્કેન</string>
+    <string name="others_scan">અન્ય સ્કેન</string>
+    <string name="contact_scan">સંપર્ક સ્કેન</string>
+    <string name="all_files_scan">બધી ફાઇલ સ્કેન</string>
+    <string name="videos_scan">વીડિયો સ્કેન</string>
+    <string name="version_text">વર્ઝન %1$s</string>
+
+    <!-- Categories -->
+    <string name="photos">ફોટા</string>
+    <string name="videos">વીડિયો</string>
+    <string name="audio">ઓડિયો</string>
+    <string name="documents">દસ્તાવેજો</string>
+    <string name="apks">APK</string>
+    <string name="others">અન્ય</string>
+    <string name="contacts">સંપર્ક</string>
+    <string name="all_files">બધી ફાઇલો</string>
+
+    <!-- Settings -->
+    <string name="settings">સેટિંગ્સ</string>
+    <string name="notifications">સૂચનાઓ</string>
+    <string name="notification_desc">સ્થિતિ: મંજૂરી નથી</string>
+    <string name="all_files_access">બધી ફાઇલોની ઍક્સેસ</string>
+    <string name="file_access_desc">સ્થિતિ: મંજૂરી નથી</string>
+    <string name="language">ભાષા</string>
+    <string name="select_language">ભાષા પસંદ કરો</string>
+    <string name="privacy_policy">ગોપનીયતા નીતિ</string>
+    <string name="privacy_desc">કોઈપણ ડેટા સર્વર પર અપલોડ કરવામાં આવતો નથી</string>
+    <string name="about_app">એપ વિશે</string>
+    <string name="about_desc">વર્ઝન અને ડેવલપર માહિતી</string>
+    <string name="rate_app">એપ રેટ કરો</string>
+    <string name="rate_desc">પ્લે સ્ટોર ખોલો</string>
+    <string name="share_app">એપ શેર કરો</string>
+    <string name="share_desc">મિત્રો સાથે શેર કરો</string>
+    <string name="contact_support">સપોર્ટનો સંપર્ક કરો</string>
+    <string name="support_desc">મદદ માટે ઇમેઇલ મોકલો</string>
+
+    <!-- Dialogs -->
+    <string name="delete_dialog_title">ડુપ્લિકેટ ડિલીટ કરવા?</string>
+    <string name="delete_dialog_message">%1$d ડુપ્લિકેટ ફાઇલો (%2$s) ડિલીટ કરવી?</string>
+    <string name="delete_dialog_warning">મૂળ ફાઇલો સુરક્ષિત રહેશે.</string>
+    <string name="about_version">વર્ઝન %1$s</string>
+    <string name="developed_by">દ્વારા વિકસિત</string>
+
+    <!-- Scan Screens -->
+    <string name="scanning_photos">ફોટા સ્કેન થઈ રહ્યા છે</string>
+    <string name="photos_scanned">%1$d ફોટા સ્કેન થયા</string>
+    <string name="scanning_audio">ઓડિયો સ્કેન થઈ રહ્યો છે</string>
+    <string name="audio_scanned">%1$d ઓડિયો સ્કેન થયા</string>
+    <string name="scanning_docs">દસ્તાવેજો સ્કેન થઈ રહ્યા છે</string>
+    <string name="docs_scanned">%1$d દસ્તાવેજો સ્કેન થયા</string>
+    <string name="scanning_all">બધી ફાઇલો સ્કેન થઈ રહી છે</string>
+    <string name="all_scanned">%1$d ફાઇલો સ્કેન થઈ</string>
+    <string name="scanning_contacts">સંપર્ક સ્કેન થઈ રહ્યા છે</string>
+    <string name="contacts_scanned">%1$d સંપર્ક સ્કેન થયા</string>
+    <string name="scanning_apks">APK સ્કેન થઈ રહ્યા છે</string>
+    <string name="apks_scanned">%1$d APK સ્કેન થયા</string>
+    <string name="scanning_others">અન્ય ફાઇલો સ્કેન થઈ રહી છે</string>
+    <string name="others_scanned">%1$d ફાઇલો સ્કેન થઈ</string>
+    <string name="scanning_videos">વીડિયો સ્કેન થઈ રહ્યા છે</string>
+    <string name="searching_duplicates">ડુપ્લિકેટ શોધી રહ્યા છે...</string>
+    <string name="videos_scanned">%1$d વીડિયો સ્કેન થયા</string>
+    <string name="no_duplicates_found">કોઈ ડુપ્લિકેટ મળ્યા નથી</string>
+</resources>

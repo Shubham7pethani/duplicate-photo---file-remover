@@ -1,0 +1,99 @@
+<resources>
+    <string name="app_name">Duplicate Photo - File Remover</string>
+    <string name="developer_name">ompethani07</string>
+    <string name="support_email">duplicatesupportremover@gmail.com</string>
+    <string name="share_app_text">Tingnan ang app na ito: %1$s</string>
+    <string name="share_app_link">https://play.google.com/store/apps/details?id=%1$s</string>
+
+    <!-- General -->
+    <string name="scan">I-scan</string>
+    <string name="ram_used">RAM na ginamit</string>
+    <string name="all_scan">I-scan Lahat</string>
+    <string name="delete">Burahin</string>
+    <string name="cancel">Kanselahin</string>
+    <string name="close">Isara</string>
+    <string name="back">Bumalik</string>
+    <string name="select_all">Piliin Lahat</string>
+    <string name="status_allowed">Katayuan: Pinayagan</string>
+    <string name="status_not_allowed">Katayuan: Hindi pinayagan</string>
+    <string name="original">ORIHINAL</string>
+    <string name="group">Grupong</string>
+    <string name="duplicates_count">%1$d mga duplicate</string>
+    <string name="files_selected">%1$d mga file na napili</string>
+    <string name="total_size">Kabuuan: %1$s</string>
+    <string name="tap_scan_to_find">I-tap ang Scan upang makahanap ng mga duplicate</string>
+    <string name="duplicate_scan">Duplicate Scan</string>
+    <string name="storage_used">Storage na Ginamit</string>
+    <string name="of_total">ng %1$s kabuuan</string>
+    <string name="free_space">Libreng Space</string>
+    <string name="duplicates">Mga Duplicate</string>
+    <string name="can_save">Maaaring Makatipid</string>
+    <string name="categories">Mga Kategorya</string>
+    <string name="files_count">%1$d Mga File</string>
+    <string name="items_size_format">%1$d Mga Item | %2$s</string>
+    <string name="apk_scan">APK Scan</string>
+    <string name="audio_scan">Audio Scan</string>
+    <string name="photo_scan">Photo Scan</string>
+    <string name="doc_scan">Document Scan</string>
+    <string name="others_scan">Iba pang Scan</string>
+    <string name="contact_scan">Contact Scan</string>
+    <string name="all_files_scan">I-scan Lahat ng File</string>
+    <string name="videos_scan">Video Scan</string>
+    <string name="version_text">Bersyon %1$s</string>
+
+    <!-- Categories -->
+    <string name="photos">Mga Larawan</string>
+    <string name="videos">Mga Video</string>
+    <string name="audio">Audio</string>
+    <string name="documents">Mga Dokumento</string>
+    <string name="apks">Mga APK</string>
+    <string name="others">Iba pa</string>
+    <string name="contacts">Mga Contact</string>
+    <string name="all_files">Lahat ng File</string>
+
+    <!-- Settings -->
+    <string name="settings">Mga Setting</string>
+    <string name="notifications">Mga Notification</string>
+    <string name="notification_desc">Katayuan: Hindi pinayagan</string>
+    <string name="all_files_access">Access sa Lahat ng File</string>
+    <string name="file_access_desc">Katayuan: Hindi pinayagan</string>
+    <string name="language">Wika</string>
+    <string name="select_language">Pumili ng Wika</string>
+    <string name="privacy_policy">Patakaran sa Privacy</string>
+    <string name="privacy_desc">Walang data na ina-upload sa anumang server</string>
+    <string name="about_app">Tungkol sa App</string>
+    <string name="about_desc">Impormasyon ng bersyon at developer</string>
+    <string name="rate_app">I-rate ang App</string>
+    <string name="rate_desc">Buksan ang Play Store</string>
+    <string name="share_app">Ibahagi ang App</string>
+    <string name="share_desc">Ibahagi sa mga kaibigan</string>
+    <string name="contact_support">Makipag-ugnayan sa Suporta</string>
+    <string name="support_desc">Magpadala ng email para sa tulong</string>
+
+    <!-- Dialogs -->
+    <string name="delete_dialog_title">I-delete ang mga Duplicate?</string>
+    <string name="delete_dialog_message">I-delete ang %1$d mga duplicate na file (%2$s)</string>
+    <string name="delete_dialog_warning">Ang mga orihinal na file ay mananatiling ligtas.</string>
+    <string name="about_version">Bersyon %1$s</string>
+    <string name="developed_by">Binuo ni</string>
+
+    <!-- Scan Screens -->
+    <string name="scanning_photos">Sini-scan ang mga Larawan</string>
+    <string name="photos_scanned">%1$d mga Larawan na Na-scan</string>
+    <string name="scanning_audio">Sini-scan ang Audio</string>
+    <string name="audio_scanned">%1$d Audio na Na-scan</string>
+    <string name="scanning_docs">Sini-scan ang mga Dokumento</string>
+    <string name="docs_scanned">%1$d mga Dokumento na Na-scan</string>
+    <string name="scanning_all">Sini-scan ang Lahat ng File</string>
+    <string name="all_scanned">%1$d mga File na Na-scan</string>
+    <string name="scanning_contacts">Sini-scan ang mga Contact</string>
+    <string name="contacts_scanned">%1$d mga Contact na Na-scan</string>
+    <string name="scanning_apks">Sini-scan ang mga APK</string>
+    <string name="apks_scanned">%1$d mga APK na Na-scan</string>
+    <string name="scanning_others">Sini-scan ang Iba pa</string>
+    <string name="others_scanned">%1$d mga File na Na-scan</string>
+    <string name="scanning_videos">Sini-scan ang mga Video</string>
+    <string name="searching_duplicates">Naghahanap ng mga duplicate...</string>
+    <string name="videos_scanned">%1$d mga Video na Na-scan</string>
+    <string name="no_duplicates_found">Walang nahanap na mga duplicate</string>
+</resources>

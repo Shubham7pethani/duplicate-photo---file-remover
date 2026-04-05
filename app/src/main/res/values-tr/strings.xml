@@ -1,0 +1,98 @@
+<resources>
+    <string name="app_name">Duplicate Photo - File Remover</string>
+    <string name="developer_name">ompethani07</string>
+    <string name="support_email">duplicatesupportremover@gmail.com</string>
+    <string name="share_app_text">Bu uygulamaya göz atın: %1$s</string>
+    <string name="share_app_link">https://play.google.com/store/apps/details?id=%1$s</string>
+
+    <!-- General -->
+    <string name="scan">Tara</string>
+    <string name="delete">Sil</string>
+    <string name="cancel">İptal</string>
+    <string name="close">Kapat</string>
+    <string name="back">Geri</string>
+    <string name="select_all">Tümünü Seç</string>
+    <string name="status_allowed">Durum: İzin verildi</string>
+    <string name="status_not_allowed">Durum: İzin verilmedi</string>
+    <string name="original">ORİJİNAL</string>
+    <string name="group">Grup</string>
+    <string name="duplicates_count">%1$d kopya</string>
+    <string name="files_selected">%1$d dosya seçildi</string>
+    <string name="total_size">Toplam: %1$s</string>
+    <string name="tap_scan_to_find">Kopyaları bulmak için Tara\'ya dokunun</string>
+    <string name="duplicate_scan">Kopya Taraması</string>
+    <string name="storage_used">Kullanılan Depolama</string>
+    <string name="of_total">toplam %1$s içinde</string>
+    <string name="free_space">Boş Alan</string>
+    <string name="duplicates">Kopyalar</string>
+    <string name="can_save">Tasarruf edilebilir</string>
+    <string name="categories">Kategoriler</string>
+    <string name="files_count">%1$d Dosya</string>
+    <string name="ram_used">RAM Kullanıldı</string>
+    <string name="all_scan">Tümünü Tara</string>
+    <string name="apk_scan">APK Taraması</string>
+    <string name="audio_scan">Ses Taraması</string>
+    <string name="photo_scan">Fotoğraf Taraması</string>
+    <string name="doc_scan">Belge Taraması</string>
+    <string name="others_scan">Diğer Taramalar</string>
+    <string name="contact_scan">Kişi Taraması</string>
+    <string name="all_files_scan">Tüm Dosya Taraması</string>
+    <string name="videos_scan">Video Taraması</string>
+    <string name="version_text">Sürüm %1$s</string>
+
+    <!-- Categories -->
+    <string name="photos">Fotoğraflar</string>
+    <string name="videos">Videolar</string>
+    <string name="audio">Ses</string>
+    <string name="documents">Belgeler</string>
+    <string name="apks">APK\'lar</string>
+    <string name="others">Diğerleri</string>
+    <string name="contacts">Kişiler</string>
+    <string name="all_files">Tüm Dosyalar</string>
+
+    <!-- Settings -->
+    <string name="settings">Ayarlar</string>
+    <string name="notifications">Bildirimler</string>
+    <string name="notification_desc">Durum: İzin verilmedi</string>
+    <string name="all_files_access">Tüm Dosyalara Erişim</string>
+    <string name="file_access_desc">Durum: İzin verilmedi</string>
+    <string name="language">Dil</string>
+    <string name="select_language">Dil Seçin</string>
+    <string name="privacy_policy">Gizlilik Politikası</string>
+    <string name="privacy_desc">Hiçbir veri sunucuya yüklenmez</string>
+    <string name="about_app">Uygulama Hakkında</string>
+    <string name="about_desc">Sürüm ve geliştirici bilgisi</string>
+    <string name="rate_app">Uygulamayı Oyla</string>
+    <string name="rate_desc">Play Store\'u Aç</string>
+    <string name="share_app">Uygulamayı Paylaş</string>
+    <string name="share_desc">Arkadaşlarla paylaş</string>
+    <string name="contact_support">Destekle İletişime Geç</string>
+    <string name="support_desc">Yardım için e-posta gönder</string>
+
+    <!-- Dialogs -->
+    <string name="delete_dialog_title">Kopyalar Silinsin mi?</string>
+    <string name="delete_dialog_message">%1$d kopya dosyayı (%2$s) silmek istiyor musunuz?</string>
+    <string name="delete_dialog_warning">Orijinal dosyalar güvenle saklanacaktır.</string>
+    <string name="about_version">Sürüm %1$s</string>
+    <string name="developed_by">Geliştiren:</string>
+
+    <!-- Scan Screens -->
+    <string name="scanning_photos">Fotoğraflar taranıyor</string>
+    <string name="photos_scanned">%1$d fotoğraf tarandı</string>
+    <string name="scanning_audio">Ses taranıyor</string>
+    <string name="audio_scanned">%1$d ses dosyası tarandı</string>
+    <string name="scanning_docs">Belgeler taranıyor</string>
+    <string name="docs_scanned">%1$d belge tarandı</string>
+    <string name="scanning_all">Tüm dosyalar taranıyor</string>
+    <string name="all_scanned">%1$d dosya tarandı</string>
+    <string name="scanning_contacts">Kişiler taranıyor</string>
+    <string name="contacts_scanned">%1$d kişi tarandı</string>
+    <string name="scanning_apks">APK\'lar taranıyor</string>
+    <string name="apks_scanned">%1$d APK tarandı</string>
+    <string name="scanning_others">Diğer dosyalar taranıyor</string>
+    <string name="others_scanned">%1$d dosya tarandı</string>
+    <string name="scanning_videos">Videolar taranıyor</string>
+    <string name="searching_duplicates">Kopyalar aranıyor...</string>
+    <string name="videos_scanned">%1$d video tarandı</string>
+    <string name="no_duplicates_found">Kopya bulunamadı</string>
+</resources>

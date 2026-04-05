@@ -1,0 +1,99 @@
+<resources>
+    <string name="app_name">Duplicate Photo - File Remover</string>
+    <string name="developer_name">ompethani07</string>
+    <string name="support_email">duplicatesupportremover@gmail.com</string>
+    <string name="share_app_text">Lihat aplikasi ini: %1$s</string>
+    <string name="share_app_link">https://play.google.com/store/apps/details?id=%1$s</string>
+
+    <!-- General -->
+    <string name="scan">Imbas</string>
+    <string name="ram_used">RAM digunakan</string>
+    <string name="all_scan">Imbas Semua</string>
+    <string name="delete">Padam</string>
+    <string name="cancel">Batal</string>
+    <string name="close">Tutup</string>
+    <string name="back">Kembali</string>
+    <string name="select_all">Pilih Semua</string>
+    <string name="status_allowed">Status: Dibenarkan</string>
+    <string name="status_not_allowed">Status: Tidak dibenarkan</string>
+    <string name="original">ASAL</string>
+    <string name="group">Kumpulan</string>
+    <string name="duplicates_count">%1$d duplikasi</string>
+    <string name="files_selected">%1$d fail dipilih</string>
+    <string name="total_size">Jumlah: %1$s</string>
+    <string name="tap_scan_to_find">Ketik Imbas untuk mencari duplikasi</string>
+    <string name="duplicate_scan">Imbasan Duplikasi</string>
+    <string name="storage_used">Storan Digunakan</string>
+    <string name="of_total">daripada jumlah %1$s</string>
+    <string name="free_space">Ruang Kosong</string>
+    <string name="duplicates">Duplikasi</string>
+    <string name="can_save">Boleh Jimat</string>
+    <string name="categories">Kategori</string>
+    <string name="files_count">%1$d Fail</string>
+    <string name="items_size_format">%1$d Item | %2$s</string>
+    <string name="apk_scan">Imbasan APK</string>
+    <string name="audio_scan">Imbasan Audio</string>
+    <string name="photo_scan">Imbasan Foto</string>
+    <string name="doc_scan">Imbasan Dokumen</string>
+    <string name="others_scan">Imbasan Lain</string>
+    <string name="contact_scan">Imbasan Kenalan</string>
+    <string name="all_files_scan">Imbas Semua Fail</string>
+    <string name="videos_scan">Imbasan Video</string>
+    <string name="version_text">Versi %1$s</string>
+
+    <!-- Categories -->
+    <string name="photos">Foto</string>
+    <string name="videos">Video</string>
+    <string name="audio">Audio</string>
+    <string name="documents">Dokumen</string>
+    <string name="apks">APK</string>
+    <string name="others">Lain-lain</string>
+    <string name="contacts">Kenalan</string>
+    <string name="all_files">Semua Fail</string>
+
+    <!-- Settings -->
+    <string name="settings">Tetapan</string>
+    <string name="notifications">Pemberitahuan</string>
+    <string name="notification_desc">Status: Tidak dibenarkan</string>
+    <string name="all_files_access">Akses Semua Fail</string>
+    <string name="file_access_desc">Status: Tidak dibenarkan</string>
+    <string name="language">Bahasa</string>
+    <string name="select_language">Pilih Bahasa</string>
+    <string name="privacy_policy">Dasar Privasi</string>
+    <string name="privacy_desc">Tiada data dimuat naik ke mana-mana pelayan</string>
+    <string name="about_app">Mengenai Aplikasi</string>
+    <string name="about_desc">Maklumat versi dan pembangun</string>
+    <string name="rate_app">Nilaikan Aplikasi</string>
+    <string name="rate_desc">Buka Play Store</string>
+    <string name="share_app">Kongsi Aplikasi</string>
+    <string name="share_desc">Kongsi dengan rakan</string>
+    <string name="contact_support">Hubungi Sokongan</string>
+    <string name="support_desc">Hantar e-mel untuk bantuan</string>
+
+    <!-- Dialogs -->
+    <string name="delete_dialog_title">Padam Duplikasi?</string>
+    <string name="delete_dialog_message">Padam %1$d fail duplikasi (%2$s)</string>
+    <string name="delete_dialog_warning">Fail asal akan disimpan dengan selamat.</string>
+    <string name="about_version">Versi %1$s</string>
+    <string name="developed_by">Dibangunkan oleh</string>
+
+    <!-- Scan Screens -->
+    <string name="scanning_photos">Mengimbas Foto</string>
+    <string name="photos_scanned">%1$d Foto Diimbas</string>
+    <string name="scanning_audio">Mengimbas Audio</string>
+    <string name="audio_scanned">%1$d Audio Diimbas</string>
+    <string name="scanning_docs">Mengimbas Dokumen</string>
+    <string name="docs_scanned">%1$d Dokumen Diimbas</string>
+    <string name="scanning_all">Mengimbas Semua Fail</string>
+    <string name="all_scanned">%1$d Fail Diimbas</string>
+    <string name="scanning_contacts">Mengimbas Kenalan</string>
+    <string name="contacts_scanned">%1$d Kenalan Diimbas</string>
+    <string name="scanning_apks">Mengimbas APK</string>
+    <string name="apks_scanned">%1$d APK Diimbas</string>
+    <string name="scanning_others">Mengimbas Lain-lain</string>
+    <string name="others_scanned">%1$d Fail Diimbas</string>
+    <string name="scanning_videos">Mengimbas Video</string>
+    <string name="searching_duplicates">Mencari duplikasi...</string>
+    <string name="videos_scanned">%1$d Video Diimbas</string>
+    <string name="no_duplicates_found">Tiada duplikasi dijumpai</string>
+</resources>

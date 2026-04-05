@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF">
+    android:background="#FFFFFF"
+    android:fitsSystemWindows="true">
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
@@ -41,7 +42,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="12dp"
-                    android:text="Audio Scan"
+                    android:text="@string/audio_scan"
                     android:textColor="#333333"
                     android:textSize="20sp"
                     android:textStyle="bold"
@@ -74,7 +75,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="32dp"
-                android:text="Scanning Audios"
+                android:text="@string/scanning_audio"
                 android:textColor="#333333"
                 android:textSize="24sp"
                 android:textStyle="bold" />
@@ -83,7 +84,7 @@
                 android:layout_width="280dp"
                 android:layout_height="280dp">
 
-                <com.duplicateremover.app.CircularProgressView
+                <com.duplicateremover07.app.CircularProgressView
                     android:id="@+id/scanProgressCircle"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -103,7 +104,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
-                android:text="Searching for duplicates..."
+                android:text="@string/searching_duplicates"
                 android:textColor="#666666"
                 android:textSize="16sp" />
 
@@ -147,7 +148,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="No duplicates found"
+                android:text="@string/no_duplicates_found"
                 android:textColor="#666666"
                 android:textSize="18sp" />
         </LinearLayout>
@@ -205,7 +206,7 @@
                 android:backgroundTint="#FF5252"
                 android:paddingStart="24dp"
                 android:paddingEnd="24dp"
-                android:text="Delete"
+                android:text="@string/delete"
                 android:textAllCaps="false"
                 android:textColor="#FFFFFF"
                 app:cornerRadius="20dp" />
@@ -215,3 +216,4 @@
     </androidx.cardview.widget.CardView>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
+

@@ -1,0 +1,99 @@
+<resources>
+    <string name="app_name">Duplicate Photo - File Remover</string>
+    <string name="developer_name">ompethani07</string>
+    <string name="support_email">duplicatesupportremover@gmail.com</string>
+    <string name="share_app_text">Δείτε αυτήν την εφαρμογή: %1$s</string>
+    <string name="share_app_link">https://play.google.com/store/apps/details?id=%1$s</string>
+
+    <!-- General -->
+    <string name="scan">Σάρωση</string>
+    <string name="ram_used">RAM σε χρήση</string>
+    <string name="all_scan">Σάρωση όλων</string>
+    <string name="delete">Διαγραφή</string>
+    <string name="cancel">Ακύρωση</string>
+    <string name="close">Κλείσιμο</string>
+    <string name="back">Πίσω</string>
+    <string name="select_all">Επιλογή όλων</string>
+    <string name="status_allowed">Κατάσταση: Επιτρέπεται</string>
+    <string name="status_not_allowed">Κατάσταση: Δεν επιτρέπεται</string>
+    <string name="original">ΠΡΩΤΟΤΥΠΟ</string>
+    <string name="group">Ομάδα</string>
+    <string name="duplicates_count">%1$d διπλότυπα</string>
+    <string name="files_selected">%1$d αρχεία επιλέχθηκαν</string>
+    <string name="total_size">Σύνολο: %1$s</string>
+    <string name="tap_scan_to_find">Πατήστε Σάρωση για εύρεση διπλότυπων</string>
+    <string name="duplicate_scan">Σάρωση διπλότυπων</string>
+    <string name="storage_used">Αποθηκευτικός χώρος σε χρήση</string>
+    <string name="of_total">από %1$s συνολικά</string>
+    <string name="free_space">Ελεύθερος χώρος</string>
+    <string name="duplicates">Διπλότυπα</string>
+    <string name="can_save">Μπορεί να εξοικονομηθεί</string>
+    <string name="categories">Κατηγορίες</string>
+    <string name="files_count">%1$d αρχεία</string>
+    <string name="items_size_format">%1$d στοιχεία | %2$s</string>
+    <string name="apk_scan">Σάρωση APK</string>
+    <string name="audio_scan">Σάρωση ήχου</string>
+    <string name="photo_scan">Σάρωση φωτογραφιών</string>
+    <string name="doc_scan">Σάρωση εγγράφων</string>
+    <string name="others_scan">Άλλη σάρωση</string>
+    <string name="contact_scan">Σάρωση επαφών</string>
+    <string name="all_files_scan">Σάρωση όλων των αρχείων</string>
+    <string name="videos_scan">Σάρωση βίντεο</string>
+    <string name="version_text">Έκδοση %1$s</string>
+
+    <!-- Categories -->
+    <string name="photos">Φωτογραφίες</string>
+    <string name="videos">Βίντεο</string>
+    <string name="audio">Ήχος</string>
+    <string name="documents">Έγγραφα</string>
+    <string name="apks">APKs</string>
+    <string name="others">Άλλα</string>
+    <string name="contacts">Επαφές</string>
+    <string name="all_files">Όλα τα αρχεία</string>
+
+    <!-- Settings -->
+    <string name="settings">Ρυθμίσεις</string>
+    <string name="notifications">Ειδοποιήσεις</string>
+    <string name="notification_desc">Κατάσταση: Δεν επιτρέπεται</string>
+    <string name="all_files_access">Πρόσβαση σε όλα τα αρχεία</string>
+    <string name="file_access_desc">Κατάσταση: Δεν επιτρέπεται</string>
+    <string name="language">Γλώσσα</string>
+    <string name="select_language">Επιλογή γλώσσας</string>
+    <string name="privacy_policy">Πολιτική απορρήτου</string>
+    <string name="privacy_desc">Κανένα δεδομένο δεν ανεβαίνει σε κανέναν διακομιστή</string>
+    <string name="about_app">Σχετικά με την εφαρμογή</string>
+    <string name="about_desc">Πληροφορίες έκδοσης και προγραμματιστή</string>
+    <string name="rate_app">Αξιολόγηση εφαρμογής</string>
+    <string name="rate_desc">Άνοιγμα Play Store</string>
+    <string name="share_app">Κοινοποίηση εφαρμογής</string>
+    <string name="share_desc">Κοινοποίηση με φίλους</string>
+    <string name="contact_support">Επικοινωνία με την υποστήριξη</string>
+    <string name="support_desc">Αποστολή email για βοήθεια</string>
+
+    <!-- Dialogs -->
+    <string name="delete_dialog_title">Διαγραφή διπλότυπων;</string>
+    <string name="delete_dialog_message">Διαγραφή %1$d διπλότυπων αρχείων (%2$s)</string>
+    <string name="delete_dialog_warning">Τα πρωτότυπα αρχεία θα παραμείνουν ασφαλή.</string>
+    <string name="about_version">Έκδοση %1$s</string>
+    <string name="developed_by">Αναπτύχθηκε από</string>
+
+    <!-- Scan Screens -->
+    <string name="scanning_photos">Σάρωση φωτογραφιών</string>
+    <string name="photos_scanned">%1$d φωτογραφίες σαρώθηκαν</string>
+    <string name="scanning_audio">Σάρωση ήχου</string>
+    <string name="audio_scanned">%1$d αρχεία ήχου σαρώθηκαν</string>
+    <string name="scanning_docs">Σάρωση εγγράφων</string>
+    <string name="docs_scanned">%1$d έγγραφα σαρώθηκαν</string>
+    <string name="scanning_all">Σάρωση όλων των αρχείων</string>
+    <string name="all_scanned">%1$d αρχεία σαρώθηκαν</string>
+    <string name="scanning_contacts">Σάρωση επαφών</string>
+    <string name="contacts_scanned">%1$d επαφές σαρώθηκαν</string>
+    <string name="scanning_apks">Σάρωση APK</string>
+    <string name="apks_scanned">%1$d APK σαρώθηκαν</string>
+    <string name="scanning_others">Σάρωση άλλων αρχείων</string>
+    <string name="others_scanned">%1$d αρχεία σαρώθηκαν</string>
+    <string name="scanning_videos">Σάρωση βίντεο</string>
+    <string name="searching_duplicates">Αναζήτηση για διπλότυπα...</string>
+    <string name="videos_scanned">%1$d βίντεο σαρώθηκαν</string>
+    <string name="no_duplicates_found">Δεν βρέθηκαν διπλότυπα</string>
+</resources>

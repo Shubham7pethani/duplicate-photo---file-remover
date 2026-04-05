@@ -1,0 +1,99 @@
+<resources>
+    <string name="app_name">Duplicate Photo - File Remover</string>
+    <string name="developer_name">ompethani07</string>
+    <string name="support_email">duplicatesupportremover@gmail.com</string>
+    <string name="share_app_text">Xem ứng dụng này: %1$s</string>
+    <string name="share_app_link">https://play.google.com/store/apps/details?id=%1$s</string>
+
+    <!-- General -->
+    <string name="scan">Quét</string>
+    <string name="ram_used">RAM đã dùng</string>
+    <string name="all_scan">Quét tất cả</string>
+    <string name="delete">Xóa</string>
+    <string name="cancel">Hủy</string>
+    <string name="close">Đóng</string>
+    <string name="back">Quay lại</string>
+    <string name="select_all">Chọn tất cả</string>
+    <string name="status_allowed">Trạng thái: Đã cho phép</string>
+    <string name="status_not_allowed">Trạng thái: Chưa cho phép</string>
+    <string name="original">GỐC</string>
+    <string name="group">Nhóm</string>
+    <string name="duplicates_count">%1$d bản trùng lặp</string>
+    <string name="files_selected">Đã chọn %1$d tệp</string>
+    <string name="total_size">Tổng cộng: %1$s</string>
+    <string name="tap_scan_to_find">Nhấn Quét để tìm bản trùng lặp</string>
+    <string name="duplicate_scan">Quét trùng lặp</string>
+    <string name="storage_used">Bộ nhớ đã dùng</string>
+    <string name="of_total">trên tổng số %1$s</string>
+    <string name="free_space">Dung lượng trống</string>
+    <string name="duplicates">Bản trùng lặp</string>
+    <string name="can_save">Có thể tiết kiệm</string>
+    <string name="categories">Danh mục</string>
+    <string name="files_count">%1$d tệp</string>
+    <string name="items_size_format">%1$d mục | %2$s</string>
+    <string name="apk_scan">Quét APK</string>
+    <string name="audio_scan">Quét âm thanh</string>
+    <string name="photo_scan">Quét ảnh</string>
+    <string name="doc_scan">Quét tài liệu</string>
+    <string name="others_scan">Quét khác</string>
+    <string name="contact_scan">Quét danh bạ</string>
+    <string name="all_files_scan">Quét tất cả tệp</string>
+    <string name="videos_scan">Quét video</string>
+    <string name="version_text">Phiên bản %1$s</string>
+
+    <!-- Categories -->
+    <string name="photos">Ảnh</string>
+    <string name="videos">Video</string>
+    <string name="audio">Âm thanh</string>
+    <string name="documents">Tài liệu</string>
+    <string name="apks">APK</string>
+    <string name="others">Khác</string>
+    <string name="contacts">Danh bạ</string>
+    <string name="all_files">Tất cả tệp</string>
+
+    <!-- Settings -->
+    <string name="settings">Cài đặt</string>
+    <string name="notifications">Thông báo</string>
+    <string name="notification_desc">Trạng thái: Chưa cho phép</string>
+    <string name="all_files_access">Truy cập tất cả tệp</string>
+    <string name="file_access_desc">Trạng thái: Chưa cho phép</string>
+    <string name="language">Ngôn ngữ</string>
+    <string name="select_language">Chọn ngôn ngữ</string>
+    <string name="privacy_policy">Chính sách bảo mật</string>
+    <string name="privacy_desc">Không có dữ liệu nào được tải lên máy chủ</string>
+    <string name="about_app">Về ứng dụng</string>
+    <string name="about_desc">Thông tin phiên bản và nhà phát triển</string>
+    <string name="rate_app">Đánh giá ứng dụng</string>
+    <string name="rate_desc">Mở Play Store</string>
+    <string name="share_app">Chia sẻ ứng dụng</string>
+    <string name="share_desc">Chia sẻ với bạn bè</string>
+    <string name="contact_support">Liên hệ hỗ trợ</string>
+    <string name="support_desc">Gửi email để được trợ giúp</string>
+
+    <!-- Dialogs -->
+    <string name="delete_dialog_title">Xóa bản trùng lặp?</string>
+    <string name="delete_dialog_message">Xóa %1$d tệp trùng lặp (%2$s)</string>
+    <string name="delete_dialog_warning">Các tệp gốc sẽ được giữ an toàn.</string>
+    <string name="about_version">Phiên bản %1$s</string>
+    <string name="developed_by">Phát triển bởi</string>
+
+    <!-- Scan Screens -->
+    <string name="scanning_photos">Đang quét ảnh</string>
+    <string name="photos_scanned">Đã quét %1$d ảnh</string>
+    <string name="scanning_audio">Đang quét âm thanh</string>
+    <string name="audio_scanned">Đã quét %1$d tệp âm thanh</string>
+    <string name="scanning_docs">Đang quét tài liệu</string>
+    <string name="docs_scanned">Đã quét %1$d tài liệu</string>
+    <string name="scanning_all">Đang quét tất cả tệp</string>
+    <string name="all_scanned">Đã quét %1$d tệp</string>
+    <string name="scanning_contacts">Đang quét danh bạ</string>
+    <string name="contacts_scanned">Đã quét %1$d danh bạ</string>
+    <string name="scanning_apks">Đang quét APK</string>
+    <string name="apks_scanned">Đã quét %1$d APK</string>
+    <string name="scanning_others">Đang quét tệp khác</string>
+    <string name="others_scanned">Đã quét %1$d tệp</string>
+    <string name="scanning_videos">Đang quét video</string>
+    <string name="searching_duplicates">Đang tìm bản trùng lặp...</string>
+    <string name="videos_scanned">Đã quét %1$d video</string>
+    <string name="no_duplicates_found">Không tìm thấy bản trùng lặp nào</string>
+</resources>

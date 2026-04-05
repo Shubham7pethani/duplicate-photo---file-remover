@@ -1,0 +1,99 @@
+<resources>
+    <string name="app_name">Duplicate Photo - File Remover</string>
+    <string name="developer_name">ompethani07</string>
+    <string name="support_email">duplicatesupportremover@gmail.com</string>
+    <string name="share_app_text">בדוק את האפליקציה הזו: %1$s</string>
+    <string name="share_app_link">https://play.google.com/store/apps/details?id=%1$s</string>
+
+    <!-- General -->
+    <string name="scan">סרוק</string>
+    <string name="ram_used">RAM בשימוש</string>
+    <string name="all_scan">סרוק הכל</string>
+    <string name="delete">מחק</string>
+    <string name="cancel">ביטול</string>
+    <string name="close">סגור</string>
+    <string name="back">חזור</string>
+    <string name="select_all">בחר הכל</string>
+    <string name="status_allowed">סטטוס: מורשה</string>
+    <string name="status_not_allowed">סטטוס: לא מורשה</string>
+    <string name="original">מקורי</string>
+    <string name="group">קבוצה</string>
+    <string name="duplicates_count">%1$d כפילויות</string>
+    <string name="files_selected">%1$d קבצים נבחרו</string>
+    <string name="total_size">סה"כ: %1$s</string>
+    <string name="tap_scan_to_find">הקש על סרוק כדי למצוא כפילויות</string>
+    <string name="duplicate_scan">סריקת כפילויות</string>
+    <string name="storage_used">אחסון בשימוש</string>
+    <string name="of_total">מתוך %1$s סה"כ</string>
+    <string name="free_space">שטח פנוי</string>
+    <string name="duplicates">כפילויות</string>
+    <string name="can_save">ניתן לחסוך</string>
+    <string name="categories">קטגוריות</string>
+    <string name="files_count">%1$d קבצים</string>
+    <string name="items_size_format">%1$d פריטים | %2$s</string>
+    <string name="apk_scan">סריקת APK</string>
+    <string name="audio_scan">סריקת אודיו</string>
+    <string name="photo_scan">סריקת תמונות</string>
+    <string name="doc_scan">סריקת מסמכים</string>
+    <string name="others_scan">סריקה אחרת</string>
+    <string name="contact_scan">סריקת אנשי קשר</string>
+    <string name="all_files_scan">סריקת כל הקבצים</string>
+    <string name="videos_scan">סריקת וידאו</string>
+    <string name="version_text">גרסה %1$s</string>
+
+    <!-- Categories -->
+    <string name="photos">תמונות</string>
+    <string name="videos">סרטונים</string>
+    <string name="audio">אודיו</string>
+    <string name="documents">מסמכים</string>
+    <string name="apks">APKs</string>
+    <string name="others">אחר</string>
+    <string name="contacts">אנשי קשר</string>
+    <string name="all_files">כל הקבצים</string>
+
+    <!-- Settings -->
+    <string name="settings">הגדרות</string>
+    <string name="notifications">התראות</string>
+    <string name="notification_desc">סטטוס: לא מורשה</string>
+    <string name="all_files_access">גישה לכל הקבצים</string>
+    <string name="file_access_desc">סטטוס: לא מורשה</string>
+    <string name="language">שפה</string>
+    <string name="select_language">בחר שפה</string>
+    <string name="privacy_policy">מדיניות פרטיות</string>
+    <string name="privacy_desc">שום נתון לא מועלה לשרת כלשהו</string>
+    <string name="about_app">אודות האפליקציה</string>
+    <string name="about_desc">מידע על הגרסה והמפתח</string>
+    <string name="rate_app">דרג את האפליקציה</string>
+    <string name="rate_desc">פתח את Play Store</string>
+    <string name="share_app">שתף אפליקציה</string>
+    <string name="share_desc">שתף עם חברים</string>
+    <string name="contact_support">צור קשר עם התמיכה</string>
+    <string name="support_desc">שלח אימייל לעזרה</string>
+
+    <!-- Dialogs -->
+    <string name="delete_dialog_title">למחוק כפילויות?</string>
+    <string name="delete_dialog_message">מחק %1$d קבצים כפולים (%2$s)</string>
+    <string name="delete_dialog_warning">קבצי המקור יישמרו בבטחה.</string>
+    <string name="about_version">גרסה %1$s</string>
+    <string name="developed_by">פותח על ידי</string>
+
+    <!-- Scan Screens -->
+    <string name="scanning_photos">סורק תמונות</string>
+    <string name="photos_scanned">%1$d תמונות נסרקו</string>
+    <string name="scanning_audio">סורק אודיו</string>
+    <string name="audio_scanned">%1$d קבצי אודיו נסרקו</string>
+    <string name="scanning_docs">סורק מסמכים</string>
+    <string name="docs_scanned">%1$d מסמכים נסרקו</string>
+    <string name="scanning_all">סורק את כל הקבצים</string>
+    <string name="all_scanned">%1$d קבצים נסרקו</string>
+    <string name="scanning_contacts">סורק אנשי קשר</string>
+    <string name="contacts_scanned">%1$d אנשי קשר נסרקו</string>
+    <string name="scanning_apks">סורק APKs</string>
+    <string name="apks_scanned">%1$d APKs נסרקו</string>
+    <string name="scanning_others">סורק קבצים אחרים</string>
+    <string name="others_scanned">%1$d קבצים נסרקו</string>
+    <string name="scanning_videos">סורק סרטונים</string>
+    <string name="searching_duplicates">מחפש כפילויות...</string>
+    <string name="videos_scanned">%1$d סרטונים נסרקו</string>
+    <string name="no_duplicates_found">לא נמצאו כפילויות</string>
+</resources>

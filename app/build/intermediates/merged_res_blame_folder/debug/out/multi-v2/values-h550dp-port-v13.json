@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.duplicateremover.app-mergeDebugResources-36:/values-h550dp-port-v13/values-h550dp-port-v13.xml",
+            "outputFile": "com.duplicateremover07.app-mergeDebugResources-53:/values-h550dp-port-v13/values-h550dp-port-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ompet\\.gradle\\caches\\transforms-3\\bec7de6f5493746bd6b85bdfc260f89d\\transformed\\material-1.11.0\\res\\values-h550dp-port-v13\\values-h550dp-port-v13.xml",
+                    "source": "C:\\Users\\ompet\\.gradle\\caches\\transforms-3\\343644c32944c3cd8cc952a2a17e8e2d\\transformed\\material-1.11.0\\res\\values-h550dp-port-v13\\values-h550dp-port-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

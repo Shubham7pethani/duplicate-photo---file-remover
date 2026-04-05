@@ -1,0 +1,99 @@
+<resources>
+    <string name="app_name">Duplicate Photo - File Remover</string>
+    <string name="developer_name">ompethani07</string>
+    <string name="support_email">duplicatesupportremover@gmail.com</string>
+    <string name="share_app_text">Bekijk deze app: %1$s</string>
+    <string name="share_app_link">https://play.google.com/store/apps/details?id=%1$s</string>
+
+    <!-- General -->
+    <string name="scan">Scannen</string>
+    <string name="ram_used">RAM gebruikt</string>
+    <string name="all_scan">Alles scannen</string>
+    <string name="delete">Verwijderen</string>
+    <string name="cancel">Annuleren</string>
+    <string name="close">Sluiten</string>
+    <string name="back">Terug</string>
+    <string name="select_all">Alles selecteren</string>
+    <string name="status_allowed">Status: Toegestaan</string>
+    <string name="status_not_allowed">Status: Niet toegestaan</string>
+    <string name="original">ORIGINEEL</string>
+    <string name="group">Groep</string>
+    <string name="duplicates_count">%1$d duplicaten</string>
+    <string name="files_selected">%1$d bestanden geselecteerd</string>
+    <string name="total_size">Totaal: %1$s</string>
+    <string name="tap_scan_to_find">Tik op Scannen om duplicaten te vinden</string>
+    <string name="duplicate_scan">Duplicatenscan</string>
+    <string name="storage_used">Opslag gebruikt</string>
+    <string name="of_total">van %1$s totaal</string>
+    <string name="free_space">Vrije ruimte</string>
+    <string name="duplicates">Duplicaten</string>
+    <string name="can_save">Bespaarbaar</string>
+    <string name="categories">Categorieën</string>
+    <string name="files_count">%1$d bestanden</string>
+    <string name="items_size_format">%1$d items | %2$s</string>
+    <string name="apk_scan">APK-scan</string>
+    <string name="audio_scan">Audioscan</string>
+    <string name="photo_scan">Fotoscan</string>
+    <string name="doc_scan">Documentenscan</string>
+    <string name="others_scan">Andere scan</string>
+    <string name="contact_scan">Contactenscan</string>
+    <string name="all_files_scan">Alles scannen</string>
+    <string name="videos_scan">Videoscan</string>
+    <string name="version_text">Versie %1$s</string>
+
+    <!-- Categories -->
+    <string name="photos">Foto\'s</string>
+    <string name="videos">Video\'s</string>
+    <string name="audio">Audio</string>
+    <string name="documents">Documenten</string>
+    <string name="apks">APK\'s</string>
+    <string name="others">Overige</string>
+    <string name="contacts">Contacten</string>
+    <string name="all_files">Alle bestanden</string>
+
+    <!-- Settings -->
+    <string name="settings">Instellingen</string>
+    <string name="notifications">Meldingen</string>
+    <string name="notification_desc">Status: Niet toegestaan</string>
+    <string name="all_files_access">Toegang tot alle bestanden</string>
+    <string name="file_access_desc">Status: Niet toegestaan</string>
+    <string name="language">Taal</string>
+    <string name="select_language">Taal selecteren</string>
+    <string name="privacy_policy">Privacybeleid</string>
+    <string name="privacy_desc">Er worden geen gegevens geüpload naar een server</string>
+    <string name="about_app">Over de app</string>
+    <string name="about_desc">Versie- en ontwikkelaarsinfo</string>
+    <string name="rate_app">App beoordelen</string>
+    <string name="rate_desc">Open Play Store</string>
+    <string name="share_app">App delen</string>
+    <string name="share_desc">Delen met vrienden</string>
+    <string name="contact_support">Contact opnemen</string>
+    <string name="support_desc">E-mail sturen voor hulp</string>
+
+    <!-- Dialogs -->
+    <string name="delete_dialog_title">Duplicaten verwijderen?</string>
+    <string name="delete_dialog_message">Verwijder %1$d duplicaatbestanden (%2$s)</string>
+    <string name="delete_dialog_warning">Originele bestanden blijven veilig bewaard.</string>
+    <string name="about_version">Versie %1$s</string>
+    <string name="developed_by">Ontwikkeld door</string>
+
+    <!-- Scan Screens -->
+    <string name="scanning_photos">Foto\'s scannen</string>
+    <string name="photos_scanned">%1$d foto\'s gescand</string>
+    <string name="scanning_audio">Audio scannen</string>
+    <string name="audio_scanned">%1$d audiobestanden gescand</string>
+    <string name="scanning_docs">Documenten scannen</string>
+    <string name="docs_scanned">%1$d documenten gescand</string>
+    <string name="scanning_all">Alle bestanden scannen</string>
+    <string name="all_scanned">%1$d bestanden gescand</string>
+    <string name="scanning_contacts">Contacten scannen</string>
+    <string name="contacts_scanned">%1$d contacten gescand</string>
+    <string name="scanning_apks">APK\'s scannen</string>
+    <string name="apks_scanned">%1$d APK\'s gescand</string>
+    <string name="scanning_others">Overige bestanden scannen</string>
+    <string name="others_scanned">%1$d bestanden gescand</string>
+    <string name="scanning_videos">Video\'s scannen</string>
+    <string name="searching_duplicates">Zoeken naar duplicaten...</string>
+    <string name="videos_scanned">%1$d video\'s gescand</string>
+    <string name="no_duplicates_found">Geen duplicaten gevonden</string>
+</resources>

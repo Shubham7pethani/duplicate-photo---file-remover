@@ -1,0 +1,99 @@
+<resources>
+    <string name="app_name">Duplicate Photo - File Remover</string>
+    <string name="developer_name">ompethani07</string>
+    <string name="support_email">duplicatesupportremover@gmail.com</string>
+    <string name="share_app_text">Sjekk ut denne appen: %1$s</string>
+    <string name="share_app_link">https://play.google.com/store/apps/details?id=%1$s</string>
+
+    <!-- General -->
+    <string name="scan">Skann</string>
+    <string name="ram_used">RAM brukt</string>
+    <string name="all_scan">Skann alle</string>
+    <string name="delete">Slett</string>
+    <string name="cancel">Avbryt</string>
+    <string name="close">Lukk</string>
+    <string name="back">Tilbake</string>
+    <string name="select_all">Velg alle</string>
+    <string name="status_allowed">Status: Tillatt</string>
+    <string name="status_not_allowed">Status: Ikke tillatt</string>
+    <string name="original">ORIGINAL</string>
+    <string name="group">Gruppe</string>
+    <string name="duplicates_count">%1$d duplikater</string>
+    <string name="files_selected">%1$d filer valgt</string>
+    <string name="total_size">Totalt: %1$s</string>
+    <string name="tap_scan_to_find">Trykk Skann for å finne duplikater</string>
+    <string name="duplicate_scan">Duplikatskanning</string>
+    <string name="storage_used">Lagring brukt</string>
+    <string name="of_total">av %1$s totalt</string>
+    <string name="free_space">Ledig plass</string>
+    <string name="duplicates">Duplikater</string>
+    <string name="can_save">Kan spare</string>
+    <string name="categories">Kategorier</string>
+    <string name="files_count">%1$d filer</string>
+    <string name="items_size_format">%1$d elementer | %2$s</string>
+    <string name="apk_scan">APK-skanning</string>
+    <string name="audio_scan">Lydskanning</string>
+    <string name="photo_scan">Fotoskanning</string>
+    <string name="doc_scan">Dokumentskanning</string>
+    <string name="others_scan">Annen skanning</string>
+    <string name="contact_scan">Kontaktskanning</string>
+    <string name="all_files_scan">Alle filer-skanning</string>
+    <string name="videos_scan">Videoskanning</string>
+    <string name="version_text">Versjon %1$s</string>
+
+    <!-- Categories -->
+    <string name="photos">Bilder</string>
+    <string name="videos">Videoer</string>
+    <string name="audio">Lyd</string>
+    <string name="documents">Dokumenter</string>
+    <string name="apks">APK-er</string>
+    <string name="others">Annet</string>
+    <string name="contacts">Kontakter</string>
+    <string name="all_files">Alle filer</string>
+
+    <!-- Settings -->
+    <string name="settings">Innstillinger</string>
+    <string name="notifications">Varsler</string>
+    <string name="notification_desc">Status: Ikke tillatt</string>
+    <string name="all_files_access">Tilgang til alle filer</string>
+    <string name="file_access_desc">Status: Ikke tillatt</string>
+    <string name="language">Språk</string>
+    <string name="select_language">Velg språk</string>
+    <string name="privacy_policy">Personvernregler</string>
+    <string name="privacy_desc">Ingen data lastes opp til noen server</string>
+    <string name="about_app">Om appen</string>
+    <string name="about_desc">Versjon og utviklerinfo</string>
+    <string name="rate_app">Vurder appen</string>
+    <string name="rate_desc">Åpne Play Store</string>
+    <string name="share_app">Del appen</string>
+    <string name="share_desc">Del med venner</string>
+    <string name="contact_support">Kontakt støtte</string>
+    <string name="support_desc">Send e-post for hjelp</string>
+
+    <!-- Dialogs -->
+    <string name="delete_dialog_title">Slett duplikater?</string>
+    <string name="delete_dialog_message">Slett %1$d duplikate filer (%2$s)</string>
+    <string name="delete_dialog_warning">Originalfiler vil bli beholdt trygt.</string>
+    <string name="about_version">Versjon %1$s</string>
+    <string name="developed_by">Utviklet av</string>
+
+    <!-- Scan Screens -->
+    <string name="scanning_photos">Skanner bilder</string>
+    <string name="photos_scanned">%1$d bilder skannet</string>
+    <string name="scanning_audio">Skanner lyd</string>
+    <string name="audio_scanned">%1$d lydfiler skannet</string>
+    <string name="scanning_docs">Skanner dokumenter</string>
+    <string name="docs_scanned">%1$d dokumenter skannet</string>
+    <string name="scanning_all">Skanner alle filer</string>
+    <string name="all_scanned">%1$d filer skannet</string>
+    <string name="scanning_contacts">Skanner kontakter</string>
+    <string name="contacts_scanned">%1$d kontakter skannet</string>
+    <string name="scanning_apks">Skanner APK-er</string>
+    <string name="apks_scanned">%1$d APK-er skannet</string>
+    <string name="scanning_others">Skanner andre filer</string>
+    <string name="others_scanned">%1$d filer skannet</string>
+    <string name="scanning_videos">Skanner videoer</string>
+    <string name="searching_duplicates">Søker etter duplikater...</string>
+    <string name="videos_scanned">%1$d videoer skannet</string>
+    <string name="no_duplicates_found">Ingen duplikater funnet</string>
+</resources>

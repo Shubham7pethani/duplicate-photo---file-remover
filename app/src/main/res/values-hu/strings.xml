@@ -1,0 +1,99 @@
+<resources>
+    <string name="app_name">Duplicate Photo - File Remover</string>
+    <string name="developer_name">ompethani07</string>
+    <string name="support_email">duplicatesupportremover@gmail.com</string>
+    <string name="share_app_text">Nézze meg ezt az alkalmazást: %1$s</string>
+    <string name="share_app_link">https://play.google.com/store/apps/details?id=%1$s</string>
+
+    <!-- General -->
+    <string name="scan">Szkennelés</string>
+    <string name="ram_used">RAM használat</string>
+    <string name="all_scan">Összes szkennelése</string>
+    <string name="delete">Törlés</string>
+    <string name="cancel">Mégse</string>
+    <string name="close">Bezárás</string>
+    <string name="back">Vissza</string>
+    <string name="select_all">Összes kijelölése</string>
+    <string name="status_allowed">Állapot: Engedélyezve</string>
+    <string name="status_not_allowed">Állapot: Nem engedélyezett</string>
+    <string name="original">EREDETI</string>
+    <string name="group">Csoport</string>
+    <string name="duplicates_count">%1$d másolat</string>
+    <string name="files_selected">%1$d fájl kiválasztva</string>
+    <string name="total_size">Összesen: %1$s</string>
+    <string name="tap_scan_to_find">Koppintson a Szkennelésre a másolatok kereséséhez</string>
+    <string name="duplicate_scan">Másolat szkennelés</string>
+    <string name="storage_used">Tárhely használat</string>
+    <string name="of_total">összesen %1$s-ból</string>
+    <string name="free_space">Szabad hely</string>
+    <string name="duplicates">Másolatok</string>
+    <string name="can_save">Megtakarítható</string>
+    <string name="categories">Kategóriák</string>
+    <string name="files_count">%1$d fájl</string>
+    <string name="items_size_format">%1$d elem | %2$s</string>
+    <string name="apk_scan">APK szkennelés</string>
+    <string name="audio_scan">Audio szkennelés</string>
+    <string name="photo_scan">Fotó szkennelés</string>
+    <string name="doc_scan">Dokumentum szkennelés</string>
+    <string name="others_scan">Egyéb szkennelés</string>
+    <string name="contact_scan">Névjegy szkennelés</string>
+    <string name="all_files_scan">Összes fájl szkennelése</string>
+    <string name="videos_scan">Videó szkennelés</string>
+    <string name="version_text">Verzió %1$s</string>
+
+    <!-- Categories -->
+    <string name="photos">Fotók</string>
+    <string name="videos">Videók</string>
+    <string name="audio">Audio</string>
+    <string name="documents">Dokumentumok</string>
+    <string name="apks">APK-k</string>
+    <string name="others">Egyebek</string>
+    <string name="contacts">Névjegyek</string>
+    <string name="all_files">Összes fájl</string>
+
+    <!-- Settings -->
+    <string name="settings">Beállítások</string>
+    <string name="notifications">Értesítések</string>
+    <string name="notification_desc">Állapot: Nem engedélyezett</string>
+    <string name="all_files_access">Hozzáférés az összes fájlhoz</string>
+    <string name="file_access_desc">Állapot: Nem engedélyezett</string>
+    <string name="language">Nyelv</string>
+    <string name="select_language">Nyelv kiválasztása</string>
+    <string name="privacy_policy">Adatvédelmi irányelvek</string>
+    <string name="privacy_desc">Semmilyen adat nem kerül feltöltésre szerverre</string>
+    <string name="about_app">Az alkalmazásról</string>
+    <string name="about_desc">Verzió és fejlesztői infó</string>
+    <string name="rate_app">Értékelje az alkalmazást</string>
+    <string name="rate_desc">Play Áruház megnyitása</string>
+    <string name="share_app">Alkalmazás megosztása</string>
+    <string name="share_desc">Megosztás barátokkal</string>
+    <string name="contact_support">Kapcsolatfelvétel a támogatással</string>
+    <string name="support_desc">E-mail küldése segítségért</string>
+
+    <!-- Dialogs -->
+    <string name="delete_dialog_title">Törli a másolatokat?</string>
+    <string name="delete_dialog_message">Töröl %1$d másolt fájlt (%2$s)</string>
+    <string name="delete_dialog_warning">Az eredeti fájlok biztonságban maradnak.</string>
+    <string name="about_version">Verzió %1$s</string>
+    <string name="developed_by">Fejlesztette</string>
+
+    <!-- Scan Screens -->
+    <string name="scanning_photos">Fotók szkennelése</string>
+    <string name="photos_scanned">%1$d fotó szkennelve</string>
+    <string name="scanning_audio">Audio szkennelése</string>
+    <string name="audio_scanned">%1$d hangfájl szkennelve</string>
+    <string name="scanning_docs">Dokumentumok szkennelése</string>
+    <string name="docs_scanned">%1$d dokumentum szkennelve</string>
+    <string name="scanning_all">Összes fájl szkennelése</string>
+    <string name="all_scanned">%1$d fájl szkennelve</string>
+    <string name="scanning_contacts">Névjegyek szkennelése</string>
+    <string name="contacts_scanned">%1$d névjegy szkennelve</string>
+    <string name="scanning_apks">APK-k szkennelése</string>
+    <string name="apks_scanned">%1$d APK szkennelve</string>
+    <string name="scanning_others">Egyéb fájlok szkennelése</string>
+    <string name="others_scanned">%1$d fájl szkennelve</string>
+    <string name="scanning_videos">Videók szkennelése</string>
+    <string name="searching_duplicates">Másolatok keresése...</string>
+    <string name="videos_scanned">%1$d videó szkennelve</string>
+    <string name="no_duplicates_found">Nem találhatók másolatok</string>
+</resources>

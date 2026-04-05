@@ -1,0 +1,99 @@
+<resources>
+    <string name="app_name">Duplicate Photo - File Remover</string>
+    <string name="developer_name">ompethani07</string>
+    <string name="support_email">duplicatesupportremover@gmail.com</string>
+    <string name="share_app_text">Check out this app: %1$s</string>
+    <string name="share_app_link">https://play.google.com/store/apps/details?id=%1$s</string>
+
+    <!-- General -->
+    <string name="scan">Scan</string>
+    <string name="delete">Hapus</string>
+    <string name="cancel">Batal</string>
+    <string name="close">Tutup</string>
+    <string name="back">Kembali</string>
+    <string name="select_all">Pilih Semua</string>
+    <string name="status_allowed">Status: Diizinkan</string>
+    <string name="status_not_allowed">Status: Tidak diizinkan</string>
+    <string name="original">ASLI</string>
+    <string name="group">Grup</string>
+    <string name="duplicates_count">%1$d duplikat</string>
+    <string name="files_selected">%1$d berkas dipilih</string>
+    <string name="total_size">Total: %1$s</string>
+    <string name="tap_scan_to_find">Ketuk Scan untuk menemukan duplikat</string>
+    <string name="duplicate_scan">Scan Duplikat</string>
+    <string name="storage_used">Penyimpanan Digunakan</string>
+    <string name="of_total">dari %1$s total</string>
+    <string name="free_space">Ruang Bebas</string>
+    <string name="duplicates">Duplikat</string>
+    <string name="can_save">Bisa Hemat</string>
+    <string name="categories">Kategori</string>
+    <string name="files_count">%1$d Berkas</string>
+    <string name="ram_used">RAM digunakan</string>
+    <string name="all_scan">Semua Pindai</string>
+    <string name="items_size_format">%1$d item | %2$s</string>
+    <string name="apk_scan">Scan APK</string>
+    <string name="audio_scan">Scan Audio</string>
+    <string name="photo_scan">Scan Foto</string>
+    <string name="doc_scan">Scan Dokumen</string>
+    <string name="others_scan">Scan Lainnya</string>
+    <string name="contact_scan">Scan Kontak</string>
+    <string name="all_files_scan">Scan Semua Berkas</string>
+    <string name="videos_scan">Scan Video</string>
+    <string name="version_text">Versi %1$s</string>
+
+    <!-- Categories -->
+    <string name="photos">Foto</string>
+    <string name="videos">Video</string>
+    <string name="audio">Audio</string>
+    <string name="documents">Dokumen</string>
+    <string name="apks">APK</string>
+    <string name="others">Lainnya</string>
+    <string name="contacts">Kontak</string>
+    <string name="all_files">Semua Berkas</string>
+
+    <!-- Settings -->
+    <string name="settings">Pengaturan</string>
+    <string name="notifications">Notifikasi</string>
+    <string name="notification_desc">Status: Tidak diizinkan</string>
+    <string name="all_files_access">Akses Semua Berkas</string>
+    <string name="file_access_desc">Status: Tidak diizinkan</string>
+    <string name="language">Bahasa</string>
+    <string name="select_language">Pilih Bahasa</string>
+    <string name="privacy_policy">Kebijakan Privasi</string>
+    <string name="privacy_desc">Tidak ada data yang diunggah ke server mana pun</string>
+    <string name="about_app">Tentang Aplikasi</string>
+    <string name="about_desc">Informasi versi dan pengembang</string>
+    <string name="rate_app">Nilai Aplikasi</string>
+    <string name="rate_desc">Buka Play Store</string>
+    <string name="share_app">Bagikan Aplikasi</string>
+    <string name="share_desc">Bagikan dengan teman</string>
+    <string name="contact_support">Hubungi Dukungan</string>
+    <string name="support_desc">Kirim email untuk bantuan</string>
+
+    <!-- Dialogs -->
+    <string name="delete_dialog_title">Hapus Duplikat?</string>
+    <string name="delete_dialog_message">Hapus %1$d berkas duplikat (%2$s)?</string>
+    <string name="delete_dialog_warning">Berkas asli akan tetap aman.</string>
+    <string name="about_version">Versi %1$s</string>
+    <string name="developed_by">Dikembangkan oleh</string>
+
+    <!-- Scan Screens -->
+    <string name="scanning_photos">Memindai Foto</string>
+    <string name="photos_scanned">%1$d Foto Dipindai</string>
+    <string name="scanning_audio">Memindai Audio</string>
+    <string name="audio_scanned">%1$d Audio Dipindai</string>
+    <string name="scanning_docs">Memindai Dokumen</string>
+    <string name="docs_scanned">%1$d Dokumen Dipindai</string>
+    <string name="scanning_all">Memindai Semua Berkas</string>
+    <string name="all_scanned">%1$d Berkas Dipindai</string>
+    <string name="scanning_contacts">Memindai Kontak</string>
+    <string name="contacts_scanned">%1$d Kontak Dipindai</string>
+    <string name="scanning_apks">Memindai APK</string>
+    <string name="apks_scanned">%1$d APK Dipindai</string>
+    <string name="scanning_others">Memindai Lainnya</string>
+    <string name="others_scanned">%1$d Berkas Dipindai</string>
+    <string name="scanning_videos">Memindai Video</string>
+    <string name="searching_duplicates">Mencari duplikat...</string>
+    <string name="videos_scanned">%1$d Video Dipindai</string>
+    <string name="no_duplicates_found">Tidak ditemukan duplikat</string>
+</resources>

@@ -1,0 +1,98 @@
+<resources>
+    <string name="app_name">Duplicate Photo - File Remover</string>
+    <string name="developer_name">ompethani07</string>
+    <string name="support_email">duplicatesupportremover@gmail.com</string>
+    <string name="share_app_text">アプリをチェックしてください: %1$s</string>
+    <string name="share_app_link">https://play.google.com/store/apps/details?id=%1$s</string>
+
+    <!-- General -->
+    <string name="scan">スキャン</string>
+    <string name="delete">削除</string>
+    <string name="cancel">キャンセル</string>
+    <string name="close">閉じる</string>
+    <string name="back">戻る</string>
+    <string name="select_all">すべて選択</string>
+    <string name="status_allowed">ステータス: 許可</string>
+    <string name="status_not_allowed">ステータス: 未許可</string>
+    <string name="original">オリジナル</string>
+    <string name="group">グループ</string>
+    <string name="duplicates_count">%1$d 個の重複</string>
+    <string name="files_selected">%1$d 個のファイルを選択中</string>
+    <string name="total_size">合計: %1$s</string>
+    <string name="tap_scan_to_find">スキャンをタップして重複を探す</string>
+    <string name="duplicate_scan">重複スキャン</string>
+    <string name="storage_used">使用済みストレージ</string>
+    <string name="of_total">合計 %1$s 中</string>
+    <string name="free_space">空き容量</string>
+    <string name="duplicates">重複</string>
+    <string name="can_save">節約可能</string>
+    <string name="categories">カテゴリー</string>
+    <string name="files_count">%1$d ファイル</string>
+    <string name="items_size_format">%1$d アイテム | %2$s</string>
+    <string name="ram_used">使用済みRAM</string>
+    <string name="all_scan">すべてスキャン</string>
+    <string name="audio_scan">オーディオスキャン</string>
+    <string name="photo_scan">フォトスキャン</string>
+    <string name="doc_scan">ドキュメントスキャン</string>
+    <string name="others_scan">その他スキャン</string>
+    <string name="contact_scan">連絡先スキャン</string>
+    <string name="all_files_scan">全ファイルスキャン</string>
+    <string name="videos_scan">ビデオスキャン</string>
+    <string name="version_text">バージョン %1$s</string>
+
+    <!-- Categories -->
+    <string name="photos">写真</string>
+    <string name="videos">ビデオ</string>
+    <string name="audio">オーディオ</string>
+    <string name="documents">ドキュメント</string>
+    <string name="apks">APK</string>
+    <string name="others">その他</string>
+    <string name="contacts">連絡先</string>
+    <string name="all_files">すべてのファイル</string>
+
+    <!-- Settings -->
+    <string name="settings">設定</string>
+    <string name="notifications">通知</string>
+    <string name="notification_desc">ステータス: 未許可</string>
+    <string name="all_files_access">全ファイルへのアクセス</string>
+    <string name="file_access_desc">ステータス: 未許可</string>
+    <string name="language">言語</string>
+    <string name="select_language">言語を選択</string>
+    <string name="privacy_policy">プライバシーポリシー</string>
+    <string name="privacy_desc">データはサーバーにアップロードされません</string>
+    <string name="about_app">アプリについて</string>
+    <string name="about_desc">バージョンと開発者情報</string>
+    <string name="rate_app">アプリを評価</string>
+    <string name="rate_desc">Playストアを開く</string>
+    <string name="share_app">アプリを共有</string>
+    <string name="share_desc">友達と共有</string>
+    <string name="contact_support">サポートに連絡</string>
+    <string name="support_desc">ヘルプが必要な場合はメールを送信</string>
+
+    <!-- Dialogs -->
+    <string name="delete_dialog_title">重複を削除しますか？</string>
+    <string name="delete_dialog_message">%1$d 個の重複ファイル（%2$s）を削除しますか？</string>
+    <string name="delete_dialog_warning">オリジナルファイルは安全に保管されます。</string>
+    <string name="about_version">バージョン %1$s</string>
+    <string name="developed_by">開発者:</string>
+
+    <!-- Scan Screens -->
+    <string name="scanning_photos">写真をスキャン中</string>
+    <string name="photos_scanned">%1$d 個のスキャン済み写真</string>
+    <string name="scanning_audio">オーディオをスキャン中</string>
+    <string name="audio_scanned">%1$d 個のスキャン済みオーディオ</string>
+    <string name="scanning_docs">ドキュメントをスキャン中</string>
+    <string name="docs_scanned">%1$d 個のスキャン済みドキュメント</string>
+    <string name="scanning_all">全ファイルをスキャン中</string>
+    <string name="all_scanned">%1$d 個のスキャン済みファイル</string>
+    <string name="scanning_contacts">連絡先をスキャン中</string>
+    <string name="contacts_scanned">%1$d 個のスキャン済み連絡先</string>
+    <string name="scanning_apks">APKをスキャン中</string>
+    <string name="apks_scanned">%1$d 個のスキャン済みAPK</string>
+    <string name="scanning_others">その他をスキャン中</string>
+    <string name="others_scanned">%1$d 個のスキャン済みファイル</string>
+    <string name="scanning_videos">ビデオをスキャン中</string>
+    <string name="searching_duplicates">重複を検索中...</string>
+    <string name="videos_scanned">%1$d 個のスキャン済みビデオ</string>
+    <string name="no_duplicates_found">重複は見つかりませんでした</string>
+</resources>

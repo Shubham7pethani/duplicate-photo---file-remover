@@ -1,0 +1,99 @@
+<resources>
+    <string name="app_name">Duplicate Photo - File Remover</string>
+    <string name="developer_name">ompethani07</string>
+    <string name="support_email">duplicatesupportremover@gmail.com</string>
+    <string name="share_app_text">Pogledajte ovu aplikaciju: %1$s</string>
+    <string name="share_app_link">https://play.google.com/store/apps/details?id=%1$s</string>
+
+    <!-- General -->
+    <string name="scan">Skeniraj</string>
+    <string name="ram_used">RAM iskorišten</string>
+    <string name="all_scan">Skeniraj sve</string>
+    <string name="delete">Obriši</string>
+    <string name="cancel">Odustani</string>
+    <string name="close">Zatvori</string>
+    <string name="back">Natrag</string>
+    <string name="select_all">Odaberi sve</string>
+    <string name="status_allowed">Status: Dopušteno</string>
+    <string name="status_not_allowed">Status: Nije dopušteno</string>
+    <string name="original">ORIGINAL</string>
+    <string name="group">Grupa</string>
+    <string name="duplicates_count">%1$d duplikata</string>
+    <string name="files_selected">%1$d datoteka odabrano</string>
+    <string name="total_size">Ukupno: %1$s</string>
+    <string name="tap_scan_to_find">Dodirnite Skeniraj za pronalaženje duplikata</string>
+    <string name="duplicate_scan">Skeniranje duplikata</string>
+    <string name="storage_used">Pohrana iskorištena</string>
+    <string name="of_total">od ukupno %1$s</string>
+    <string name="free_space">Slobodan prostor</string>
+    <string name="duplicates">Duplikati</string>
+    <string name="can_save">Može se uštedjeti</string>
+    <string name="categories">Kategorije</string>
+    <string name="files_count">%1$d datoteka</string>
+    <string name="items_size_format">%1$d stavki | %2$s</string>
+    <string name="apk_scan">Skeniranje APK</string>
+    <string name="audio_scan">Skeniranje zvuka</string>
+    <string name="photo_scan">Skeniranje fotografija</string>
+    <string name="doc_scan">Skeniranje dokumenata</string>
+    <string name="others_scan">Ostalo skeniranje</string>
+    <string name="contact_scan">Skeniranje kontakata</string>
+    <string name="all_files_scan">Skeniranje svih datoteka</string>
+    <string name="videos_scan">Skeniranje videozapisa</string>
+    <string name="version_text">Verzija %1$s</string>
+
+    <!-- Categories -->
+    <string name="photos">Fotografije</string>
+    <string name="videos">Videozapisi</string>
+    <string name="audio">Audio</string>
+    <string name="documents">Dokumenti</string>
+    <string name="apks">APK datoteke</string>
+    <string name="others">Ostalo</string>
+    <string name="contacts">Kontakti</string>
+    <string name="all_files">Sve datoteke</string>
+
+    <!-- Settings -->
+    <string name="settings">Postavke</string>
+    <string name="notifications">Obavijesti</string>
+    <string name="notification_desc">Status: Nije dopušteno</string>
+    <string name="all_files_access">Pristup svim datotekama</string>
+    <string name="file_access_desc">Status: Nije dopušteno</string>
+    <string name="language">Jezik</string>
+    <string name="select_language">Odaberi jezik</string>
+    <string name="privacy_policy">Pravila privatnosti</string>
+    <string name="privacy_desc">Nikakvi podaci se ne šalju na server</string>
+    <string name="about_app">O aplikaciji</string>
+    <string name="about_desc">Verzija i informacije o razvojnom programeru</string>
+    <string name="rate_app">Ocijeni aplikaciju</string>
+    <string name="rate_desc">Otvori Play Store</string>
+    <string name="share_app">Podijeli aplikaciju</string>
+    <string name="share_desc">Podijeli s prijateljima</string>
+    <string name="contact_support">Kontaktiraj podršku</string>
+    <string name="support_desc">Pošalji e-mail za pomoć</string>
+
+    <!-- Dialogs -->
+    <string name="delete_dialog_title">Obrisati duplikate?</string>
+    <string name="delete_dialog_message">Obriši %1$d dupliciranih datoteka (%2$s)</string>
+    <string name="delete_dialog_warning">Izvorne datoteke ostat će sigurne.</string>
+    <string name="about_version">Verzija %1$s</string>
+    <string name="developed_by">Razvio</string>
+
+    <!-- Scan Screens -->
+    <string name="scanning_photos">Skeniranje fotografija</string>
+    <string name="photos_scanned">Skenirano fotografija: %1$d</string>
+    <string name="scanning_audio">Skeniranje zvuka</string>
+    <string name="audio_scanned">Skenirano audio datoteka: %1$d</string>
+    <string name="scanning_docs">Skeniranje dokumenata</string>
+    <string name="docs_scanned">Skenirano dokumenata: %1$d</string>
+    <string name="scanning_all">Skeniranje svih datoteka</string>
+    <string name="all_scanned">Skenirano datoteka: %1$d</string>
+    <string name="scanning_contacts">Skeniranje kontakata</string>
+    <string name="contacts_scanned">Skenirano kontakata: %1$d</string>
+    <string name="scanning_apks">Skeniranje APK datoteka</string>
+    <string name="apks_scanned">Skenirano APK datoteka: %1$d</string>
+    <string name="scanning_others">Skeniranje ostalih datoteka</string>
+    <string name="others_scanned">Skenirano datoteka: %1$d</string>
+    <string name="scanning_videos">Skeniranje videozapisa</string>
+    <string name="searching_duplicates">Traženje duplikata...</string>
+    <string name="videos_scanned">Skenirano videozapisa: %1$d</string>
+    <string name="no_duplicates_found">Nisu pronađeni duplikati</string>
+</resources>

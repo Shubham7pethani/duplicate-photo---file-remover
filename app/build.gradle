@@ -1,24 +1,43 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'com.google.gms.google-services'
+    id 'com.google.firebase.crashlytics'
 }
 
 android {
-    namespace 'com.duplicateremover.app'
-    compileSdk 34
+    namespace 'com.duplicateremover07.app'
+    compileSdk 35
 
     defaultConfig {
-        applicationId "com.duplicateremover.app"
+        applicationId "com.duplicateremover07.app"
         minSdk 24
-        targetSdk 34
-        versionCode 1
-        versionName "1.0"
+        targetSdk 35
+        versionCode 10
+        versionName "1.9"
+    }
+
+    signingConfigs {
+        release {
+            storeFile file("../duplicate_remover_keystore.jks")
+            storePassword "duplicate_pass_2026"
+            keyAlias "release_key"
+            keyPassword "duplicate_pass_2026"
+        }
     }
 
     buildTypes {
         release {
-            minifyEnabled false
+            signingConfig signingConfigs.release
+            minifyEnabled true
+            shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    bundle {
+        language {
+            enableSplit = false
         }
     }
     compileOptions {
@@ -44,4 +63,12 @@ dependencies {
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3'
     implementation 'com.github.bumptech.glide:glide:4.16.0'
     implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.work:work-runtime-ktx:2.9.0'
+    implementation 'com.google.android.play:app-update:2.1.0'
+    implementation 'com.google.android.play:app-update-ktx:2.1.0'
+
+    // Firebase
+    implementation platform('com.google.firebase:firebase-bom:32.7.4')
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+    implementation 'com.google.firebase:firebase-crashlytics-ktx'
 }

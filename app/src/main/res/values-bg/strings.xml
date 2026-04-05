@@ -1,0 +1,99 @@
+<resources>
+    <string name="app_name">Duplicate Photo - File Remover</string>
+    <string name="developer_name">ompethani07</string>
+    <string name="support_email">duplicatesupportremover@gmail.com</string>
+    <string name="share_app_text">Вижте това приложение: %1$s</string>
+    <string name="share_app_link">https://play.google.com/store/apps/details?id=%1$s</string>
+
+    <!-- General -->
+    <string name="scan">Сканиране</string>
+    <string name="ram_used">Използвана RAM</string>
+    <string name="all_scan">Сканирай всичко</string>
+    <string name="delete">Изтрий</string>
+    <string name="cancel">Отказ</string>
+    <string name="close">Затвори</string>
+    <string name="back">Назад</string>
+    <string name="select_all">Избери всички</string>
+    <string name="status_allowed">Статус: Разрешено</string>
+    <string name="status_not_allowed">Статус: Не е разрешено</string>
+    <string name="original">ОРИГИНАЛ</string>
+    <string name="group">Група</string>
+    <string name="duplicates_count">%1$d дубликата</string>
+    <string name="files_selected">%1$d избрани файла</string>
+    <string name="total_size">Общо: %1$s</string>
+    <string name="tap_scan_to_find">Докоснете Сканиране, за да намерите дубликати</string>
+    <string name="duplicate_scan">Сканиране за дубликати</string>
+    <string name="storage_used">Използвана памет</string>
+    <string name="of_total">от %1$s общо</string>
+    <string name="free_space">Свободно място</string>
+    <string name="duplicates">Дубликати</string>
+    <string name="can_save">Може да се спести</string>
+    <string name="categories">Категории</string>
+    <string name="files_count">%1$d файла</string>
+    <string name="items_size_format">%1$d елемента | %2$s</string>
+    <string name="apk_scan">Сканиране на APK</string>
+    <string name="audio_scan">Сканиране на аудио</string>
+    <string name="photo_scan">Сканиране на снимки</string>
+    <string name="doc_scan">Сканиране на документи</string>
+    <string name="others_scan">Друго сканиране</string>
+    <string name="contact_scan">Сканиране на контакти</string>
+    <string name="all_files_scan">Сканиране на всички файлове</string>
+    <string name="videos_scan">Сканиране на видео</string>
+    <string name="version_text">Версия %1$s</string>
+
+    <!-- Categories -->
+    <string name="photos">Снимки</string>
+    <string name="videos">Видеоклипове</string>
+    <string name="audio">Аудио</string>
+    <string name="documents">Документи</string>
+    <string name="apks">APK файлове</string>
+    <string name="others">Други</string>
+    <string name="contacts">Контакти</string>
+    <string name="all_files">Всички файлове</string>
+
+    <!-- Settings -->
+    <string name="settings">Настройки</string>
+    <string name="notifications">Известия</string>
+    <string name="notification_desc">Статус: Не е разрешено</string>
+    <string name="all_files_access">Достъп до всички файлове</string>
+    <string name="file_access_desc">Статус: Не е разрешено</string>
+    <string name="language">Език</string>
+    <string name="select_language">Избор на език</string>
+    <string name="privacy_policy">Политика за поверителност</string>
+    <string name="privacy_desc">Никакви данни не се качват на нито един сървър</string>
+    <string name="about_app">Относно приложението</string>
+    <string name="about_desc">Инфо за версията и разработчика</string>
+    <string name="rate_app">Оценете приложението</string>
+    <string name="rate_desc">Отвори Play Store</string>
+    <string name="share_app">Сподели приложението</string>
+    <string name="share_desc">Сподели с приятели</string>
+    <string name="contact_support">Свържи се с поддръжката</string>
+    <string name="support_desc">Изпрати имейл за помощ</string>
+
+    <!-- Dialogs -->
+    <string name="delete_dialog_title">Изтриване на дубликати?</string>
+    <string name="delete_dialog_message">Изтриване на %1$d дублиращи се файла (%2$s)</string>
+    <string name="delete_dialog_warning">Оригиналните файлове ще бъдат запазени безопасно.</string>
+    <string name="about_version">Версия %1$s</string>
+    <string name="developed_by">Разработено от</string>
+
+    <!-- Scan Screens -->
+    <string name="scanning_photos">Сканиране на снимки</string>
+    <string name="photos_scanned">%1$d снимки сканирани</string>
+    <string name="scanning_audio">Сканиране на аудио</string>
+    <string name="audio_scanned">%1$d аудио файла сканирани</string>
+    <string name="scanning_docs">Сканиране на документи</string>
+    <string name="docs_scanned">%1$d документа сканирани</string>
+    <string name="scanning_all">Сканиране на всички файлове</string>
+    <string name="all_scanned">%1$d файла сканирани</string>
+    <string name="scanning_contacts">Сканиране на конταкти</string>
+    <string name="contacts_scanned">%1$d контакта сканирани</string>
+    <string name="scanning_apks">Сканиране на APK файлове</string>
+    <string name="apks_scanned">%1$d APK сканирани</string>
+    <string name="scanning_others">Сканиране на други файлове</string>
+    <string name="others_scanned">%1$d файла сканирани</string>
+    <string name="scanning_videos">Сканиране на видеоклипове</string>
+    <string name="searching_duplicates">Търсене на дубликати...</string>
+    <string name="videos_scanned">%1$d видеоклипа сканирани</string>
+    <string name="no_duplicates_found">Не са намерени дубликати</string>
+</resources>

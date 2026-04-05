@@ -1,0 +1,876 @@
+package com.duplicateremover07.app
+
+import android.Manifest
+import android.app.ActivityManager
+import android.content.Intent
+import android.content.pm.PackageManager
+import android.database.ContentObserver
+import android.os.Build
+import android.os.Bundle
+import android.os.Environment
+import android.os.Handler
+import android.os.Looper
+import android.os.StatFs
+import android.provider.ContactsContract
+import android.provider.MediaStore
+import android.util.Log
+import android.view.View
+import android.widget.Toast
+import androidx.activity.result.contract.ActivityResultContracts
+import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
+import androidx.lifecycle.lifecycleScope
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.work.Constraints
+import androidx.work.ExistingPeriodicWorkPolicy
+import androidx.work.NetworkType
+import androidx.activity.enableEdgeToEdge
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
+import androidx.work.PeriodicWorkRequestBuilder
+import androidx.work.WorkManager
+import com.google.android.play.core.appupdate.AppUpdateManager
+import com.google.android.play.core.appupdate.AppUpdateManagerFactory
+import com.google.android.play.core.install.model.AppUpdateType
+import com.google.android.play.core.install.model.UpdateAvailability
+import com.duplicateremover07.app.databinding.ActivityMainBinding
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.Job
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
+import java.io.File
+import java.security.MessageDigest
+import java.util.concurrent.TimeUnit
+
+data class MediaFile(
+    val id: Long,
+    val path: String,
+    val name: String,
+    val size: Long,
+    val dateAdded: Long,
+    val mimeType: String,
+    var hash: String = "",
+    var isSelected: Boolean = false
+)
+
+class MainActivity : BaseActivity() {
+
+    private val storageLogTag = "StorageDebug"
+
+    private lateinit var binding: ActivityMainBinding
+    private lateinit var duplicateAdapter: DuplicateGroupAdapter
+    private val duplicateGroups = mutableListOf<List<MediaFile>>()
+    private val allMediaFiles = mutableListOf<MediaFile>()
+
+    private val mainHandler = Handler(Looper.getMainLooper())
+    private var duplicatesRefreshJob: Job? = null
+    private var mediaStoreObserver: ContentObserver? = null
+    private lateinit var appUpdateManager: AppUpdateManager
+    private val UPDATE_REQUEST_CODE = 1234
+
+    private val homePermissionsLauncher = registerForActivityResult(
+        ActivityResultContracts.RequestMultiplePermissions()
+    ) {
+        updateStorageStats()
+        calculateActualDuplicates()
+    }
+
+    private val notificationPermissionLauncher = registerForActivityResult(
+        ActivityResultContracts.RequestPermission()
+    ) { isGranted ->
+        if (!isGranted) {
+            Toast.makeText(this, "Notification permission is required for background alerts", Toast.LENGTH_LONG).show()
+        }
+    }
+
+    private val permissionLauncher = registerForActivityResult(
+        ActivityResultContracts.RequestMultiplePermissions()
+    ) { permissions ->
+        when {
+            permissions[Manifest.permission.READ_MEDIA_IMAGES] == true ||
+            permissions[Manifest.permission.READ_EXTERNAL_STORAGE] == true -> {
+                showScanScreen()
+                startScanning()
+            }
+            permissions[Manifest.permission.POST_NOTIFICATIONS] == true -> {
+                // Permission granted via standard request
+            }
+            else -> {
+                Toast.makeText(this, "Storage permission required", Toast.LENGTH_LONG).show()
+            }
+        }
+    }
+
+    private val manageStorageLauncher = registerForActivityResult(
+        ActivityResultContracts.StartActivityForResult()
+    ) {
+        updateStorageStats()
+        calculateActualDuplicates()
+    }
+
+    private fun checkAllFilesPermission() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+            if (!Environment.isExternalStorageManager()) {
+                val intent = Intent(android.provider.Settings.ACTION_MANAGE_APP_ALL_FILES_ACCESS_PERMISSION)
+                intent.data = android.net.Uri.parse("package:$packageName")
+                manageStorageLauncher.launch(intent)
+            }
+        }
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        LocaleHelper.onAttach(this)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        ViewCompat.setOnApplyWindowInsetsListener(binding.main) { v, insets ->
+            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
+            insets
+        }
+
+        appUpdateManager = AppUpdateManagerFactory.create(this)
+        checkForUpdates()
+
+        setSupportActionBar(binding.toolbar)
+        supportActionBar?.setDisplayShowTitleEnabled(false)
+
+        setupRecyclerView()
+        setupClickListeners()
+        showHomeScreen()
+        checkAllFilesPermission()
+        scheduleBackgroundScan()
+        requestNotificationPermission()
+
+        requestAllHomePermissionsIfNeeded()
+    }
+
+    private val updateLauncher = registerForActivityResult(
+        ActivityResultContracts.StartIntentSenderForResult()
+    ) { result ->
+        if (result.resultCode != RESULT_OK) {
+            Log.d("Update", "Update flow failed: ${result.resultCode}")
+        }
+    }
+
+    private fun checkForUpdates() {
+        val appUpdateInfoTask = appUpdateManager.appUpdateInfo
+        appUpdateInfoTask.addOnSuccessListener { appUpdateInfo ->
+            if (appUpdateInfo.updateAvailability() == UpdateAvailability.UPDATE_AVAILABLE
+                && appUpdateInfo.isUpdateTypeAllowed(AppUpdateType.IMMEDIATE)
+            ) {
+                try {
+                    appUpdateManager.startUpdateFlowForResult(
+                        appUpdateInfo,
+                        updateLauncher,
+                        com.google.android.play.core.appupdate.AppUpdateOptions.defaultOptions(AppUpdateType.IMMEDIATE)
+                    )
+                } catch (e: Exception) {
+                    Log.e("Update", "Update flow start failed: ${e.message}")
+                }
+            }
+        }
+    }
+
+    override fun onResume() {
+        super.onResume()
+        // Refresh data whenever user returns to home screen
+        updateStorageStats()
+        calculateActualDuplicates()
+        
+        // Resume any pending update
+        appUpdateManager.appUpdateInfo.addOnSuccessListener { appUpdateInfo ->
+            if (appUpdateInfo.updateAvailability() == UpdateAvailability.DEVELOPER_TRIGGERED_UPDATE_IN_PROGRESS) {
+                try {
+                    appUpdateManager.startUpdateFlowForResult(
+                        appUpdateInfo,
+                        updateLauncher,
+                        com.google.android.play.core.appupdate.AppUpdateOptions.defaultOptions(AppUpdateType.IMMEDIATE)
+                    )
+                } catch (e: Exception) {
+                    Log.e("Update", "Update flow resumption failed: ${e.message}")
+                }
+            }
+        }
+    }
+
+    private fun requestAllHomePermissionsIfNeeded() {
+        val required = mutableListOf<String>()
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            required += Manifest.permission.READ_MEDIA_IMAGES
+            required += Manifest.permission.READ_MEDIA_VIDEO
+            required += Manifest.permission.READ_MEDIA_AUDIO
+            required += Manifest.permission.POST_NOTIFICATIONS
+        } else {
+            required += Manifest.permission.READ_EXTERNAL_STORAGE
+        }
+
+        required += Manifest.permission.READ_CONTACTS
+
+        val missing = required.filter {
+            ContextCompat.checkSelfPermission(this, it) != PackageManager.PERMISSION_GRANTED
+        }
+
+        if (missing.isNotEmpty()) {
+            homePermissionsLauncher.launch(missing.toTypedArray())
+        }
+    }
+
+    private fun requestNotificationPermission() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            when {
+                ContextCompat.checkSelfPermission(this, Manifest.permission.POST_NOTIFICATIONS) == PackageManager.PERMISSION_GRANTED -> {
+                    // Already granted
+                }
+                shouldShowRequestPermissionRationale(Manifest.permission.POST_NOTIFICATIONS) -> {
+                    // User denied once, explain and ask again
+                    AlertDialog.Builder(this)
+                        .setTitle("Notifications Required")
+                        .setMessage("We need notification permission to alert you when duplicate files are detected in the background.")
+                        .setPositiveButton("Allow") { _, _ ->
+                            notificationPermissionLauncher.launch(Manifest.permission.POST_NOTIFICATIONS)
+                        }
+                        .setNegativeButton("No Thanks", null)
+                        .show()
+                }
+                else -> {
+                    // First time asking
+                    notificationPermissionLauncher.launch(Manifest.permission.POST_NOTIFICATIONS)
+                }
+            }
+        }
+    }
+
+    private fun scheduleBackgroundScan() {
+        val constraints = Constraints.Builder()
+            .setRequiresBatteryNotLow(false)
+            .setRequiresStorageNotLow(false)
+            .build()
+
+        val workRequest = PeriodicWorkRequestBuilder<DuplicateDetectionWorker>(
+            15, TimeUnit.MINUTES,
+            5, TimeUnit.MINUTES
+        )
+            .setConstraints(constraints)
+            .build()
+
+        WorkManager.getInstance(this).enqueueUniquePeriodicWork(
+            "duplicate_scan_work",
+            ExistingPeriodicWorkPolicy.UPDATE,
+            workRequest
+        )
+    }
+
+    override fun onStart() {
+        super.onStart()
+        registerMediaStoreObserver()
+    }
+
+    override fun onStop() {
+        super.onStop()
+        unregisterMediaStoreObserver()
+        duplicatesRefreshJob?.cancel()
+        duplicatesRefreshJob = null
+    }
+
+    private fun setupRecyclerView() {
+        duplicateAdapter = DuplicateGroupAdapter { filesToDelete ->
+            deleteFiles(filesToDelete)
+        }
+        binding.recyclerView.apply {
+            layoutManager = LinearLayoutManager(this@MainActivity)
+            adapter = duplicateAdapter
+        }
+    }
+
+    private fun setupClickListeners() {
+        // Storage Card
+        binding.storageCard.setOnClickListener {
+            val intent = Intent(this, CategoriesActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.settingsButton.setOnClickListener {
+            val intent = Intent(this, SettingsActivity::class.java)
+            startActivity(intent)
+        }
+
+        // All Files
+        binding.categoryAllFiles.setOnClickListener {
+            val intent = Intent(this, AllFilesScanActivity::class.java)
+            startActivity(intent)
+        }
+
+        // Photos
+        binding.categoryPhotos.setOnClickListener {
+            val intent = Intent(this, PhotoScanActivity::class.java)
+            startActivity(intent)
+        }
+        
+        // Videos
+        binding.categoryVideos.setOnClickListener {
+            val intent = Intent(this, VideoScanActivity::class.java)
+            startActivity(intent)
+        }
+        
+        // Documents
+        binding.categoryDocs.setOnClickListener {
+            val intent = Intent(this, DocScanActivity::class.java)
+            startActivity(intent)
+        }
+        
+        // Audios
+        binding.categoryAudios.setOnClickListener {
+            val intent = Intent(this, AudioScanActivity::class.java)
+            startActivity(intent)
+        }
+        
+        // Contacts
+        binding.categoryContacts.setOnClickListener {
+            val intent = Intent(this, ContactScanActivity::class.java)
+            startActivity(intent)
+        }
+
+        // Back button
+        binding.backButton.setOnClickListener {
+            showHomeScreen()
+        }
+
+        // Delete button
+        binding.deleteButton.setOnClickListener {
+            val selectedFiles = duplicateAdapter.getSelectedFiles()
+            if (selectedFiles.isNotEmpty()) {
+                showDeleteConfirmation(selectedFiles)
+            } else {
+                Toast.makeText(this, "No files selected", Toast.LENGTH_SHORT).show()
+            }
+        }
+
+        binding.selectAllButton.setOnClickListener {
+            duplicateAdapter.selectAllExceptFirst()
+        }
+    }
+
+    private fun startScanActivity(category: String) {
+        val intent = Intent(this, ScanActivity::class.java).apply {
+            putExtra("CATEGORY", category)
+        }
+        startActivity(intent)
+    }
+
+    private fun showHomeScreen() {
+        binding.homeScrollView.visibility = View.VISIBLE
+        binding.scanResultsContainer.visibility = View.GONE
+        binding.statusText.text = getString(R.string.tap_scan_to_find)
+    }
+
+    private fun showScanScreen() {
+        binding.homeScrollView.visibility = View.GONE
+        binding.scanResultsContainer.visibility = View.VISIBLE
+    }
+
+    private fun scheduleDuplicatesRefresh() {
+        duplicatesRefreshJob?.cancel()
+        duplicatesRefreshJob = lifecycleScope.launch {
+            // debounce to avoid re-scanning repeatedly during downloads/copies
+            delay(1200)
+            updateStorageStats()
+            calculateActualDuplicates()
+        }
+    }
+
+    private fun registerMediaStoreObserver() {
+        if (mediaStoreObserver != null) return
+        mediaStoreObserver = object : ContentObserver(mainHandler) {
+            override fun onChange(selfChange: Boolean) {
+                super.onChange(selfChange)
+                scheduleDuplicatesRefresh()
+            }
+
+            override fun onChange(selfChange: Boolean, uri: android.net.Uri?) {
+                super.onChange(selfChange, uri)
+                scheduleDuplicatesRefresh()
+            }
+        }
+
+        try {
+            contentResolver.registerContentObserver(
+                MediaStore.Images.Media.EXTERNAL_CONTENT_URI,
+                true,
+                mediaStoreObserver!!
+            )
+            contentResolver.registerContentObserver(
+                MediaStore.Video.Media.EXTERNAL_CONTENT_URI,
+                true,
+                mediaStoreObserver!!
+            )
+            contentResolver.registerContentObserver(
+                MediaStore.Audio.Media.EXTERNAL_CONTENT_URI,
+                true,
+                mediaStoreObserver!!
+            )
+            val filesUri = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+                MediaStore.Files.getContentUri(MediaStore.VOLUME_EXTERNAL)
+            } else {
+                MediaStore.Files.getContentUri("external")
+            }
+            contentResolver.registerContentObserver(
+                filesUri,
+                true,
+                mediaStoreObserver!!
+            )
+        } catch (_: Exception) {
+            // ignore; app will still refresh onResume
+        }
+    }
+
+    private fun unregisterMediaStoreObserver() {
+        val observer = mediaStoreObserver ?: return
+        try {
+            contentResolver.unregisterContentObserver(observer)
+        } catch (_: Exception) {
+        }
+        mediaStoreObserver = null
+    }
+
+    private fun updateStorageStats() {
+        val stats = StorageUtils.getStorageStats(this)
+        val usedString = StorageUtils.formatSize(stats.usedBytes)
+        val totalString = StorageUtils.formatSize(stats.totalBytes)
+        val freeString = StorageUtils.formatSize(stats.availableBytes)
+
+        try {
+            val dataStat = StatFs(Environment.getDataDirectory().path)
+            val dataTotal = dataStat.blockCountLong * dataStat.blockSizeLong
+            val dataAvail = dataStat.availableBlocksLong * dataStat.blockSizeLong
+            val dataUsed = (dataTotal - dataAvail).coerceAtLeast(0L)
+
+            Log.d(
+                storageLogTag,
+                "UI(total=${stats.totalBytes}, used=${stats.usedBytes}, free=${stats.availableBytes}) " +
+                    "StatFs(dataTotal=$dataTotal, dataUsed=$dataUsed, dataFree=$dataAvail)"
+            )
+        } catch (e: Exception) {
+            Log.d(storageLogTag, "StatFs debug failed: ${e.message}")
+        }
+
+        val displayPercentage = stats.usedPercentage
+
+        // Smooth animations for text changes
+        animateTextChange(binding.storageUsedText, usedString)
+        animateTextChange(binding.freeSpaceText, freeString)
+        binding.storageTotalText.text = getString(R.string.of_total, totalString)
+        
+        // Circular and Linear progress animations are handled by their custom views
+        binding.storageProgress.setProgress(displayPercentage)
+        binding.linearProgress.setProgress(displayPercentage)
+        binding.storagePercentText.text = "$displayPercentage%"
+    }
+
+    private fun animateTextChange(textView: android.widget.TextView, newText: String) {
+        if (textView.text == newText) return
+        textView.animate().alpha(0f).setDuration(200).withEndAction {
+            textView.text = newText
+            textView.animate().alpha(1f).setDuration(200).start()
+        }.start()
+    }
+
+
+    private fun calculateActualDuplicates() {
+        lifecycleScope.launch(Dispatchers.IO) {
+            var totalCount = 0
+            var totalSize = 0L
+
+            // Scan Photos
+            val photos = queryFiles(MediaStore.Images.Media.EXTERNAL_CONTENT_URI)
+            val photoDupes = findDuplicatesForFiles(photos)
+            totalCount += photoDupes.sumOf { it.size - 1 }
+            totalSize += photoDupes.sumOf { group -> group.drop(1).sumOf { it.size } }
+
+            // Scan Videos
+            val videos = queryFiles(MediaStore.Video.Media.EXTERNAL_CONTENT_URI)
+            val videoDupes = findDuplicatesForFiles(videos)
+            totalCount += videoDupes.sumOf { it.size - 1 }
+            totalSize += videoDupes.sumOf { group -> group.drop(1).sumOf { it.size } }
+
+            // Scan Audio
+            val audio = queryFiles(MediaStore.Audio.Media.EXTERNAL_CONTENT_URI)
+            val audioDupes = findDuplicatesForFiles(audio)
+            totalCount += audioDupes.sumOf { it.size - 1 }
+            totalSize += audioDupes.sumOf { group -> group.drop(1).sumOf { it.size } }
+
+            // Scan Documents and Others (using MediaStore.Files)
+            val filesUri = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+                MediaStore.Files.getContentUri(MediaStore.VOLUME_EXTERNAL)
+            } else {
+                MediaStore.Files.getContentUri("external")
+            }
+            // Exclude media already scanned to avoid double counting
+            val selection = "${MediaStore.Files.FileColumns.MEDIA_TYPE} != ${MediaStore.Files.FileColumns.MEDIA_TYPE_IMAGE} AND " +
+                "${MediaStore.Files.FileColumns.MEDIA_TYPE} != ${MediaStore.Files.FileColumns.MEDIA_TYPE_VIDEO} AND " +
+                "${MediaStore.Files.FileColumns.MEDIA_TYPE} != ${MediaStore.Files.FileColumns.MEDIA_TYPE_AUDIO}"
+            val otherFiles = queryFiles(filesUri, selection)
+            val otherDupes = findDuplicatesForFiles(otherFiles)
+            totalCount += otherDupes.sumOf { it.size - 1 }
+            totalSize += otherDupes.sumOf { group -> group.drop(1).sumOf { it.size } }
+
+            // Scan Contacts (only if permission granted)
+            val hasContactsPermission = ContextCompat.checkSelfPermission(
+                this@MainActivity,
+                Manifest.permission.READ_CONTACTS
+            ) == PackageManager.PERMISSION_GRANTED
+
+            if (hasContactsPermission) {
+                val contactProjection = arrayOf(
+                    ContactsContract.CommonDataKinds.Phone.CONTACT_ID,
+                    ContactsContract.CommonDataKinds.Phone.DISPLAY_NAME,
+                    ContactsContract.CommonDataKinds.Phone.NUMBER
+                )
+
+                val contactGroups = mutableMapOf<String, MutableSet<Long>>() // number -> Set of distinct Contact IDs
+                contentResolver.query(
+                    ContactsContract.CommonDataKinds.Phone.CONTENT_URI,
+                    contactProjection,
+                    null,
+                    null,
+                    null
+                )?.use { cursor ->
+                    val idCol = cursor.getColumnIndexOrThrow(ContactsContract.CommonDataKinds.Phone.CONTACT_ID)
+                    val numCol = cursor.getColumnIndexOrThrow(ContactsContract.CommonDataKinds.Phone.NUMBER)
+
+                    while (cursor.moveToNext()) {
+                        val id = cursor.getLong(idCol)
+                        val number = (cursor.getString(numCol) ?: "").replace("[^0-9+]".toRegex(), "")
+                        if (number.isNotBlank()) {
+                            contactGroups.getOrPut(number) { mutableSetOf() }.add(id)
+                        }
+                    }
+                }
+
+                val contactDupesCount = contactGroups.values.sumOf { ids -> 
+                    (ids.size - 1).coerceAtLeast(0) 
+                }
+                totalCount += contactDupesCount
+            }
+
+            withContext(Dispatchers.Main) {
+                binding.duplicatesCountText.text = "$totalCount"
+                binding.canSaveText.text = StorageUtils.formatSize(totalSize)
+            }
+        }
+    }
+
+    private fun queryFiles(uri: android.net.Uri, selection: String? = null): List<MediaFile> {
+        val files = mutableListOf<MediaFile>()
+        val projection = arrayOf(
+            MediaStore.MediaColumns._ID,
+            MediaStore.MediaColumns.DATA,
+            MediaStore.MediaColumns.DISPLAY_NAME,
+            MediaStore.MediaColumns.SIZE,
+            MediaStore.MediaColumns.DATE_ADDED,
+            MediaStore.MediaColumns.MIME_TYPE
+        )
+        contentResolver.query(uri, projection, selection, null, null)?.use { cursor ->
+            val idCol = cursor.getColumnIndexOrThrow(MediaStore.MediaColumns._ID)
+            val pathCol = cursor.getColumnIndexOrThrow(MediaStore.MediaColumns.DATA)
+            val nameCol = cursor.getColumnIndexOrThrow(MediaStore.MediaColumns.DISPLAY_NAME)
+            val sizeCol = cursor.getColumnIndexOrThrow(MediaStore.MediaColumns.SIZE)
+            val dateCol = cursor.getColumnIndexOrThrow(MediaStore.MediaColumns.DATE_ADDED)
+            val mimeCol = cursor.getColumnIndexOrThrow(MediaStore.MediaColumns.MIME_TYPE)
+            while (cursor.moveToNext()) {
+                val size = cursor.getLong(sizeCol)
+                val path = cursor.getString(pathCol) ?: ""
+                val name = cursor.getString(nameCol) ?: ""
+                val mimeType = (cursor.getString(mimeCol) ?: "").lowercase()
+
+                if (size <= 0 || path.isEmpty() || !File(path).exists()) continue
+
+                // Strictly exclude system/hidden folders and non-media files
+                val isSystemFile = path.contains("/Android/", true) || 
+                                 path.contains("/PSP/", true) ||
+                                 path.contains("/SYSTEM/", true) ||
+                                 path.contains("/. ", true) ||
+                                 name.startsWith(".")
+
+                if (isSystemFile) continue
+
+                // Only include specific user-friendly categories
+                val isImage = mimeType.startsWith("image/")
+                val isVideo = mimeType.startsWith("video/")
+                val isAudio = mimeType.startsWith("audio/")
+                val isDoc = mimeType == "application/pdf" || mimeType.startsWith("text/") || 
+                           name.endsWith(".pdf", true) || name.endsWith(".doc", true) || 
+                           name.endsWith(".docx", true) || name.endsWith(".xls", true) || 
+                           name.endsWith(".xlsx", true)
+                val isApk = mimeType == "application/vnd.android.package-archive" || name.endsWith(".apk", true)
+
+                if (isImage || isVideo || isAudio || isDoc || isApk) {
+                    files.add(MediaFile(
+                        cursor.getLong(idCol),
+                        path,
+                        name,
+                        size,
+                        cursor.getLong(dateCol),
+                        mimeType
+                    ))
+                }
+            }
+        }
+        return files
+    }
+
+    private fun findDuplicatesForFiles(files: List<MediaFile>): List<List<MediaFile>> {
+        val sizeGroups = files.groupBy { it.size }.filter { it.value.size > 1 }
+        val duplicates = mutableListOf<List<MediaFile>>()
+        sizeGroups.forEach { (_, group) ->
+            group.forEach { it.hash = StorageUtils.calculateFileHash(it.path) }
+            // Filter out files where hashing failed (avoid empty string collisions)
+            val validHashGroup = group.filter { it.hash.isNotEmpty() }
+            val hashGroups = validHashGroup.groupBy { it.hash }.filter { it.value.size > 1 }
+            hashGroups.forEach { duplicates.add(it.value) }
+        }
+        return duplicates
+    }
+
+
+    private fun checkPermissionsAndScan() {
+        val permissions = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            arrayOf(Manifest.permission.READ_MEDIA_IMAGES, Manifest.permission.READ_MEDIA_VIDEO)
+        } else {
+            arrayOf(Manifest.permission.READ_EXTERNAL_STORAGE)
+        }
+
+        when {
+            permissions.all {
+                ContextCompat.checkSelfPermission(this, it) == PackageManager.PERMISSION_GRANTED
+            } -> {
+                showScanScreen()
+                startScanning()
+            }
+            else -> permissionLauncher.launch(permissions)
+        }
+    }
+
+    private fun startScanning() {
+        binding.progressBar.visibility = View.VISIBLE
+        binding.statusText.text = "Scanning files..."
+        binding.recyclerView.visibility = View.GONE
+        binding.emptyView.visibility = View.GONE
+        duplicateAdapter.submitList(emptyList())
+
+        lifecycleScope.launch(Dispatchers.IO) {
+            try {
+                allMediaFiles.clear()
+                scanMediaFiles()
+                findDuplicates()
+
+                withContext(Dispatchers.Main) {
+                    displayResults()
+                }
+            } catch (e: Exception) {
+                withContext(Dispatchers.Main) {
+                    binding.statusText.text = "Error: ${e.message}"
+                    binding.emptyView.visibility = View.VISIBLE
+                    Toast.makeText(this@MainActivity, "Scan failed: ${e.message}", Toast.LENGTH_LONG).show()
+                }
+            } finally {
+                withContext(Dispatchers.Main) {
+                    binding.progressBar.visibility = View.GONE
+                }
+            }
+        }
+    }
+
+    private fun scanMediaFiles() {
+        val projection = arrayOf(
+            MediaStore.Images.Media._ID,
+            MediaStore.Images.Media.DATA,
+            MediaStore.Images.Media.DISPLAY_NAME,
+            MediaStore.Images.Media.SIZE,
+            MediaStore.Images.Media.DATE_ADDED,
+            MediaStore.Images.Media.MIME_TYPE
+        )
+
+        contentResolver.query(
+            MediaStore.Images.Media.EXTERNAL_CONTENT_URI,
+            projection,
+            null,
+            null,
+            "${MediaStore.Images.Media.DATE_ADDED} DESC"
+        )?.use { cursor ->
+            val idColumn = cursor.getColumnIndexOrThrow(MediaStore.Images.Media._ID)
+            val pathColumn = cursor.getColumnIndexOrThrow(MediaStore.Images.Media.DATA)
+            val nameColumn = cursor.getColumnIndexOrThrow(MediaStore.Images.Media.DISPLAY_NAME)
+            val sizeColumn = cursor.getColumnIndexOrThrow(MediaStore.Images.Media.SIZE)
+            val dateColumn = cursor.getColumnIndexOrThrow(MediaStore.Images.Media.DATE_ADDED)
+            val mimeColumn = cursor.getColumnIndexOrThrow(MediaStore.Images.Media.MIME_TYPE)
+
+            while (cursor.moveToNext()) {
+                val id = cursor.getLong(idColumn)
+                val path = cursor.getString(pathColumn)
+                val name = cursor.getString(nameColumn)
+                val size = cursor.getLong(sizeColumn)
+                val date = cursor.getLong(dateColumn)
+                val mime = cursor.getString(mimeColumn) ?: "image/jpeg"
+
+                allMediaFiles.add(MediaFile(id, path, name, size, date, mime))
+            }
+        }
+
+        // Scan videos too
+        contentResolver.query(
+            MediaStore.Video.Media.EXTERNAL_CONTENT_URI,
+            projection.map { it.replace("images", "video") }.toTypedArray(),
+            null,
+            null,
+            "${MediaStore.Video.Media.DATE_ADDED} DESC"
+        )?.use { cursor ->
+            val idColumn = cursor.getColumnIndexOrThrow(MediaStore.Video.Media._ID)
+            val pathColumn = cursor.getColumnIndexOrThrow(MediaStore.Video.Media.DATA)
+            val nameColumn = cursor.getColumnIndexOrThrow(MediaStore.Video.Media.DISPLAY_NAME)
+            val sizeColumn = cursor.getColumnIndexOrThrow(MediaStore.Video.Media.SIZE)
+            val dateColumn = cursor.getColumnIndexOrThrow(MediaStore.Video.Media.DATE_ADDED)
+            val mimeColumn = cursor.getColumnIndexOrThrow(MediaStore.Video.Media.MIME_TYPE)
+
+            while (cursor.moveToNext()) {
+                val id = cursor.getLong(idColumn)
+                val path = cursor.getString(pathColumn)
+                val name = cursor.getString(nameColumn)
+                val size = cursor.getLong(sizeColumn)
+                val date = cursor.getLong(dateColumn)
+                val mime = cursor.getString(mimeColumn) ?: "video/mp4"
+
+                allMediaFiles.add(MediaFile(id, path, name, size, date, mime))
+            }
+        }
+    }
+
+    private fun findDuplicates() {
+        // Group by size first (quick filter)
+        val sizeGroups = allMediaFiles.groupBy { it.size }.filter { it.value.size > 1 }
+        
+        duplicateGroups.clear()
+
+        sizeGroups.forEach { (_, files) ->
+            // Calculate hash for each file
+            files.forEach { file ->
+                if (file.hash.isEmpty()) {
+                    file.hash = calculateFileHash(file.path)
+                }
+            }
+
+            // Group by hash
+            val hashGroups = files.groupBy { it.hash }.filter { it.value.size > 1 }
+            
+            hashGroups.forEach { (_, duplicates) ->
+                // Sort by date, keep oldest first
+                val sorted = duplicates.sortedBy { it.dateAdded }
+                duplicateGroups.add(sorted)
+            }
+        }
+    }
+
+    private fun calculateFileHash(filePath: String): String {
+        return try {
+            val file = File(filePath)
+            if (!file.exists()) return ""
+            
+            // For large files, just hash first and last 1MB for speed
+            val digest = MessageDigest.getInstance("MD5")
+            
+            file.inputStream().use { input ->
+                val buffer = ByteArray(8192)
+                var bytesRead: Int
+                var totalRead = 0L
+                val maxRead = 1024 * 1024 // 1MB
+                
+                while (input.read(buffer).also { bytesRead = it } != -1 && totalRead < maxRead) {
+                    digest.update(buffer, 0, bytesRead)
+                    totalRead += bytesRead
+                }
+            }
+            
+            digest.digest().joinToString("") { "%02x".format(it) }
+        } catch (e: Exception) {
+            ""
+        }
+    }
+
+    private suspend fun displayResults() {
+        withContext(Dispatchers.Main) {
+            if (duplicateGroups.isEmpty()) {
+                binding.statusText.text = getString(R.string.no_duplicates_found)
+                binding.recyclerView.visibility = View.GONE
+                binding.emptyView.visibility = View.VISIBLE
+                binding.duplicatesCountText.text = "0"
+                binding.canSaveText.text = "0 MB"
+            } else {
+                val totalDuplicates = duplicateGroups.sumOf { it.size - 1 }
+                val spaceWasted = duplicateGroups.sumOf { group ->
+                    group.drop(1).sumOf { it.size }
+                }
+                
+                binding.statusText.text = getString(R.string.searching_duplicates)
+                binding.recyclerView.visibility = View.VISIBLE
+                binding.emptyView.visibility = View.GONE
+                
+                binding.duplicatesCountText.text = "$totalDuplicates"
+                binding.canSaveText.text = formatSize(spaceWasted)
+                
+                duplicateAdapter.submitList(duplicateGroups.toList())
+            }
+        }
+    }
+
+    private fun formatSize(size: Long): String = StorageUtils.formatSize(size)
+
+    private fun showDeleteConfirmation(files: List<MediaFile>) {
+        val totalSize = files.sumOf { it.size }
+        AlertDialog.Builder(this)
+            .setTitle(R.string.delete_dialog_title)
+            .setMessage(getString(R.string.delete_dialog_message, files.size, formatSize(totalSize)))
+            .setPositiveButton(R.string.delete) { _, _ ->
+                deleteFiles(files)
+            }
+            .setNegativeButton(R.string.cancel, null)
+            .show()
+    }
+
+    private fun deleteFiles(files: List<MediaFile>) {
+        lifecycleScope.launch(Dispatchers.IO) {
+            var deleted = 0
+            var failed = 0
+            
+            files.forEach { file ->
+                try {
+                    val f = File(file.path)
+                    if (f.exists() && f.delete()) {
+                        deleted++
+                        // Remove from media store
+                        contentResolver.delete(
+                            MediaStore.Images.Media.EXTERNAL_CONTENT_URI,
+                            "${MediaStore.Images.Media._ID} = ?",
+                            arrayOf(file.id.toString())
+                        )
+                    } else {
+                        failed++
+                    }
+                } catch (e: Exception) {
+                    failed++
+                }
+            }
+            
+            withContext(Dispatchers.Main) {
+                Toast.makeText(this@MainActivity, "Deleted: $deleted, Failed: $failed", Toast.LENGTH_LONG).show()
+                if (deleted > 0) {
+                    startScanning() // Refresh
+                }
+            }
+        }
+    }
+}
+
